@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Samples/Vivox/15.1.180000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Scenes/MainScene.unity
     guid: dbc457e6df4234749aff8bd5ffa028ef
+  - enabled: 1
+    path: Assets/Samples/Planetarium/Scenes/Main.unity
+    guid: ea72b709789f511478552a4093a69650
+  - enabled: 0
+    path: Assets/Scenes/PlanetChatAR.unity
+    guid: a8802defbe7bd9d4bbba2f92596645d3
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f6fbbf91758edc04d9720e388c935917, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dce0b1c1077912f4f9569c34285ed42e, type: 2}
