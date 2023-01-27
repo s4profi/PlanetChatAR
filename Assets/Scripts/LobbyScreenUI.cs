@@ -48,7 +48,6 @@ public class LobbyScreenUI : MonoBehaviour
         _vivoxVoiceManager.OnUserLoggedOutEvent += OnUserLoggedOut;
         _vivoxVoiceManager.OnRecoveryStateChangedEvent += OnRecoveryStateChanged;
         LogoutButton.onClick.AddListener(() => { LogoutOfVivoxService(); });
-
         if (_vivoxVoiceManager.LoginState == LoginState.LoggedIn)
         {
             OnUserLoggedIn();
@@ -78,7 +77,7 @@ public class LobbyScreenUI : MonoBehaviour
         _vivoxVoiceManager.JoinChannel(LobbyChannelName.text, ChannelType.NonPositional, VivoxVoiceManager.ChatCapability.TextAndAudio);
     }
 
-    private void LogoutOfVivoxService()
+    public void LogoutOfVivoxService()
     {
         LogoutButton.interactable = false;
 
