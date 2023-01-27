@@ -8,7 +8,6 @@ public class PlanetsMainMode : MonoBehaviour
 {
     [SerializeField] TMP_Text planetName;
     [SerializeField] Toggle infoButton;
-    [SerializeField] GameObject chat;
     Camera mainCamera;
     
     void Start()
@@ -20,7 +19,6 @@ public class PlanetsMainMode : MonoBehaviour
     {
         planetName.text = "";
         infoButton.interactable = false;
-        chat.SetActive(false);
     }
 
     void Update()
