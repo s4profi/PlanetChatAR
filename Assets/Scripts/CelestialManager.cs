@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public struct PlanetObject{
     public GameObject gameObject;
@@ -28,7 +29,7 @@ public class CelestialManager : MonoBehaviour
                                           //this is just for having an accurate text date
     public int numberOfDaysFromNow = 0;   //If you want to start from another than today
 
-    public Text dateText;
+    public TextMeshProUGUI dateText;
     //Prefabs for celestial objects
     public GameObject moonPrefab;
     public GameObject sunPrefab;
