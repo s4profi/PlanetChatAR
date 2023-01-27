@@ -29,22 +29,17 @@ public class PlanetsMainMode : MonoBehaviour
        // }
         //else
         //{
-            Debug.Log("wtf1");
             Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                Debug.Log("wtf2");
 
                 GameObject planet = hit.collider.gameObject;
-                Debug.Log(planet.name);
                 planetName.text = planet.name;
                 infoButton.interactable = true;
             }
             else
             {
-                            Debug.Log("wtf3");
-
                 planetName.text = "";
                 infoButton.interactable = false;               
             }
