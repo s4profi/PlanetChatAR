@@ -202,13 +202,13 @@ public class TextChatUI : MonoBehaviour
         if (channelTextMessage.FromSelf)
         {
             newMessageText.alignment = TextAnchor.MiddleRight;
-            newMessageText.text = string.Format($"{channelTextMessage.Message} :<color=blue>{sender} </color>\n<color=#5A5A5A><size=8>{channelTextMessage.ReceivedTime}</size></color>");
+            newMessageText.text = string.Format($"{channelTextMessage.Message} :<color=blue>{sender} </color>\n<color=#5A5A5A><size=14>{channelTextMessage.ReceivedTime}</size></color>");
             StartCoroutine(SendScrollRectToBottom());
         }
         else
         {
             newMessageText.alignment = TextAnchor.MiddleLeft;
-            newMessageText.text = string.Format($"<color=green>{sender} </color>: {channelTextMessage.Message}\n<color=#5A5A5A><size=8>{channelTextMessage.ReceivedTime}</size></color>");
+            newMessageText.text = string.Format($"<color=green>{sender} </color>: {channelTextMessage.Message}\n<color=#5A5A5A><size=14>{channelTextMessage.ReceivedTime}</size></color>");
             if (ToggleTTS.isOn)
             {
                 // Speak local tts message with incoming text message

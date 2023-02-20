@@ -137,7 +137,7 @@ public class VivoxVoiceManager : MonoBehaviour
         {
             if (value != null)
             {
-                _client.GetLoginSession(m_Account).SetTransmissionMode(TransmissionMode.Single, value.Channel);
+                _client.GetLoginSession(m_Account).SetTransmissionMode(TransmissionMode.None, value.Channel);
             }
         }
     }

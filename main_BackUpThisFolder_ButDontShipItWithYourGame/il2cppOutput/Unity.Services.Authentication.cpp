@@ -1,0 +1,9662 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+#include <stdint.h>
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2>
+struct VirtualFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1>
+struct InterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct InterfaceActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct InterfaceActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct InterfaceFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2>
+struct InterfaceFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2>
+struct GenericInterfaceFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline R Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2, typename T3>
+struct GenericInterfaceFuncInvoker3
+{
+	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline R Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2, typename T3, typename T4>
+struct GenericInterfaceFuncInvoker4
+{
+	typedef R (*Func)(void*, T1, T2, T3, T4, const RuntimeMethod*);
+
+	static inline R Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2, T3 p3, T4 p4)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
+	}
+};
+
+// System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>>
+struct Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D;
+// System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>>
+struct Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5;
+// System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>
+struct Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB;
+// System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>
+struct Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50;
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Action`1<Unity.Services.Core.RequestFailedException>
+struct Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860;
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A;
+// System.Action`2<Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState>
+struct Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537;
+// System.Action`2<System.Int32Enum,System.Int32Enum>
+struct Action_2_t43544BAAB4CC69E54228A3389CC3D57A805208A2;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding>
+struct Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task>
+struct Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Object>
+struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
+// System.Func`1<System.Threading.Tasks.Task/ContingentProperties>
+struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
+// System.Collections.Generic.IDictionary`2<System.Object,System.Object>
+struct IDictionary_2_t823399AD16F88CDEB25958D8CB61771376A5ADED;
+// System.Collections.Generic.IDictionary`2<System.String,System.String>
+struct IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF;
+// System.Collections.Generic.IEqualityComparer`1<System.String>
+struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthAuthCodeResponse>
+struct IWebRequest_1_tE555426EA4479EA10B2FC774004BF7533B0DAB42;
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthTokenResponse>
+struct IWebRequest_1_t1EC35A8CBA06ABC11A837661D9E749BC675F9335;
+// Unity.Services.Authentication.Utilities.IWebRequest`1<System.Object>
+struct IWebRequest_1_t266A667C6E6BC68BDE804027720A8A939204F4B1;
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>
+struct IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30;
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>
+struct IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,System.String>
+struct KeyCollection_t2EDD317F5771E575ACB63527B5AFB71291040342;
+// System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>
+struct List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A;
+// System.Predicate`1<System.Object>
+struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
+// System.Predicate`1<System.Threading.Tasks.Task>
+struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.String>
+struct ValueCollection_t238D0D2427C6B841A01F522A41540165A2C4AE76;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,System.String>[]
+struct EntryU5BU5D_t1AF33AD0B7330843448956EC4277517081658AE7;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Security.Cryptography.KeySizes[]
+struct KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// Unity.Services.Authentication.Models.WellKnownKey[]
+struct WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9;
+// Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation[]
+struct ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF;
+// Unity.Services.Authentication.Models.AccessToken
+struct AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F;
+// Unity.Services.Authentication.AccessTokenComponent
+struct AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2;
+// Unity.Services.Authentication.Models.AccessTokenExtraClaims
+struct AccessTokenExtraClaims_t305F774A480A5C1A73EAAE27B6C634AD81E4EADC;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// System.Security.Cryptography.AsymmetricAlgorithm
+struct AsymmetricAlgorithm_t5E7E9D26CE0EDCAABD84F616A44E476473BA2AF8;
+// Unity.Services.Core.Internal.AsyncOperation
+struct AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0;
+// Unity.Services.Authentication.AuthenticationAsyncOperation
+struct AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3;
+// Unity.Services.Authentication.Models.AuthenticationErrorResponse
+struct AuthenticationErrorResponse_t6967AFC2C38980652CCFDF41FB11D7CADD5E5632;
+// Unity.Services.Authentication.AuthenticationException
+struct AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3;
+// Unity.Services.Authentication.AuthenticationNetworkClient
+struct AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8;
+// Unity.Services.Authentication.AuthenticationPackageInitializer
+struct AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E;
+// Unity.Services.Authentication.AuthenticationServiceInternal
+struct AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B;
+// Unity.Services.Authentication.Models.BaseJwt
+struct BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0;
+// Unity.Services.Authentication.CodeChallengeGenerator
+struct CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17;
+// System.Globalization.CodePageDataItem
+struct CodePageDataItem_t52460FA30AE37F4F26ACB81055E58002262F19F2;
+// Unity.Services.Authentication.Utilities.ContainerObject
+struct ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5;
+// System.Threading.ContextCallback
+struct ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007;
+// Unity.Services.Core.Internal.CoreRegistry
+struct CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA;
+// Unity.Services.Authentication.Utilities.DateTimeWrapper
+struct DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E;
+// System.Text.DecoderFallback
+struct DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.Text.EncoderFallback
+struct EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293;
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
+// System.Exception
+struct Exception_t;
+// Unity.Services.Authentication.Models.ExternalTokenRequest
+struct ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6;
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// System.Security.Cryptography.HashAlgorithm
+struct HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D;
+// Unity.Services.Authentication.Internal.IAccessToken
+struct IAccessToken_t8A8955010FD3200218D16D50699C60F922877720;
+// Unity.Services.Core.Internal.IAsyncOperation
+struct IAsyncOperation_t7153260BE2F10D2FD112421181A5755F80E5A752;
+// Unity.Services.Authentication.IAuthenticationNetworkClient
+struct IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D;
+// Unity.Services.Authentication.IAuthenticationService
+struct IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737;
+// Unity.Services.Authentication.Utilities.ICache
+struct ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051;
+// Unity.Services.Authentication.ICodeChallengeGenerator
+struct ICodeChallengeGenerator_tF562B3B1458E869807326F5B138F1B49690BD5DE;
+// Unity.Services.Core.Internal.IComponentRegistry
+struct IComponentRegistry_t139D898B2B7C9D1FF36A573E8DC25415053883B7;
+// Unity.Services.Authentication.Utilities.IDateTimeWrapper
+struct IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// Unity.Services.Core.Environments.Internal.IEnvironments
+struct IEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7;
+// Unity.Services.Authentication.IJwtDecoder
+struct IJwtDecoder_tF19E685470959229CAE1602E09CC93F130442E47;
+// UnityEngine.ILogger
+struct ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42;
+// Unity.Services.Authentication.Utilities.INetworkingUtilities
+struct INetworkingUtilities_tE79731F3192E6DBD5021C6B680A0911087585E02;
+// Unity.Services.Core.Internal.IPackageRegistry
+struct IPackageRegistry_t598A337CA30E50021BB139EF5CF3C3867139CFA2;
+// Unity.Services.Authentication.Internal.IPlayerId
+struct IPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913;
+// Unity.Services.Authentication.Utilities.IScheduler
+struct IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E;
+// Unity.Services.Authentication.JwtDecoder
+struct JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484;
+// Mono.Security.Cryptography.KeyPairPersistence
+struct KeyPairPersistence_t78D61FCDE172753BFE756B555CBD85127832CDF6;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+// Unity.Services.Authentication.Utilities.NetworkingUtilities
+struct NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837;
+// Unity.Services.Authentication.Models.OAuthAuthCodeResponse
+struct OAuthAuthCodeResponse_t819F40E54DE14BF799F56EE8243D8BDA04040E7C;
+// Unity.Services.Authentication.Models.OAuthTokenResponse
+struct OAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B;
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+// Unity.Services.Authentication.PlayerIdComponent
+struct PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19;
+// Unity.Services.Authentication.Utilities.PlayerPrefsCache
+struct PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E;
+// System.Security.Cryptography.RNGCryptoServiceProvider
+struct RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170;
+// System.Security.Cryptography.RSA
+struct RSA_tDDE9BD4C9806074FA9B1C6A5C93523A97116F21A;
+// System.Security.Cryptography.RSACryptoServiceProvider
+struct RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C;
+// Mono.Security.Cryptography.RSAManaged
+struct RSAManaged_t897B29EF76C459408E11A42680C942716D809001;
+// System.Security.Cryptography.RSAPKCS1SignatureDeformatter
+struct RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3;
+// Unity.Services.Core.RequestFailedException
+struct RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00;
+// System.Security.Cryptography.SHA256
+struct SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// Unity.Services.Authentication.Utilities.Scheduler
+struct Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F;
+// Unity.Services.Authentication.Models.SessionTokenRequest
+struct SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C;
+// Unity.Services.Authentication.Models.SignInResponse
+struct SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816;
+// System.Threading.Tasks.StackGuard
+struct StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352;
+// System.String
+struct String_t;
+// System.Text.StringBuilder
+struct StringBuilder_t;
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
+// System.Threading.Tasks.TaskFactory
+struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0;
+// System.Threading.Tasks.TaskScheduler
+struct TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E;
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E;
+// System.UriParser
+struct UriParser_t920B0868286118827C08B08A15A9456AF6C19D81;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// Unity.Services.Authentication.Models.WellKnownKey
+struct WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA;
+// Unity.Services.Authentication.Models.WellKnownKeys
+struct WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292;
+// Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0
+struct U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051;
+// Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0
+struct U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21;
+// Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0
+struct U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF;
+// System.Threading.Tasks.Task/ContingentProperties
+struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
+// System.Uri/UriInfo
+struct UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09;
+
+IL2CPP_EXTERN_C RuntimeClass* AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ICodeChallengeGenerator_tF562B3B1458E869807326F5B138F1B49690BD5DE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t3C6913E067AB1171D9894C79A396D8A8E90E311B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t174BFB804F1D416642CD11B72858B43316D8B26D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IWebRequest_1_t1EC35A8CBA06ABC11A837661D9E749BC675F9335_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IWebRequest_1_tE555426EA4479EA10B2FC774004BF7533B0DAB42_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral00420C520F15D0B0F9AF23CEF4CE0EE71BACFD66;
+IL2CPP_EXTERN_C String_t* _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922;
+IL2CPP_EXTERN_C String_t* _stringLiteral05399353FFE33FD801B0B6965CCE63207FFB2C7B;
+IL2CPP_EXTERN_C String_t* _stringLiteral063CF8D39471E989CB65BB9D666850AA223AFB9E;
+IL2CPP_EXTERN_C String_t* _stringLiteral069E76898DCED02EA1198EDF60D34460ED12B74D;
+IL2CPP_EXTERN_C String_t* _stringLiteral0DD32B18A388C5F1A6BAFD3629759260C61F767C;
+IL2CPP_EXTERN_C String_t* _stringLiteral0F135BF8FF941BA6F2B951EF67E50180FB7EEC18;
+IL2CPP_EXTERN_C String_t* _stringLiteral118DD8D39E0E902C46C352245BD0D8CF150CBFEA;
+IL2CPP_EXTERN_C String_t* _stringLiteral141957AF910C5B886304F115D2479EA72DD92035;
+IL2CPP_EXTERN_C String_t* _stringLiteral1459AA156A3CC61BE3445EF580D2A5FB14EA4CE8;
+IL2CPP_EXTERN_C String_t* _stringLiteral14B5EE6FCFD86D67EDBE48E605EB1010F8C38C8F;
+IL2CPP_EXTERN_C String_t* _stringLiteral158B6A1BFB4007A30B92DF912CBC29F2328168DD;
+IL2CPP_EXTERN_C String_t* _stringLiteral1FA13CA565DC9B5105D70A528D26A6FC7A57049E;
+IL2CPP_EXTERN_C String_t* _stringLiteral27712C5B80373B2C269D5C45C3A29ACA8E10A63B;
+IL2CPP_EXTERN_C String_t* _stringLiteral2E8E67C620487DD60223D455B640C5D17B3EE354;
+IL2CPP_EXTERN_C String_t* _stringLiteral30582D3073E84B43D5FF2D77B3D111122A050829;
+IL2CPP_EXTERN_C String_t* _stringLiteral3588789C48AB78DB91B054AB1061B98B63526313;
+IL2CPP_EXTERN_C String_t* _stringLiteral3F356137CA88ED48EB67D737BE3B186689AF3BDA;
+IL2CPP_EXTERN_C String_t* _stringLiteral4366449D1BB04F580364AB0FD15FBD1E1E033D6B;
+IL2CPP_EXTERN_C String_t* _stringLiteral4BE0C724DF0778AB44291FE22681FE3735239D7F;
+IL2CPP_EXTERN_C String_t* _stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37;
+IL2CPP_EXTERN_C String_t* _stringLiteral5007D8D0381075039AADFA5A7B7117BF4299AF46;
+IL2CPP_EXTERN_C String_t* _stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF;
+IL2CPP_EXTERN_C String_t* _stringLiteral5A5357BFF4777961C0ED9DFB11AC98AFAF29AF93;
+IL2CPP_EXTERN_C String_t* _stringLiteral60A2E461CC4A1D49199A67B5216F128319CE63CC;
+IL2CPP_EXTERN_C String_t* _stringLiteral64961BD849FAD6BFF8F01E214325B1482B355DFA;
+IL2CPP_EXTERN_C String_t* _stringLiteral64F0B93C5B7055DDA721986BA7566D27276D2FDD;
+IL2CPP_EXTERN_C String_t* _stringLiteral6682BD0725A4AB34573ADAA351C3058894511A91;
+IL2CPP_EXTERN_C String_t* _stringLiteral6F5EC7239B41C242FCB23B64D91DA0070FC1C044;
+IL2CPP_EXTERN_C String_t* _stringLiteral72129450AE06DEA77C55240A9CFFCC9CACFFA761;
+IL2CPP_EXTERN_C String_t* _stringLiteral77B5A95080D1AC66E0C734381A240DBAF39BB2C9;
+IL2CPP_EXTERN_C String_t* _stringLiteral861931048A40F32AB45F0ED63E9CA0A3725C8228;
+IL2CPP_EXTERN_C String_t* _stringLiteral86960211724E96958878FAD8035F1CACBBFAD32A;
+IL2CPP_EXTERN_C String_t* _stringLiteral88797218BED4E88AF105C4417B4296F4CE5EE4BC;
+IL2CPP_EXTERN_C String_t* _stringLiteral8A97118D426618B5C413DD90A9DFC97F3B050575;
+IL2CPP_EXTERN_C String_t* _stringLiteral9118BD0CAA037C7CB5A295148D715E5D7BB54A65;
+IL2CPP_EXTERN_C String_t* _stringLiteral93EEA4A28E7258C679658D99B1B19C8099D532C8;
+IL2CPP_EXTERN_C String_t* _stringLiteral98DC5CC9FB1CF6E407FEE201642AC8D774BB85CB;
+IL2CPP_EXTERN_C String_t* _stringLiteral9A2C107486E2353981192A25079D4547A4EFC7C3;
+IL2CPP_EXTERN_C String_t* _stringLiteral9BFD678133B3B79B23BAF9441A1BD053A447DC8F;
+IL2CPP_EXTERN_C String_t* _stringLiteral9D5A3AE3D2B0B5E5AF5AB489000D9B88FA11E907;
+IL2CPP_EXTERN_C String_t* _stringLiteralA389DA709F3CFA7E1C35D8DA42B74663535E9D57;
+IL2CPP_EXTERN_C String_t* _stringLiteralAA77D5693A0F444FC4C8236C0AEED70B164CFF58;
+IL2CPP_EXTERN_C String_t* _stringLiteralAABA5583336EE2A2E15567578298B9945602F0B1;
+IL2CPP_EXTERN_C String_t* _stringLiteralAC5A0910C0D3254F50FE56CC14FA8998F0B8AAFD;
+IL2CPP_EXTERN_C String_t* _stringLiteralAE6B586536DCC58E642B6D3B9D4C296C35DA9468;
+IL2CPP_EXTERN_C String_t* _stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990;
+IL2CPP_EXTERN_C String_t* _stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89;
+IL2CPP_EXTERN_C String_t* _stringLiteralB88088E5036DDBE9F6C1AA395AD7F15FBA25AECF;
+IL2CPP_EXTERN_C String_t* _stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2;
+IL2CPP_EXTERN_C String_t* _stringLiteralC2DA60AE96E2C9EF3EAF20897A5AA957AFDF64EC;
+IL2CPP_EXTERN_C String_t* _stringLiteralCEB5ADD24A8B3212AEDF863D68D2927C47646EE2;
+IL2CPP_EXTERN_C String_t* _stringLiteralD1074749CB9993BB9DEDCC6BD306CA84F53FA616;
+IL2CPP_EXTERN_C String_t* _stringLiteralD621D0010945E36D547156BC95881968C096B637;
+IL2CPP_EXTERN_C String_t* _stringLiteralD7276E51514232F10F0BDD940C7D25FA88F1E666;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralE0DC7C66D6ABB7483F3666B9237D6E5EBEAA9B19;
+IL2CPP_EXTERN_C String_t* _stringLiteralE160FC59F4EF7F755804916A69BE8D785CD5F97C;
+IL2CPP_EXTERN_C String_t* _stringLiteralE226315A889E342809A09A15505207F9977AF600;
+IL2CPP_EXTERN_C String_t* _stringLiteralE4EF956D8605C91DE8D8A5036BA8A8E5C713A5CC;
+IL2CPP_EXTERN_C String_t* _stringLiteralE66AC7975C1CCC8A26B104524EA620350F1EAA46;
+IL2CPP_EXTERN_C String_t* _stringLiteralE90370157D82330EBA0740F6D47984F414315AA1;
+IL2CPP_EXTERN_C String_t* _stringLiteralEF2BFEB3CE669AED6916F2510227D9758DF039EE;
+IL2CPP_EXTERN_C String_t* _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D;
+IL2CPP_EXTERN_C String_t* _stringLiteralF67B63DDDBE53FE39B3D99C2D009C6DF09C38E70;
+IL2CPP_EXTERN_C const RuntimeMethod* AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AuthenticationServiceInternal_HandleServerError_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_mD6FD94B7681C055E27D132613DD3A5D0674EAF34_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AuthenticationServiceInternal_ScheduledRefresh_mCEB91C4C7C5AC7319195A2EFCCDDC93F65E11C79_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AuthenticationServiceInternal_SendSignInFailedEvent_m7F9BC187D103F816D990928BDB855BB1551B23DF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistration_DependsOn_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mF32D3AEE8770313EFCC77D92013AF760CBABCD64_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistration_ProvidesComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m93F4FBA0C705D7D86490EBD4E70005983E16BFA0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistration_ProvidesComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_mE4D416BE760057F83FE86BA2FEF5753E1B44BE69_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistry_GetServiceComponent_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mB14B4F5C7C715C037C3D0B96AD44CFBC570659AF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistry_RegisterPackage_TisAuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_m7F81ECFF18FBDFC0E59A8302DC62E3B420173E7A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistry_RegisterServiceComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m96E3BC38CB35E7DE66A2138E255D9138290E0719_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CoreRegistry_RegisterServiceComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_m76EE03A1259101C248F840059C28D021440190D3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m1D3CFAA07F0EE9405CAF58853C2E25690A51D0F9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisScheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_m4C4B68A26ED728913DD047575532C95851D7246C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* IJwtDecoder_Decode_TisAccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F_m06699E5EE8C942C395EB39550DF21F118A5F1ADD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* INetworkingUtilities_Get_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_m2D3DAD5104A9E5BE1B8DB213B74DF6B18F32A428_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* INetworkingUtilities_PostForm_TisOAuthAuthCodeResponse_t819F40E54DE14BF799F56EE8243D8BDA04040E7C_m4A8E30156345E4ED3BAD9F4C2DEF4BDC1E051B74_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* INetworkingUtilities_Post_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4FF04A941BA16EA71363962E2E84D1BEF8F9C228_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_m654BCCAE2F20CB11D8E8C2D2C886A0C8A13EB1C4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m7345512A32CB4DCAA0643050B18DC8DCD71B927A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayerIdComponent_OnAuthenticationSignInFailed_mAAEA7D424139FBB82A3164A1CD5A333F201242A1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayerIdComponent_OnAuthenticationSignedIn_m0E02EF11593EB434D9FA0D1C86090CBF9353C075_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayerIdComponent_OnAuthenticationSignedOut_mF2BC0F83B2DA26BFA1E72E273BE1AB152DADEA15_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass48_0_U3CGetWellKnownKeysU3Eb__0_mB8D8A3DD3287A260B417BD99DD01E5DC02AF779E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass60_0_U3CLinkWithExternalTokenU3Eb__0_m30161E872D501B08573CD206F6CB8FC34E7A55EB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__0_m979ACCE6209E593F21636F99393161F144CCD52F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__1_mC2E61A07B993149891B60BADED084A98CBE43E20_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+struct WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9;
+struct ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// <Module>
+struct U3CModuleU3E_t2AF2223AD514DA27E9C59F48F3CCB2A9083DB62A 
+{
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t1AF33AD0B7330843448956EC4277517081658AE7* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t2EDD317F5771E575ACB63527B5AFB71291040342* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t238D0D2427C6B841A01F522A41540165A2C4AE76* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>
+struct List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF* ___s_emptyArray_5;
+};
+
+// Unity.Services.Authentication.AccessTokenComponent
+struct AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2  : public RuntimeObject
+{
+	// Unity.Services.Authentication.IAuthenticationService Unity.Services.Authentication.AccessTokenComponent::m_AuthenticationService
+	RuntimeObject* ___m_AuthenticationService_0;
+};
+
+// Unity.Services.Authentication.Models.AccessTokenExtraClaims
+struct AccessTokenExtraClaims_t305F774A480A5C1A73EAAE27B6C634AD81E4EADC  : public RuntimeObject
+{
+};
+struct Il2CppArrayBounds;
+
+// System.Security.Cryptography.AsymmetricAlgorithm
+struct AsymmetricAlgorithm_t5E7E9D26CE0EDCAABD84F616A44E476473BA2AF8  : public RuntimeObject
+{
+	// System.Int32 System.Security.Cryptography.AsymmetricAlgorithm::KeySizeValue
+	int32_t ___KeySizeValue_0;
+	// System.Security.Cryptography.KeySizes[] System.Security.Cryptography.AsymmetricAlgorithm::LegalKeySizesValue
+	KeySizesU5BU5D_tDD87467B9CB683380B5DC92193576A3136DFAE03* ___LegalKeySizesValue_1;
+};
+
+// System.Security.Cryptography.AsymmetricSignatureDeformatter
+struct AsymmetricSignatureDeformatter_tBB96AAAC1F942F159021BF6815E4E9ED0AEB1F3B  : public RuntimeObject
+{
+};
+
+// Unity.Services.Core.Internal.AsyncOperation
+struct AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0  : public RuntimeObject
+{
+	// System.Boolean Unity.Services.Core.Internal.AsyncOperation::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_0;
+	// Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperation::<Status>k__BackingField
+	int32_t ___U3CStatusU3Ek__BackingField_1;
+	// System.Exception Unity.Services.Core.Internal.AsyncOperation::<Exception>k__BackingField
+	Exception_t* ___U3CExceptionU3Ek__BackingField_2;
+	// System.Action`1<Unity.Services.Core.Internal.IAsyncOperation> Unity.Services.Core.Internal.AsyncOperation::m_CompletedCallback
+	Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* ___m_CompletedCallback_3;
+};
+
+// Unity.Services.Authentication.AuthenticationAsyncOperation
+struct AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3  : public RuntimeObject
+{
+	// Unity.Services.Core.Internal.AsyncOperation Unity.Services.Authentication.AuthenticationAsyncOperation::m_AsyncOperation
+	AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* ___m_AsyncOperation_0;
+	// Unity.Services.Core.RequestFailedException Unity.Services.Authentication.AuthenticationAsyncOperation::m_Exception
+	RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* ___m_Exception_1;
+	// System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation> Unity.Services.Authentication.AuthenticationAsyncOperation::BeforeFail
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* ___BeforeFail_2;
+};
+
+// Unity.Services.Authentication.AuthenticationErrorCodes
+struct AuthenticationErrorCodes_tAE30BE90DFBEAE96413E18FF7979FCE49AFB7CF1  : public RuntimeObject
+{
+};
+
+// Unity.Services.Authentication.Models.AuthenticationErrorResponse
+struct AuthenticationErrorResponse_t6967AFC2C38980652CCFDF41FB11D7CADD5E5632  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Models.AuthenticationErrorResponse::Title
+	String_t* ___Title_0;
+	// System.String Unity.Services.Authentication.Models.AuthenticationErrorResponse::Detail
+	String_t* ___Detail_1;
+	// System.Int32 Unity.Services.Authentication.Models.AuthenticationErrorResponse::Status
+	int32_t ___Status_2;
+};
+
+// Unity.Services.Authentication.AuthenticationNetworkClient
+struct AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8  : public RuntimeObject
+{
+	// Unity.Services.Authentication.Utilities.INetworkingUtilities Unity.Services.Authentication.AuthenticationNetworkClient::m_NetworkClient
+	RuntimeObject* ___m_NetworkClient_11;
+	// Unity.Services.Authentication.ICodeChallengeGenerator Unity.Services.Authentication.AuthenticationNetworkClient::m_CodeChallengeGenerator
+	RuntimeObject* ___m_CodeChallengeGenerator_12;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_WellKnownUrl
+	String_t* ___m_WellKnownUrl_13;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_AnonymousUrl
+	String_t* ___m_AnonymousUrl_14;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_SessionTokenUrl
+	String_t* ___m_SessionTokenUrl_15;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_ExternalTokenUrl
+	String_t* ___m_ExternalTokenUrl_16;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_LinkExternalTokenUrl
+	String_t* ___m_LinkExternalTokenUrl_17;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_OAuthUrl
+	String_t* ___m_OAuthUrl_18;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_OAuthTokenUrl
+	String_t* ___m_OAuthTokenUrl_19;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_OAuthRevokeTokenUrl
+	String_t* ___m_OAuthRevokeTokenUrl_20;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::m_CommonHeaders
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___m_CommonHeaders_21;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_OAuthClientId
+	String_t* ___m_OAuthClientId_22;
+	// System.String Unity.Services.Authentication.AuthenticationNetworkClient::m_SessionChallengeCode
+	String_t* ___m_SessionChallengeCode_23;
+	// Unity.Services.Core.Environments.Internal.IEnvironments Unity.Services.Authentication.AuthenticationNetworkClient::m_EnvironmentComponent
+	RuntimeObject* ___m_EnvironmentComponent_24;
+};
+
+// Unity.Services.Authentication.AuthenticationPackageInitializer
+struct AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E  : public RuntimeObject
+{
+};
+
+// Unity.Services.Authentication.AuthenticationService
+struct AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34  : public RuntimeObject
+{
+};
+
+struct AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_StaticFields
+{
+	// Unity.Services.Authentication.IAuthenticationService Unity.Services.Authentication.AuthenticationService::<Instance>k__BackingField
+	RuntimeObject* ___U3CInstanceU3Ek__BackingField_0;
+};
+
+// Unity.Services.Authentication.Models.BaseJwt
+struct BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0  : public RuntimeObject
+{
+	// System.Int32 Unity.Services.Authentication.Models.BaseJwt::ExpirationTimeUnix
+	int32_t ___ExpirationTimeUnix_0;
+	// System.Int32 Unity.Services.Authentication.Models.BaseJwt::IssuedAtTimeUnix
+	int32_t ___IssuedAtTimeUnix_1;
+	// System.Int32 Unity.Services.Authentication.Models.BaseJwt::NotBeforeTimeUnix
+	int32_t ___NotBeforeTimeUnix_2;
+};
+
+// Unity.Services.Authentication.CodeChallengeGenerator
+struct CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17  : public RuntimeObject
+{
+	// System.Text.StringBuilder Unity.Services.Authentication.CodeChallengeGenerator::m_CodeBuilder
+	StringBuilder_t* ___m_CodeBuilder_2;
+};
+
+// Unity.Services.Authentication.Utilities.ContainerObject
+struct ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5  : public RuntimeObject
+{
+};
+
+struct ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields
+{
+	// System.Boolean Unity.Services.Authentication.Utilities.ContainerObject::s_Created
+	bool ___s_Created_0;
+	// UnityEngine.GameObject Unity.Services.Authentication.Utilities.ContainerObject::s_Container
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___s_Container_1;
+};
+
+// Unity.Services.Core.Internal.CoreRegistry
+struct CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA  : public RuntimeObject
+{
+	// Unity.Services.Core.Internal.IPackageRegistry Unity.Services.Core.Internal.CoreRegistry::<PackageRegistry>k__BackingField
+	RuntimeObject* ___U3CPackageRegistryU3Ek__BackingField_1;
+	// Unity.Services.Core.Internal.IComponentRegistry Unity.Services.Core.Internal.CoreRegistry::<ComponentRegistry>k__BackingField
+	RuntimeObject* ___U3CComponentRegistryU3Ek__BackingField_2;
+};
+
+struct CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA_StaticFields
+{
+	// Unity.Services.Core.Internal.CoreRegistry Unity.Services.Core.Internal.CoreRegistry::<Instance>k__BackingField
+	CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* ___U3CInstanceU3Ek__BackingField_0;
+};
+
+// UnityEngine.Debug
+struct Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F  : public RuntimeObject
+{
+};
+
+struct Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_StaticFields
+{
+	// UnityEngine.ILogger UnityEngine.Debug::s_DefaultLogger
+	RuntimeObject* ___s_DefaultLogger_0;
+	// UnityEngine.ILogger UnityEngine.Debug::s_Logger
+	RuntimeObject* ___s_Logger_1;
+};
+
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095  : public RuntimeObject
+{
+	// System.Int32 System.Text.Encoding::m_codePage
+	int32_t ___m_codePage_9;
+	// System.Globalization.CodePageDataItem System.Text.Encoding::dataItem
+	CodePageDataItem_t52460FA30AE37F4F26ACB81055E58002262F19F2* ___dataItem_10;
+	// System.Boolean System.Text.Encoding::m_deserializedFromEverett
+	bool ___m_deserializedFromEverett_11;
+	// System.Boolean System.Text.Encoding::m_isReadOnly
+	bool ___m_isReadOnly_12;
+	// System.Text.EncoderFallback System.Text.Encoding::encoderFallback
+	EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293* ___encoderFallback_13;
+	// System.Text.DecoderFallback System.Text.Encoding::decoderFallback
+	DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90* ___decoderFallback_14;
+};
+
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
+{
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
+	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
+	// System.Object System.Text.Encoding::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_15;
+};
+
+// Unity.Services.Authentication.Models.ExternalTokenRequest
+struct ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Models.ExternalTokenRequest::IdProvider
+	String_t* ___IdProvider_0;
+	// System.String Unity.Services.Authentication.Models.ExternalTokenRequest::Token
+	String_t* ___Token_1;
+};
+
+// System.Security.Cryptography.HashAlgorithm
+struct HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D  : public RuntimeObject
+{
+	// System.Boolean System.Security.Cryptography.HashAlgorithm::_disposed
+	bool ____disposed_0;
+	// System.Int32 System.Security.Cryptography.HashAlgorithm::HashSizeValue
+	int32_t ___HashSizeValue_1;
+	// System.Byte[] System.Security.Cryptography.HashAlgorithm::HashValue
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___HashValue_2;
+	// System.Int32 System.Security.Cryptography.HashAlgorithm::State
+	int32_t ___State_3;
+};
+
+// Unity.Services.Authentication.Utilities.HttpUtilities
+struct HttpUtilities_t3A0A3B8BCC7DA96149B423AC282437F541C87B58  : public RuntimeObject
+{
+};
+
+// Unity.Services.Authentication.Utilities.Logger
+struct Logger_t8849812421491216BBD38D224A7A4B67EA461229  : public RuntimeObject
+{
+};
+
+// Unity.Services.Authentication.Utilities.NetworkingUtilities
+struct NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837  : public RuntimeObject
+{
+	// Unity.Services.Authentication.Utilities.IScheduler Unity.Services.Authentication.Utilities.NetworkingUtilities::m_Scheduler
+	RuntimeObject* ___m_Scheduler_0;
+	// System.Int32 Unity.Services.Authentication.Utilities.NetworkingUtilities::<RedirectLimit>k__BackingField
+	int32_t ___U3CRedirectLimitU3Ek__BackingField_1;
+};
+
+// Unity.Services.Authentication.Models.OAuthAuthCodeResponse
+struct OAuthAuthCodeResponse_t819F40E54DE14BF799F56EE8243D8BDA04040E7C  : public RuntimeObject
+{
+};
+
+// Unity.Services.Authentication.Models.OAuthTokenResponse
+struct OAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Models.OAuthTokenResponse::AccessToken
+	String_t* ___AccessToken_0;
+	// System.String Unity.Services.Authentication.Models.OAuthTokenResponse::IdToken
+	String_t* ___IdToken_1;
+	// System.String Unity.Services.Authentication.Models.OAuthTokenResponse::RefreshToken
+	String_t* ___RefreshToken_2;
+	// System.String Unity.Services.Authentication.Models.OAuthTokenResponse::Scope
+	String_t* ___Scope_3;
+	// System.String Unity.Services.Authentication.Models.OAuthTokenResponse::TokenType
+	String_t* ___TokenType_4;
+	// System.Int64 Unity.Services.Authentication.Models.OAuthTokenResponse::ExpiresIn
+	int64_t ___ExpiresIn_5;
+};
+
+// Unity.Services.Authentication.PlayerIdComponent
+struct PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19  : public RuntimeObject
+{
+	// Unity.Services.Authentication.IAuthenticationService Unity.Services.Authentication.PlayerIdComponent::m_AuthenticationService
+	RuntimeObject* ___m_AuthenticationService_0;
+	// System.Action`1<System.String> Unity.Services.Authentication.PlayerIdComponent::PlayerIdChanged
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___PlayerIdChanged_1;
+};
+
+// Unity.Services.Authentication.Utilities.PlayerPrefsCache
+struct PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Utilities.PlayerPrefsCache::m_Prefix
+	String_t* ___m_Prefix_0;
+};
+
+// System.Security.Cryptography.RandomNumberGenerator
+struct RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3  : public RuntimeObject
+{
+};
+
+// Unity.Services.Authentication.Models.SessionTokenRequest
+struct SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Models.SessionTokenRequest::SessionToken
+	String_t* ___SessionToken_0;
+};
+
+// Unity.Services.Authentication.Models.SignInResponse
+struct SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Models.SignInResponse::UserId
+	String_t* ___UserId_0;
+	// System.String Unity.Services.Authentication.Models.SignInResponse::IdToken
+	String_t* ___IdToken_1;
+	// System.String Unity.Services.Authentication.Models.SignInResponse::SessionToken
+	String_t* ___SessionToken_2;
+	// System.Int32 Unity.Services.Authentication.Models.SignInResponse::ExpiresIn
+	int32_t ___ExpiresIn_3;
+};
+
+// System.String
+struct String_t  : public RuntimeObject
+{
+	// System.Int32 System.String::_stringLength
+	int32_t ____stringLength_4;
+	// System.Char System.String::_firstChar
+	Il2CppChar ____firstChar_5;
+};
+
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.Text.StringBuilder
+struct StringBuilder_t  : public RuntimeObject
+{
+	// System.Char[] System.Text.StringBuilder::m_ChunkChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___m_ChunkChars_0;
+	// System.Text.StringBuilder System.Text.StringBuilder::m_ChunkPrevious
+	StringBuilder_t* ___m_ChunkPrevious_1;
+	// System.Int32 System.Text.StringBuilder::m_ChunkLength
+	int32_t ___m_ChunkLength_2;
+	// System.Int32 System.Text.StringBuilder::m_ChunkOffset
+	int32_t ___m_ChunkOffset_3;
+	// System.Int32 System.Text.StringBuilder::m_MaxCapacity
+	int32_t ___m_MaxCapacity_4;
+};
+
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572  : public RuntimeObject
+{
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_taskId
+	int32_t ___m_taskId_1;
+	// System.Delegate System.Threading.Tasks.Task::m_action
+	Delegate_t* ___m_action_2;
+	// System.Object System.Threading.Tasks.Task::m_stateObject
+	RuntimeObject* ___m_stateObject_3;
+	// System.Threading.Tasks.TaskScheduler System.Threading.Tasks.Task::m_taskScheduler
+	TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E* ___m_taskScheduler_4;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::m_parent
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_parent_5;
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_stateFlags
+	int32_t ___m_stateFlags_6;
+	// System.Object modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_continuationObject
+	RuntimeObject* ___m_continuationObject_7;
+	// System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
+	ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540* ___m_contingentProperties_10;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields
+{
+	// System.Int32 System.Threading.Tasks.Task::s_taskIdCounter
+	int32_t ___s_taskIdCounter_0;
+	// System.Object System.Threading.Tasks.Task::s_taskCompletionSentinel
+	RuntimeObject* ___s_taskCompletionSentinel_8;
+	// System.Boolean System.Threading.Tasks.Task::s_asyncDebuggingEnabled
+	bool ___s_asyncDebuggingEnabled_9;
+	// System.Action`1<System.Object> System.Threading.Tasks.Task::s_taskCancelCallback
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___s_taskCancelCallback_11;
+	// System.Func`1<System.Threading.Tasks.Task/ContingentProperties> System.Threading.Tasks.Task::s_createContingentProperties
+	Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1* ___s_createContingentProperties_14;
+	// System.Threading.Tasks.TaskFactory System.Threading.Tasks.Task::<Factory>k__BackingField
+	TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0* ___U3CFactoryU3Ek__BackingField_15;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::<CompletedTask>k__BackingField
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___U3CCompletedTaskU3Ek__BackingField_16;
+	// System.Predicate`1<System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_IsExceptionObservedByParentPredicate
+	Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED* ___s_IsExceptionObservedByParentPredicate_17;
+	// System.Threading.ContextCallback System.Threading.Tasks.Task::s_ecCallback
+	ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007* ___s_ecCallback_18;
+	// System.Predicate`1<System.Object> System.Threading.Tasks.Task::s_IsTaskContinuationNullPredicate
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___s_IsTaskContinuationNullPredicate_19;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_currentActiveTasks
+	Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55* ___s_currentActiveTasks_20;
+	// System.Object System.Threading.Tasks.Task::s_activeTasksLock
+	RuntimeObject* ___s_activeTasksLock_21;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_ThreadStaticFields
+{
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::t_currentTask
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___t_currentTask_12;
+	// System.Threading.Tasks.StackGuard System.Threading.Tasks.Task::t_stackGuard
+	StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352* ___t_stackGuard_13;
+};
+
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
+{
+	// System.String System.Uri::m_String
+	String_t* ___m_String_13;
+	// System.String System.Uri::m_originalUnicodeString
+	String_t* ___m_originalUnicodeString_14;
+	// System.UriParser System.Uri::m_Syntax
+	UriParser_t920B0868286118827C08B08A15A9456AF6C19D81* ___m_Syntax_15;
+	// System.String System.Uri::m_DnsSafeHost
+	String_t* ___m_DnsSafeHost_16;
+	// System.Uri/Flags System.Uri::m_Flags
+	uint64_t ___m_Flags_17;
+	// System.Uri/UriInfo System.Uri::m_Info
+	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_18;
+	// System.Boolean System.Uri::m_iriParsing
+	bool ___m_iriParsing_19;
+};
+
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
+{
+	// System.String System.Uri::UriSchemeFile
+	String_t* ___UriSchemeFile_0;
+	// System.String System.Uri::UriSchemeFtp
+	String_t* ___UriSchemeFtp_1;
+	// System.String System.Uri::UriSchemeGopher
+	String_t* ___UriSchemeGopher_2;
+	// System.String System.Uri::UriSchemeHttp
+	String_t* ___UriSchemeHttp_3;
+	// System.String System.Uri::UriSchemeHttps
+	String_t* ___UriSchemeHttps_4;
+	// System.String System.Uri::UriSchemeWs
+	String_t* ___UriSchemeWs_5;
+	// System.String System.Uri::UriSchemeWss
+	String_t* ___UriSchemeWss_6;
+	// System.String System.Uri::UriSchemeMailto
+	String_t* ___UriSchemeMailto_7;
+	// System.String System.Uri::UriSchemeNews
+	String_t* ___UriSchemeNews_8;
+	// System.String System.Uri::UriSchemeNntp
+	String_t* ___UriSchemeNntp_9;
+	// System.String System.Uri::UriSchemeNetTcp
+	String_t* ___UriSchemeNetTcp_10;
+	// System.String System.Uri::UriSchemeNetPipe
+	String_t* ___UriSchemeNetPipe_11;
+	// System.String System.Uri::SchemeDelimiter
+	String_t* ___SchemeDelimiter_12;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
+	bool ___s_ConfigInitialized_20;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
+	bool ___s_ConfigInitializing_21;
+	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
+	int32_t ___s_IdnScope_22;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
+	bool ___s_IriParsing_23;
+	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
+	bool ___useDotNetRelativeOrAbsolute_24;
+	// System.Boolean System.Uri::IsWindowsFileSystem
+	bool ___IsWindowsFileSystem_25;
+	// System.Object System.Uri::s_initLock
+	RuntimeObject* ___s_initLock_26;
+	// System.Char[] System.Uri::HexLowerChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_27;
+	// System.Char[] System.Uri::_WSchars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_28;
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// Unity.Services.Authentication.Models.WellKnownKey
+struct WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA  : public RuntimeObject
+{
+	// System.String Unity.Services.Authentication.Models.WellKnownKey::Use
+	String_t* ___Use_0;
+	// System.String Unity.Services.Authentication.Models.WellKnownKey::KeyType
+	String_t* ___KeyType_1;
+	// System.String Unity.Services.Authentication.Models.WellKnownKey::KeyId
+	String_t* ___KeyId_2;
+	// System.String Unity.Services.Authentication.Models.WellKnownKey::Algorithm
+	String_t* ___Algorithm_3;
+	// System.String Unity.Services.Authentication.Models.WellKnownKey::N
+	String_t* ___N_4;
+	// System.String Unity.Services.Authentication.Models.WellKnownKey::E
+	String_t* ___E_5;
+};
+
+// Unity.Services.Authentication.Models.WellKnownKeys
+struct WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292  : public RuntimeObject
+{
+	// Unity.Services.Authentication.Models.WellKnownKey[] Unity.Services.Authentication.Models.WellKnownKeys::Keys
+	WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9* ___Keys_0;
+};
+
+// Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0
+struct U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051  : public RuntimeObject
+{
+	// Unity.Services.Authentication.AuthenticationServiceInternal Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0::<>4__this
+	AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* ___U3CU3E4__this_0;
+	// Unity.Services.Authentication.AuthenticationAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0::asyncOperation
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___asyncOperation_1;
+	// System.Int32 Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0::attempt
+	int32_t ___attempt_2;
+};
+
+// Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0
+struct U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21  : public RuntimeObject
+{
+	// Unity.Services.Authentication.AuthenticationServiceInternal Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0::<>4__this
+	AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* ___U3CU3E4__this_0;
+	// Unity.Services.Authentication.AuthenticationAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0::operation
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation_1;
+};
+
+// Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0
+struct U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF  : public RuntimeObject
+{
+	// Unity.Services.Authentication.AuthenticationServiceInternal Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0::<>4__this
+	AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* ___U3CU3E4__this_0;
+	// Unity.Services.Authentication.AuthenticationAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0::asyncOp
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___asyncOp_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	RuntimeObject* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	RuntimeObject* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,System.String>
+struct KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	String_t* ___value_1;
+};
+
+// Unity.Services.Authentication.Models.AccessToken
+struct AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F  : public BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0
+{
+	// System.String[] Unity.Services.Authentication.Models.AccessToken::Audience
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___Audience_3;
+	// System.String Unity.Services.Authentication.Models.AccessToken::ClientId
+	String_t* ___ClientId_4;
+	// Unity.Services.Authentication.Models.AccessTokenExtraClaims Unity.Services.Authentication.Models.AccessToken::Extra
+	AccessTokenExtraClaims_t305F774A480A5C1A73EAAE27B6C634AD81E4EADC* ___Extra_5;
+	// System.String Unity.Services.Authentication.Models.AccessToken::Issuer
+	String_t* ___Issuer_6;
+	// System.String Unity.Services.Authentication.Models.AccessToken::JwtId
+	String_t* ___JwtId_7;
+	// System.String Unity.Services.Authentication.Models.AccessToken::ProjectId
+	String_t* ___ProjectId_8;
+	// System.String[] Unity.Services.Authentication.Models.AccessToken::Scope
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___Scope_9;
+	// System.String Unity.Services.Authentication.Models.AccessToken::Subject
+	String_t* ___Subject_10;
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Byte
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	// System.Byte System.Byte::m_value
+	uint8_t ___m_value_0;
+};
+
+// System.Char
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17 
+{
+	// System.Char System.Char::m_value
+	Il2CppChar ___m_value_0;
+};
+
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
+{
+	// System.Byte[] System.Char::s_categoryForLatin1
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
+};
+
+// Unity.Services.Core.Internal.CoreRegistration
+struct CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 
+{
+	// Unity.Services.Core.Internal.IPackageRegistry Unity.Services.Core.Internal.CoreRegistration::m_Registry
+	RuntimeObject* ___m_Registry_0;
+	// System.Int32 Unity.Services.Core.Internal.CoreRegistration::m_PackageHash
+	int32_t ___m_PackageHash_1;
+};
+// Native definition for P/Invoke marshalling of Unity.Services.Core.Internal.CoreRegistration
+struct CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581_marshaled_pinvoke
+{
+	RuntimeObject* ___m_Registry_0;
+	int32_t ___m_PackageHash_1;
+};
+// Native definition for COM marshalling of Unity.Services.Core.Internal.CoreRegistration
+struct CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581_marshaled_com
+{
+	RuntimeObject* ___m_Registry_0;
+	int32_t ___m_PackageHash_1;
+};
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D 
+{
+	// System.UInt64 System.DateTime::_dateData
+	uint64_t ____dateData_46;
+};
+
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
+{
+	// System.Int32[] System.DateTime::s_daysToMonth365
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
+	// System.Int32[] System.DateTime::s_daysToMonth366
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
+	// System.DateTime System.DateTime::MinValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
+	// System.DateTime System.DateTime::MaxValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
+	// System.DateTime System.DateTime::UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
+};
+
+// System.Double
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
+{
+	// System.Double System.Double::m_value
+	double ___m_value_0;
+};
+
+// System.Guid
+struct Guid_t 
+{
+	// System.Int32 System.Guid::_a
+	int32_t ____a_1;
+	// System.Int16 System.Guid::_b
+	int16_t ____b_2;
+	// System.Int16 System.Guid::_c
+	int16_t ____c_3;
+	// System.Byte System.Guid::_d
+	uint8_t ____d_4;
+	// System.Byte System.Guid::_e
+	uint8_t ____e_5;
+	// System.Byte System.Guid::_f
+	uint8_t ____f_6;
+	// System.Byte System.Guid::_g
+	uint8_t ____g_7;
+	// System.Byte System.Guid::_h
+	uint8_t ____h_8;
+	// System.Byte System.Guid::_i
+	uint8_t ____i_9;
+	// System.Byte System.Guid::_j
+	uint8_t ____j_10;
+	// System.Byte System.Guid::_k
+	uint8_t ____k_11;
+};
+
+struct Guid_t_StaticFields
+{
+	// System.Guid System.Guid::Empty
+	Guid_t ___Empty_0;
+};
+
+// System.Int32
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	// System.Int32 System.Int32::m_value
+	int32_t ___m_value_0;
+};
+
+// System.Int64
+struct Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3 
+{
+	// System.Int64 System.Int64::m_value
+	int64_t ___m_value_0;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.Security.Cryptography.RSA
+struct RSA_tDDE9BD4C9806074FA9B1C6A5C93523A97116F21A  : public AsymmetricAlgorithm_t5E7E9D26CE0EDCAABD84F616A44E476473BA2AF8
+{
+};
+
+// System.Security.Cryptography.RSAPKCS1SignatureDeformatter
+struct RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3  : public AsymmetricSignatureDeformatter_tBB96AAAC1F942F159021BF6815E4E9ED0AEB1F3B
+{
+	// System.Security.Cryptography.RSA System.Security.Cryptography.RSAPKCS1SignatureDeformatter::rsa
+	RSA_tDDE9BD4C9806074FA9B1C6A5C93523A97116F21A* ___rsa_0;
+	// System.String System.Security.Cryptography.RSAPKCS1SignatureDeformatter::hashName
+	String_t* ___hashName_1;
+};
+
+// System.Security.Cryptography.RSAParameters
+struct RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF 
+{
+	// System.Byte[] System.Security.Cryptography.RSAParameters::Exponent
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___Exponent_0;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::Modulus
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___Modulus_1;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::P
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___P_2;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::Q
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___Q_3;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::DP
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___DP_4;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::DQ
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___DQ_5;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::InverseQ
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___InverseQ_6;
+	// System.Byte[] System.Security.Cryptography.RSAParameters::D
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___D_7;
+};
+// Native definition for P/Invoke marshalling of System.Security.Cryptography.RSAParameters
+struct RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshaled_pinvoke
+{
+	Il2CppSafeArray/*NONE*/* ___Exponent_0;
+	Il2CppSafeArray/*NONE*/* ___Modulus_1;
+	Il2CppSafeArray/*NONE*/* ___P_2;
+	Il2CppSafeArray/*NONE*/* ___Q_3;
+	Il2CppSafeArray/*NONE*/* ___DP_4;
+	Il2CppSafeArray/*NONE*/* ___DQ_5;
+	Il2CppSafeArray/*NONE*/* ___InverseQ_6;
+	Il2CppSafeArray/*NONE*/* ___D_7;
+};
+// Native definition for COM marshalling of System.Security.Cryptography.RSAParameters
+struct RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshaled_com
+{
+	Il2CppSafeArray/*NONE*/* ___Exponent_0;
+	Il2CppSafeArray/*NONE*/* ___Modulus_1;
+	Il2CppSafeArray/*NONE*/* ___P_2;
+	Il2CppSafeArray/*NONE*/* ___Q_3;
+	Il2CppSafeArray/*NONE*/* ___DP_4;
+	Il2CppSafeArray/*NONE*/* ___DQ_5;
+	Il2CppSafeArray/*NONE*/* ___InverseQ_6;
+	Il2CppSafeArray/*NONE*/* ___D_7;
+};
+
+// System.Security.Cryptography.SHA256
+struct SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9  : public HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D
+{
+};
+
+// System.TimeSpan
+struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A 
+{
+	// System.Int64 System.TimeSpan::_ticks
+	int64_t ____ticks_22;
+};
+
+struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
+{
+	// System.TimeSpan System.TimeSpan::Zero
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero_19;
+	// System.TimeSpan System.TimeSpan::MaxValue
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MaxValue_20;
+	// System.TimeSpan System.TimeSpan::MinValue
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MinValue_21;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// Unity.Services.Authentication.AuthenticationServiceInternal
+struct AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B  : public RuntimeObject
+{
+	// Unity.Services.Authentication.IAuthenticationNetworkClient Unity.Services.Authentication.AuthenticationServiceInternal::m_NetworkClient
+	RuntimeObject* ___m_NetworkClient_9;
+	// Unity.Services.Authentication.IJwtDecoder Unity.Services.Authentication.AuthenticationServiceInternal::m_JwtDecoder
+	RuntimeObject* ___m_JwtDecoder_10;
+	// Unity.Services.Authentication.Utilities.ICache Unity.Services.Authentication.AuthenticationServiceInternal::m_Cache
+	RuntimeObject* ___m_Cache_11;
+	// Unity.Services.Authentication.Utilities.IScheduler Unity.Services.Authentication.AuthenticationServiceInternal::m_Scheduler
+	RuntimeObject* ___m_Scheduler_12;
+	// Unity.Services.Authentication.Utilities.IDateTimeWrapper Unity.Services.Authentication.AuthenticationServiceInternal::m_DateTime
+	RuntimeObject* ___m_DateTime_13;
+	// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.AuthenticationServiceInternal::m_DelayedTokenRequest
+	RuntimeObject* ___m_DelayedTokenRequest_14;
+	// System.String Unity.Services.Authentication.AuthenticationServiceInternal::m_PlayerId
+	String_t* ___m_PlayerId_15;
+	// System.DateTime Unity.Services.Authentication.AuthenticationServiceInternal::m_AccessTokenExpiryTime
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___m_AccessTokenExpiryTime_16;
+	// System.Action`2<Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState> Unity.Services.Authentication.AuthenticationServiceInternal::StateChanged
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* ___StateChanged_17;
+	// System.Action`1<Unity.Services.Core.RequestFailedException> Unity.Services.Authentication.AuthenticationServiceInternal::SignInFailed
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* ___SignInFailed_18;
+	// System.Action Unity.Services.Authentication.AuthenticationServiceInternal::SignedIn
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___SignedIn_19;
+	// System.Action Unity.Services.Authentication.AuthenticationServiceInternal::SignedOut
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___SignedOut_20;
+	// System.String Unity.Services.Authentication.AuthenticationServiceInternal::<AccessToken>k__BackingField
+	String_t* ___U3CAccessTokenU3Ek__BackingField_21;
+	// Unity.Services.Authentication.AuthenticationState Unity.Services.Authentication.AuthenticationServiceInternal::<State>k__BackingField
+	int32_t ___U3CStateU3Ek__BackingField_22;
+	// Unity.Services.Authentication.Models.WellKnownKeys Unity.Services.Authentication.AuthenticationServiceInternal::<WellKnownKeys>k__BackingField
+	WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___U3CWellKnownKeysU3Ek__BackingField_23;
+};
+
+// System.DateTimeOffset
+struct DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 
+{
+	// System.DateTime System.DateTimeOffset::_dateTime
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ____dateTime_3;
+	// System.Int16 System.DateTimeOffset::_offsetMinutes
+	int16_t ____offsetMinutes_4;
+};
+
+struct DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_StaticFields
+{
+	// System.DateTimeOffset System.DateTimeOffset::MinValue
+	DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 ___MinValue_0;
+	// System.DateTimeOffset System.DateTimeOffset::MaxValue
+	DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 ___MaxValue_1;
+	// System.DateTimeOffset System.DateTimeOffset::UnixEpoch
+	DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 ___UnixEpoch_2;
+};
+
+// Unity.Services.Authentication.Utilities.DateTimeWrapper
+struct DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E  : public RuntimeObject
+{
+};
+
+struct DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_StaticFields
+{
+	// System.DateTime Unity.Services.Authentication.Utilities.DateTimeWrapper::k_UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___k_UnixEpoch_0;
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
+// Unity.Services.Authentication.JwtDecoder
+struct JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484  : public RuntimeObject
+{
+	// Unity.Services.Authentication.Utilities.IDateTimeWrapper Unity.Services.Authentication.JwtDecoder::m_DateTime
+	RuntimeObject* ___m_DateTime_2;
+};
+
+struct JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_StaticFields
+{
+	// System.DateTime Unity.Services.Authentication.JwtDecoder::k_UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___k_UnixEpoch_0;
+	// System.Char[] Unity.Services.Authentication.JwtDecoder::k_JwtSeparator
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___k_JwtSeparator_1;
+};
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	// System.IntPtr UnityEngine.Object::m_CachedPtr
+	intptr_t ___m_CachedPtr_0;
+};
+
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr_0;
+};
+
+// System.Security.Cryptography.RNGCryptoServiceProvider
+struct RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170  : public RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3
+{
+	// System.IntPtr System.Security.Cryptography.RNGCryptoServiceProvider::_handle
+	intptr_t ____handle_1;
+};
+
+struct RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170_StaticFields
+{
+	// System.Object System.Security.Cryptography.RNGCryptoServiceProvider::_lock
+	RuntimeObject* ____lock_0;
+};
+
+// System.Security.Cryptography.RSACryptoServiceProvider
+struct RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C  : public RSA_tDDE9BD4C9806074FA9B1C6A5C93523A97116F21A
+{
+	// Mono.Security.Cryptography.KeyPairPersistence System.Security.Cryptography.RSACryptoServiceProvider::store
+	KeyPairPersistence_t78D61FCDE172753BFE756B555CBD85127832CDF6* ___store_3;
+	// System.Boolean System.Security.Cryptography.RSACryptoServiceProvider::persistKey
+	bool ___persistKey_4;
+	// System.Boolean System.Security.Cryptography.RSACryptoServiceProvider::persisted
+	bool ___persisted_5;
+	// System.Boolean System.Security.Cryptography.RSACryptoServiceProvider::privateKeyExportable
+	bool ___privateKeyExportable_6;
+	// System.Boolean System.Security.Cryptography.RSACryptoServiceProvider::m_disposed
+	bool ___m_disposed_7;
+	// Mono.Security.Cryptography.RSAManaged System.Security.Cryptography.RSACryptoServiceProvider::rsa
+	RSAManaged_t897B29EF76C459408E11A42680C942716D809001* ___rsa_8;
+};
+
+struct RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C_StaticFields
+{
+	// System.Security.Cryptography.CspProviderFlags modreq(System.Runtime.CompilerServices.IsVolatile) System.Security.Cryptography.RSACryptoServiceProvider::s_UseMachineKeyStore
+	int32_t ___s_UseMachineKeyStore_2;
+};
+
+// Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+struct ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C 
+{
+	// System.Action Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation::Action
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___Action_0;
+	// System.DateTime Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation::InvocationTime
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___InvocationTime_1;
+};
+// Native definition for P/Invoke marshalling of Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+struct ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_pinvoke
+{
+	Il2CppMethodPointer ___Action_0;
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___InvocationTime_1;
+};
+// Native definition for COM marshalling of Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+struct ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_com
+{
+	Il2CppMethodPointer ___Action_0;
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___InvocationTime_1;
+};
+
+// UnityEngine.Component
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// Unity.Services.Core.RequestFailedException
+struct RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00  : public Exception_t
+{
+	// System.Int32 Unity.Services.Core.RequestFailedException::<ErrorCode>k__BackingField
+	int32_t ___U3CErrorCodeU3Ek__BackingField_18;
+};
+
+// System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>>
+struct Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>>
+struct Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>
+struct Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>
+struct Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Unity.Services.Core.RequestFailedException>
+struct Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A  : public MulticastDelegate_t
+{
+};
+
+// System.Action`2<Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState>
+struct Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537  : public MulticastDelegate_t
+{
+};
+
+// System.Action`2<System.Int32Enum,System.Int32Enum>
+struct Action_2_t43544BAAB4CC69E54228A3389CC3D57A805208A2  : public MulticastDelegate_t
+{
+};
+
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+
+// Unity.Services.Authentication.AuthenticationException
+struct AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3  : public RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00
+{
+};
+
+// UnityEngine.Behaviour
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+
+// Unity.Services.Authentication.Utilities.Scheduler
+struct Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation> Unity.Services.Authentication.Utilities.Scheduler::m_Queue
+	List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* ___m_Queue_4;
+};
+
+struct Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_StaticFields
+{
+	// Unity.Services.Authentication.Utilities.Scheduler Unity.Services.Authentication.Utilities.Scheduler::s_Instance
+	Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* ___s_Instance_5;
+	// System.Boolean Unity.Services.Authentication.Utilities.Scheduler::s_Created
+	bool ___s_Created_6;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Unity.Services.Authentication.Models.WellKnownKey[]
+struct WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9  : public RuntimeArray
+{
+	ALIGN_FIELD (8) WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* m_Items[1];
+
+	inline WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Il2CppChar m_Items[1];
+
+	inline Il2CppChar GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Il2CppChar GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation[]
+struct ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF  : public RuntimeArray
+{
+	ALIGN_FIELD (8) ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C m_Items[1];
+
+	inline ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Action_0), (void*)NULL);
+	}
+	inline ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Action_0), (void*)NULL);
+	}
+};
+
+
+// System.Void System.Action`1<System.Object>::Invoke(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m623BF34EB93B2B3A3B7D46743B508E2E2958939E_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___dictionary0, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::HandleServerError<System.Object>(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationServiceInternal_HandleServerError_TisRuntimeObject_m24A6C9C57F5265E43A92C20F32CF9FDF1FEFFF1E_gshared (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method) ;
+// System.Void System.Action`2<System.Int32Enum,System.Int32Enum>::Invoke(T1,T2)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_mF6BE8B768C3DA33BE3281D8F143C0FB02E720366_gshared_inline (Action_2_t43544BAAB4CC69E54228A3389CC3D57A805208A2* __this, int32_t ___arg10, int32_t ___arg21, const RuntimeMethod* method) ;
+// TComponent Unity.Services.Core.Internal.CoreRegistry::GetServiceComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CoreRegistry_GetServiceComponent_TisRuntimeObject_m6C2601CB56CD9AE5154E543B9AA87E10AFCA875C_gshared (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.CoreRegistry::RegisterServiceComponent<System.Object>(TComponent)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoreRegistry_RegisterServiceComponent_TisRuntimeObject_m619D1536EFA7133E95AF878679EFDA3A9CFBC67F_gshared (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, RuntimeObject* ___component0, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistry::RegisterPackage<System.Object>(TPackage)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistry_RegisterPackage_TisRuntimeObject_m5DF8BA5ABD5476A91872308A910C81D92F1FC6DD_gshared (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, RuntimeObject* ___package0, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::DependsOn<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistration_DependsOn_TisRuntimeObject_m3400ECC31E4225994DD0AEDDC45B11A61E95559C_gshared (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::ProvidesComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistration_ProvidesComponent_TisRuntimeObject_mBB6FDBE4AAE276784D193AB900F392199F177650_gshared (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Key()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_gshared_inline (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_gshared_inline (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C ___item0, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_gshared (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::RemoveAt(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_gshared (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465_gshared (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, const RuntimeMethod* method) ;
+
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.AsyncOperation::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation__ctor_m39B9682C2896CAA23CAC25FCF9D902C19EBF11DE (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.AsyncOperation::SetInProgress()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_SetInProgress_mF9F046353697ECEB9B2FD83E3193E8C050BCC860 (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.RequestFailedException Unity.Services.Authentication.AuthenticationException::Create(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* AuthenticationException_Create_mE1E6C1F3DF918B0DBCD40D720049396EE93093F0 (int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::Fail(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_Fail_mBCD364F5EBF265ECC916506704490852E8E7DEB3 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.RequestFailedException::.ctor(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestFailedException__ctor_m5F2BC9B778764EF58CA947E789CAEEAD27341C7A (RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* __this, int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogException_m2532F898D427E3B5F2F6E3CA979AE1260869B476 (Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>::Invoke(T)
+inline void Action_1_Invoke_m5499BDEE8B46ABC32AF2E9F689AB2079F620C672_inline (Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___obj0, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___obj0, method);
+}
+// System.Void Unity.Services.Core.Internal.AsyncOperation::Fail(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_Fail_m863A1DBBA999B7B0EA18739E519AACFF0054A5DF (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, Exception_t* ___reason0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.AsyncOperation::Succeed()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_Succeed_mE56F6B7EC1E7A92BD743C0B4E8D4EC85C1F07A28 (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___a0, Delegate_t* ___b1, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___source0, Delegate_t* ___value1, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Core.Internal.AsyncOperation::get_IsDone()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AsyncOperation_get_IsDone_mFABF133C322E1F709C84DF9FA4C57C25AE1B28D0_inline (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Core.Internal.AsyncOperation::get_Status()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AsyncOperation_get_Status_m0A936D453514234140366F6C2318ECA656CF3A87_inline (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.AsyncOperation::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_add_Completed_m3BF706D0128F8660347D12C9C4F4DCBB580EC67F (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* ___value0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.AsyncOperation::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_remove_Completed_mE76C24A21D1799C3979DBA0823F181CFEFCFB228 (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* ___value0, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.AuthenticationAsyncOperation::get_IsDone()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationAsyncOperation_get_IsDone_mED0E92C0E7D81064D93745CD90C818127CE42C63 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.RequestFailedException::.ctor(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestFailedException__ctor_mE50ABBA68C3EC48A3D31EE97594E2909FF7501F7 (RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* __this, int32_t ___errorCode0, String_t* ___message1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationException::.ctor(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationException__ctor_mE85564838F285C5EB1D1B7B417BC3A2E8D3FE3CF (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* __this, int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor()
+inline void Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052 (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2 (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* __this, String_t* ___key0, String_t* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*, String_t*, String_t*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::GetCommonHeaders()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* AuthenticationNetworkClient_GetCommonHeaders_mA91AF9F13338A7B915A99B61CC71874D75CB1C2F (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::WithEnvironment(System.Collections.Generic.Dictionary`2<System.String,System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* AuthenticationNetworkClient_WithEnvironment_m9B313EFCA29F2D7457AE5029FA31443331CC5AFC (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___headers0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Models.SessionTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionTokenRequest__ctor_m50B49F66C062091CD769D7B04769C66CA3A64CD0 (SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::WithAccessToken(System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* AuthenticationNetworkClient_WithAccessToken_m4AE9B063983685468194A0909E905DCE6DDD96C7 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___headers0, String_t* ___accessToken1, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::S256EncodeChallenge(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_S256EncodeChallenge_mA45F2D5B843B45CD270DFDFFC7827D8F6668D85D (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___code0, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
+// System.Security.Cryptography.SHA256 System.Security.Cryptography.SHA256::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* SHA256_Create_m41FBBA07C26677E1028E44E3530AC1BA17D26BBC (const RuntimeMethod* method) ;
+// System.Text.Encoding System.Text.Encoding::get_UTF8()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9 (const RuntimeMethod* method) ;
+// System.Byte[] System.Security.Cryptography.HashAlgorithm::ComputeHash(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HashAlgorithm_ComputeHash_mC9CD24714D75A8D61F12509BF952A26347FF22FB (HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::UrlSafeBase64Encode(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_UrlSafeBase64Encode_m2B368AA21E569034377FC08BAFB74E51A4305628 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___input0, const RuntimeMethod* method) ;
+// System.String System.Convert::ToBase64String(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Convert_ToBase64String_mD0680EF77270244071965AFA1207921C73EEA323 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___inArray0, const RuntimeMethod* method) ;
+// System.String System.String::Replace(System.Char,System.Char)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF (String_t* __this, Il2CppChar ___oldChar0, Il2CppChar ___newChar1, const RuntimeMethod* method) ;
+// System.String System.String::Replace(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___oldValue0, String_t* ___newValue1, const RuntimeMethod* method) ;
+// System.Void System.Uri::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Uri__ctor_m6CA436E6AD2768A121FA851CBEEFA3623E849D3A (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* __this, String_t* ___uriString0, const RuntimeMethod* method) ;
+// System.String System.Uri::get_Query()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_Query_m17DEC663263C486C8C8177AF9C4BFE2FFBE51178 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* __this, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::ExtractAuthCode(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_ExtractAuthCode_mC0AB64045052B054060988AE26934BA07FC3A6E2 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___locationUri0, String_t* ___query1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogError(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Collections.Generic.IDictionary`2<System.String,System.String> Unity.Services.Authentication.Utilities.HttpUtilities::ParseQueryString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtilities_ParseQueryString_m1C7C46237E72120005DFE046ACEEB0710A148122 (String_t* ___queryString0, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
+// System.Boolean System.String::IsNullOrEmpty(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___value0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+inline void Dictionary_2__ctor_m1D3CFAA07F0EE9405CAF58853C2E25690A51D0F9 (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* __this, RuntimeObject* ___dictionary0, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*, RuntimeObject*, const RuntimeMethod*))Dictionary_2__ctor_m623BF34EB93B2B3A3B7D46743B508E2E2958939E_gshared)(__this, ___dictionary0, method);
+}
+// Unity.Services.Authentication.AuthenticationState Unity.Services.Authentication.AuthenticationServiceInternal::get_State()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::get_IsSignedIn()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationServiceInternal_get_IsSignedIn_mCF8CDE17E3B5F2ACDCF556705C025DA48D5671FB (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::set_State(Unity.Services.Authentication.AuthenticationState)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_State_mBE3362F5E6AAA06DA3D0D9CFA6CE38C5A5991FA1_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass48_0__ctor_mDB365B0EE77D490844A986981F3E914E15015C44 (U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* __this, const RuntimeMethod* method) ;
+// Unity.Services.Authentication.Models.WellKnownKeys Unity.Services.Authentication.AuthenticationServiceInternal::get_WellKnownKeys()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* AuthenticationServiceInternal_get_WellKnownKeys_m413980717CA743861F20F5BE752831315F0B519D_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_mA9C476D6E560DE0A32E1A48C34B43437F6FD0005 (Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___object0, ___method1, method);
+}
+// System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, RuntimeObject* ___arg23, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::GetWellKnownKeys(Unity.Services.Authentication.AuthenticationAsyncOperation,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_GetWellKnownKeys_m3E9005A2035FC2A78854CD11E33E293D697AF280 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___asyncOperation0, int32_t ___attempt1, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::HandleServerError<Unity.Services.Authentication.Models.WellKnownKeys>(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<T>)
+inline bool AuthenticationServiceInternal_HandleServerError_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_mD6FD94B7681C055E27D132613DD3A5D0674EAF34 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B*, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*, RuntimeObject*, const RuntimeMethod*))AuthenticationServiceInternal_HandleServerError_TisRuntimeObject_m24A6C9C57F5265E43A92C20F32CF9FDF1FEFFF1E_gshared)(__this, ___operation0, ___request1, method);
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::set_WellKnownKeys(Unity.Services.Authentication.Models.WellKnownKeys)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_WellKnownKeys_m829E05331FF7572A43CA5CCF93CCCD8E00F3E7F3_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___value0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::CompleteSignIn(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Models.SignInResponse)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_CompleteSignIn_m97FC06962BB5CB365C74B6CD8B705FB594EA07C8 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* ___response1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::Fail(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.AuthenticationServiceInternal::ReadSessionToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationServiceInternal_ReadSessionToken_m88CE89E9A04556185439D8017BEB68D104C272ED (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithSessionTokenAsync()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInWithSessionTokenAsync_mDFB90D538FE42F7BA8E349005577179BABC84785 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::StartSigningIn(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_StartSigningIn_m30687FA8DD7CB1A83E74D20E6EBEFAF4AB8E604F (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, RuntimeObject* ___signInRequest0, bool ___isRefreshRequest1, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task Unity.Services.Core.Internal.AsyncOperationExtensions::AsTask(Unity.Services.Core.Internal.IAsyncOperation)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41 (RuntimeObject* ___self0, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::AlreadySignedInError()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_AlreadySignedInError_m768B0F384D2B6FCF614B993606BC688E5B8263F7 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Models.ExternalTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4 (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithExternalToken(Unity.Services.Authentication.Models.ExternalTokenRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_SignInWithExternalToken_mB52512B07CA5392837815F2F9FC46E1CDAFBAF16 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* ___externalToken0, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::LinkWithExternalToken(Unity.Services.Authentication.Models.ExternalTokenRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_LinkWithExternalToken_m0B98C8B675CADF7FD06AF88A40BF40A33ACC6653 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* ___externalToken0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass60_0__ctor_m65B98D801B61766A56D0115EDBD97C322E513721 (U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::get_IsAuthorized()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationServiceInternal_get_IsAuthorized_m617D4F6C205F90145F46BA9C4069B3B9BC87CD8D (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.AuthenticationServiceInternal::get_AccessToken()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AuthenticationServiceInternal_get_AccessToken_m7B4AC5988045E8F833AE7E31782030743B96E8F2_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_mE363ABAE204C244BBACF63C643A1D028F34239E0 (Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___object0, ___method1, method);
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithSessionToken(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_SignInWithSessionToken_mE068C18D9D3E84C3EB2AEDEE3FFF7EA0D36D343D (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, bool ___isRefreshRequest0, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::SessionTokenNotExistsError()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_SessionTokenNotExistsError_mAF088B7273D544AB0937F651A22E60225779FDEB (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0__ctor_m546E76834473A4879801D58A66104651A5D23BE4 (U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* __this, const RuntimeMethod* method) ;
+// Unity.Services.Authentication.AuthenticationAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::CreateSignInAsyncOperation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* AuthenticationServiceInternal_CreateSignInAsyncOperation_m38C64A03C8D1646219DC015DC942E38C504B3581 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::ChangeState(Unity.Services.Authentication.AuthenticationState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___newState0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::set_AccessToken(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_AccessToken_mCA6812FEB9BEE46E4C936835F0B81274A4ADF519_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::HandleServerError<Unity.Services.Authentication.Models.SignInResponse>(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<T>)
+inline bool AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B*, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*, RuntimeObject*, const RuntimeMethod*))AuthenticationServiceInternal_HandleServerError_TisRuntimeObject_m24A6C9C57F5265E43A92C20F32CF9FDF1FEFFF1E_gshared)(__this, ___operation0, ___request1, method);
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::Succeed()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_Succeed_mED8FB66D82A18579EC1B4D34F718D693E64C9743 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) ;
+// System.DateTime System.DateTime::AddSeconds(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, double ___value0, const RuntimeMethod* method) ;
+// System.Boolean System.DateTime::op_GreaterThan(System.DateTime,System.DateTime)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTime_op_GreaterThan_m8F1FA3C039A0148FC1500E790A77CB44F025EA9F (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___t10, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___t21, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::RefreshAccessToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.String System.String::Format(System.String,System.Object,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::SignOut()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_SignOut_m498695B59594FC656559861BB6F8BEFBFA2D19B0 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::Expire()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_Expire_m8C6099E18DC51230DE98008291F7C59CE4956593 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Authentication.AuthenticationAsyncOperation::get_Status()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AuthenticationAsyncOperation_get_Status_mA2239698A3C23F4D98F53AB25F16F0F4879DBADF (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::HandleStateChanged(Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_HandleStateChanged_mA91EB55BD7CB58B1D54CE9AFBF300671A11E5082 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___oldState0, int32_t ___newState1, const RuntimeMethod* method) ;
+// System.Void System.Action`2<Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState>::Invoke(T1,T2)
+inline void Action_2_Invoke_m5990E16EB63DD4F10939145AD950E5D0FB683630_inline (Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* __this, int32_t ___arg10, int32_t ___arg21, const RuntimeMethod* method)
+{
+	((  void (*) (Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*, int32_t, int32_t, const RuntimeMethod*))Action_2_Invoke_mF6BE8B768C3DA33BE3281D8F143C0FB02E720366_gshared_inline)(__this, ___arg10, ___arg21, method);
+}
+// System.Void System.Action::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationException::.ctor(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationException__ctor_m9DB0261958C40C53C2AFCB000415B96A3EC9E944 (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* __this, int32_t ___errorCode0, String_t* ___message1, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_m1363A3318AB3F7DD8329FFCDDC59E5A7F0DEBF51 (Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___object0, ___method1, method);
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::add_BeforeFail(System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_add_BeforeFail_mDAD353FA6413E1CC9BB304D5DB7C7BC506DD141F (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* ___value0, const RuntimeMethod* method) ;
+// Unity.Services.Core.RequestFailedException Unity.Services.Authentication.AuthenticationAsyncOperation::get_Exception()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* AuthenticationAsyncOperation_get_Exception_mE8D6E42481B873D50E094488DB0579445AC6F304_inline (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Unity.Services.Core.RequestFailedException>::Invoke(T)
+inline void Action_1_Invoke_mC5DAA9EF72C51CDD3FB0A88D333E75CD14ECC367_inline (Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* __this, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* ___obj0, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___obj0, method);
+}
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::WellKnownKeysReceived(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_WellKnownKeysReceived_m31821AED6B5059F4670618E0C27C2D09E235935C (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___asyncOperation0, RuntimeObject* ___response1, int32_t ___attempt2, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::LinkResponseReceived(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_LinkResponseReceived_mA6B2E1C4E4251418143CEB62442B3D9CBEF9F901 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::RefreshResponseReceived(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_RefreshResponseReceived_m8B4AA8A6EE546A32473B117F6A21A7ACB136AAB1 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, RuntimeObject* ___request0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::SignInResponseReceived(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_SignInResponseReceived_m6C9EC85EF8296F671A27528FAE8DDE0C0C98FB62 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method) ;
+// System.Void System.Text.StringBuilder::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_m2619CA8D2C3476DF1A302D9D941498BB1C6164C5 (StringBuilder_t* __this, int32_t ___capacity0, const RuntimeMethod* method) ;
+// System.Void System.Security.Cryptography.RNGCryptoServiceProvider::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RNGCryptoServiceProvider__ctor_m605146E692C0209B3FFE83F7AC94335CA089CA09 (RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170* __this, const RuntimeMethod* method) ;
+// System.Text.StringBuilder System.Text.StringBuilder::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Clear_m2D76F6533574F40A4E3E2DC4E730277CBD0AF8F6 (StringBuilder_t* __this, const RuntimeMethod* method) ;
+// System.Int32 System.String::get_Length()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) ;
+// System.Char System.String::get_Chars(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3 (String_t* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Text.StringBuilder System.Text.StringBuilder::Append(System.Char)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1 (StringBuilder_t* __this, Il2CppChar ___value0, const RuntimeMethod* method) ;
+// System.Guid System.Guid::NewGuid()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Guid_t Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD (const RuntimeMethod* method) ;
+// System.String System.Guid::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C (Guid_t* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Utilities.DateTimeWrapper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeWrapper__ctor_mD7341469CDCCE234FFD35274D114172641144C11 (DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* __this, const RuntimeMethod* method) ;
+// Unity.Services.Authentication.Utilities.IScheduler Unity.Services.Authentication.Utilities.Scheduler::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Scheduler_get_Instance_mC3FD4E903B8F35F3EED1369D40170F1533E1A468 (const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Utilities.NetworkingUtilities::.ctor(Unity.Services.Authentication.Utilities.IScheduler)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkingUtilities__ctor_m0E9E78601B583135C8CA8D53D0A5D814E27CAD11 (NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* __this, RuntimeObject* ___scheduler0, const RuntimeMethod* method) ;
+// System.String UnityEngine.Application::get_cloudProjectId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_cloudProjectId_m84C5E847485178EEDA2E56E5EF72B0A740453EF9 (const RuntimeMethod* method) ;
+// TComponent Unity.Services.Core.Internal.CoreRegistry::GetServiceComponent<Unity.Services.Core.Environments.Internal.IEnvironments>()
+inline RuntimeObject* CoreRegistry_GetServiceComponent_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mB14B4F5C7C715C037C3D0B96AD44CFBC570659AF (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA*, const RuntimeMethod*))CoreRegistry_GetServiceComponent_TisRuntimeObject_m6C2601CB56CD9AE5154E543B9AA87E10AFCA875C_gshared)(__this, method);
+}
+// System.Void Unity.Services.Authentication.CodeChallengeGenerator::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodeChallengeGenerator__ctor_m66BB925BCB168A053F6FFD450DC1C76B3C549E10 (CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationNetworkClient::.ctor(System.String,System.String,Unity.Services.Core.Environments.Internal.IEnvironments,Unity.Services.Authentication.ICodeChallengeGenerator,Unity.Services.Authentication.Utilities.INetworkingUtilities)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationNetworkClient__ctor_m0D5F810B7528B37E23EB85CEC0066ED37B98DA59 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___authenticationHost0, String_t* ___projectId1, RuntimeObject* ___environment2, RuntimeObject* ___codeChallengeGenerator3, RuntimeObject* ___networkClient4, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.JwtDecoder::.ctor(Unity.Services.Authentication.Utilities.IDateTimeWrapper)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JwtDecoder__ctor_m353AA4C1FE6B9AB45C97587597DD94F8150691A4 (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, RuntimeObject* ___dateTime0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Utilities.PlayerPrefsCache::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefsCache__ctor_m4677B3EA4BDF476DEBFC0C864B28992BA6DD8A87 (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* __this, String_t* ___prefix0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::.ctor(Unity.Services.Authentication.IAuthenticationNetworkClient,Unity.Services.Authentication.IJwtDecoder,Unity.Services.Authentication.Utilities.ICache,Unity.Services.Authentication.Utilities.IScheduler,Unity.Services.Authentication.Utilities.IDateTimeWrapper)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal__ctor_m13900FE930302252C8B99FC4C40C93C8F0704CDC (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, RuntimeObject* ___networkClient0, RuntimeObject* ___jwtDecoder1, RuntimeObject* ___cache2, RuntimeObject* ___scheduler3, RuntimeObject* ___dateTime4, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationService::set_Instance(Unity.Services.Authentication.IAuthenticationService)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationService_set_Instance_mF6E5CECFA4F9F11AD6628770749F28B73904F1F3_inline (RuntimeObject* ___value0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.PlayerIdComponent::.ctor(Unity.Services.Authentication.IAuthenticationService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent__ctor_mB88AF23D52904F21AEB5868839CEFF5004861088 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, RuntimeObject* ___service0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.CoreRegistry::RegisterServiceComponent<Unity.Services.Authentication.Internal.IPlayerId>(TComponent)
+inline void CoreRegistry_RegisterServiceComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_m76EE03A1259101C248F840059C28D021440190D3 (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, RuntimeObject* ___component0, const RuntimeMethod* method)
+{
+	((  void (*) (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA*, RuntimeObject*, const RuntimeMethod*))CoreRegistry_RegisterServiceComponent_TisRuntimeObject_m619D1536EFA7133E95AF878679EFDA3A9CFBC67F_gshared)(__this, ___component0, method);
+}
+// System.Void Unity.Services.Authentication.AccessTokenComponent::.ctor(Unity.Services.Authentication.IAuthenticationService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccessTokenComponent__ctor_m8A83A80795B870841D75E8ACE09DDDA33A312220 (AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2* __this, RuntimeObject* ___service0, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Core.Internal.CoreRegistry::RegisterServiceComponent<Unity.Services.Authentication.Internal.IAccessToken>(TComponent)
+inline void CoreRegistry_RegisterServiceComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m96E3BC38CB35E7DE66A2138E255D9138290E0719 (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, RuntimeObject* ___component0, const RuntimeMethod* method)
+{
+	((  void (*) (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA*, RuntimeObject*, const RuntimeMethod*))CoreRegistry_RegisterServiceComponent_TisRuntimeObject_m619D1536EFA7133E95AF878679EFDA3A9CFBC67F_gshared)(__this, ___component0, method);
+}
+// System.Threading.Tasks.Task System.Threading.Tasks.Task::get_CompletedTask()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Task_get_CompletedTask_m1567097D0142D009DC8F9B70DA2C55DA651D55E9_inline (const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.CoreRegistry Unity.Services.Core.Internal.CoreRegistry::get_Instance()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* CoreRegistry_get_Instance_m73A64BD3CB78EF5AC698D1635B5872CEB9F9AFE2_inline (const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.AuthenticationPackageInitializer::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationPackageInitializer__ctor_m7CCECFA94D25D61294F3A9A2FCEB6CCA2B401130 (AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E* __this, const RuntimeMethod* method) ;
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistry::RegisterPackage<Unity.Services.Authentication.AuthenticationPackageInitializer>(TPackage)
+inline CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistry_RegisterPackage_TisAuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_m7F81ECFF18FBDFC0E59A8302DC62E3B420173E7A (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* __this, AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E* ___package0, const RuntimeMethod* method)
+{
+	return ((  CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 (*) (CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA*, AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E*, const RuntimeMethod*))CoreRegistry_RegisterPackage_TisRuntimeObject_m5DF8BA5ABD5476A91872308A910C81D92F1FC6DD_gshared)(__this, ___package0, method);
+}
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::DependsOn<Unity.Services.Core.Environments.Internal.IEnvironments>()
+inline CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistration_DependsOn_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mF32D3AEE8770313EFCC77D92013AF760CBABCD64 (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581* __this, const RuntimeMethod* method)
+{
+	return ((  CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 (*) (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581*, const RuntimeMethod*))CoreRegistration_DependsOn_TisRuntimeObject_m3400ECC31E4225994DD0AEDDC45B11A61E95559C_gshared)(__this, method);
+}
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::ProvidesComponent<Unity.Services.Authentication.Internal.IPlayerId>()
+inline CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistration_ProvidesComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_mE4D416BE760057F83FE86BA2FEF5753E1B44BE69 (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581* __this, const RuntimeMethod* method)
+{
+	return ((  CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 (*) (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581*, const RuntimeMethod*))CoreRegistration_ProvidesComponent_TisRuntimeObject_mBB6FDBE4AAE276784D193AB900F392199F177650_gshared)(__this, method);
+}
+// Unity.Services.Core.Internal.CoreRegistration Unity.Services.Core.Internal.CoreRegistration::ProvidesComponent<Unity.Services.Authentication.Internal.IAccessToken>()
+inline CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 CoreRegistration_ProvidesComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m93F4FBA0C705D7D86490EBD4E70005983E16BFA0 (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581* __this, const RuntimeMethod* method)
+{
+	return ((  CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 (*) (CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581*, const RuntimeMethod*))CoreRegistration_ProvidesComponent_TisRuntimeObject_mBB6FDBE4AAE276784D193AB900F392199F177650_gshared)(__this, method);
+}
+// System.Void System.Action`1<Unity.Services.Core.RequestFailedException>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_mAB078D5C3E59EC79FCD9B4BAD5E23E38FD951815 (Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___object0, ___method1, method);
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::NotifyPlayerChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_NotifyPlayerChanged_m407D0F182A3245D1A01BA68797D92E33915A7E46 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.PlayerIdComponent::get_PlayerId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerIdComponent_get_PlayerId_m3B26D7263EE5FF703A96397CA7F8359EFC2B3E63 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.String>::Invoke(T)
+inline void Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* __this, String_t* ___obj0, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, String_t*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___obj0, method);
+}
+// Unity.Services.Authentication.Models.WellKnownKey Unity.Services.Authentication.JwtDecoder::GetKey(System.String,Unity.Services.Authentication.Models.WellKnownKeys)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* JwtDecoder_GetKey_mBA9377CA21E9478EB1CD5D27D83D6F6CAAE52C7E (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___keyId0, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___keys1, const RuntimeMethod* method) ;
+// System.Byte[] Unity.Services.Authentication.JwtDecoder::Base64UrlDecode(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* JwtDecoder_Base64UrlDecode_m4FAC88A6795B97AF79655B79A4C8BF70242DD7B9 (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___input0, const RuntimeMethod* method) ;
+// System.Boolean Unity.Services.Authentication.JwtDecoder::Verify(System.String,System.String,System.Byte[],System.Byte[],System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JwtDecoder_Verify_mC246A9384C12081B0A751AC932DC0203B7999CF9 (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___header0, String_t* ___payload1, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature2, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___modulus3, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___exponent4, const RuntimeMethod* method) ;
+// System.Void System.Security.Cryptography.RSACryptoServiceProvider::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RSACryptoServiceProvider__ctor_mE4BC404364B89F41C863EC3860ED4B9D7DD7A06F (RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
+// System.Void System.Security.Cryptography.RSAPKCS1SignatureDeformatter::.ctor(System.Security.Cryptography.AsymmetricAlgorithm)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RSAPKCS1SignatureDeformatter__ctor_m791E4894429FB7772E9A930C4A8B10C47A07293F (RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3* __this, AsymmetricAlgorithm_t5E7E9D26CE0EDCAABD84F616A44E476473BA2AF8* ___key0, const RuntimeMethod* method) ;
+// System.String System.String::CreateString(System.Char,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_CreateString_mAA0705B41B390BDB42F67894B9B67C956814C71B (String_t* __this, Il2CppChar ___c0, int32_t ___count1, const RuntimeMethod* method) ;
+// System.Byte[] System.Convert::FromBase64String(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C (String_t* ___s0, const RuntimeMethod* method) ;
+// System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, int32_t ___millisecond6, int32_t ___kind7, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.PlayerPrefs::HasKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668 (String_t* ___key0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.PlayerPrefs::DeleteKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_DeleteKey_mF3A7857B52DCEF4139843CD28716788624C2AD30 (String_t* ___key0, const RuntimeMethod* method) ;
+// System.String UnityEngine.PlayerPrefs::GetString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerPrefs_GetString_mA4C9F842BF77E5572AB20EA087C7048F870D02AE (String_t* ___key0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.PlayerPrefs::SetString(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256 (String_t* ___key0, String_t* ___value1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.PlayerPrefs::Save()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE (const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_hideFlags_mACB8BFC903FB3B01BBD427753E791BF28B5E33D4 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___target0, const RuntimeMethod* method) ;
+// System.DateTime System.DateTime::get_UtcNow()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA (const RuntimeMethod* method) ;
+// System.TimeSpan System.DateTime::op_Subtraction(System.DateTime,System.DateTime)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A DateTime_op_Subtraction_m64D26F5ABFAE6E166A7E567093D025F6C69F0123 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___d10, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___d21, const RuntimeMethod* method) ;
+// System.Double System.TimeSpan::get_TotalSeconds()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double TimeSpan_get_TotalSeconds_mED686E7CECE6A76A7DC38518698B9199DB8CDEA8 (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* __this, const RuntimeMethod* method) ;
+// System.String[] System.String::Split(System.Char[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m101D35FEC86371D2BB4E3480F6F896880093B2E9 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___separator0, const RuntimeMethod* method) ;
+// System.Int32 System.String::IndexOf(System.Char)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966 (String_t* __this, Il2CppChar ___value0, const RuntimeMethod* method) ;
+// System.String System.String::Substring(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE (String_t* __this, int32_t ___startIndex0, int32_t ___length1, const RuntimeMethod* method) ;
+// System.String Unity.Services.Authentication.Utilities.HttpUtilities::UnescapeUrlString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtilities_UnescapeUrlString_m5EC1D31D756AF74748889083B40EA9219B058E30 (String_t* ___urlString0, const RuntimeMethod* method) ;
+// System.String System.String::Substring(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472 (String_t* __this, int32_t ___startIndex0, const RuntimeMethod* method) ;
+// System.Void System.Text.StringBuilder::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D (StringBuilder_t* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,System.String>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_m654BCCAE2F20CB11D8E8C2D2C886A0C8A13EB1C4_inline (KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// System.String Unity.Services.Authentication.Utilities.HttpUtilities::EscapeUrlString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtilities_EscapeUrlString_mDC6203F9AFC6BAEE7514CFF1BA1888CF969E0D4E (String_t* ___rawString0, const RuntimeMethod* method) ;
+// System.Text.StringBuilder System.Text.StringBuilder::Append(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D (StringBuilder_t* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,System.String>::get_Value()
+inline String_t* KeyValuePair_2_get_Value_m7345512A32CB4DCAA0643050B18DC8DCD71B927A_inline (KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// System.String System.Uri::EscapeDataString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_EscapeDataString_m844D0FB6899488BDEBAF160B23397CD7ED8CA2DF (String_t* ___stringToEscape0, const RuntimeMethod* method) ;
+// System.String System.Uri::UnescapeDataString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_UnescapeDataString_m095AF55EE0F237A44FC8A53D2EE6FA66A567634D (String_t* ___stringToUnescape0, const RuntimeMethod* method) ;
+// UnityEngine.ILogger UnityEngine.Debug::get_unityLogger()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline (const RuntimeMethod* method) ;
+// System.Int32 Unity.Services.Core.RequestFailedException::get_ErrorCode()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RequestFailedException_get_ErrorCode_mF3E649123FAA0AD7EEE1FFCBFACE6C2A20CBEDAE_inline (RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* __this, const RuntimeMethod* method) ;
+// UnityEngine.GameObject Unity.Services.Authentication.Utilities.ContainerObject::get_Container()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ContainerObject_get_Container_m308E7B5A31CAEF3F482467294D4A1CE3B26138FC (const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<Unity.Services.Authentication.Utilities.Scheduler>()
+inline Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* GameObject_AddComponent_TisScheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_m4C4B68A26ED728913DD047575532C95851D7246C (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// System.Int32 System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::get_Count()
+inline int32_t List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_inline (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*, const RuntimeMethod*))List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_gshared_inline)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::Add(T)
+inline void List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_inline (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C, const RuntimeMethod*))List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_gshared_inline)(__this, ___item0, method);
+}
+// T System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::get_Item(System.Int32)
+inline ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37 (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C (*) (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*, int32_t, const RuntimeMethod*))List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_gshared)(__this, ___index0, method);
+}
+// System.Boolean System.Delegate::op_Equality(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Delegate_op_Equality_m8B96593B665536587FFD27DE233442C075971C32 (Delegate_t* ___d10, Delegate_t* ___d21, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::RemoveAt(System.Int32)
+inline void List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_gshared)(__this, ___index0, method);
+}
+// System.Boolean System.DateTime::op_LessThan(System.DateTime,System.DateTime)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTime_op_LessThan_m2A02FFF5F35E33417FB32CB9F948769CA15AED17 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___t10, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___t21, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation>::.ctor()
+inline void List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465 (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*, const RuntimeMethod*))List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465_gshared)(__this, method);
+}
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Services.Authentication.Models.BaseJwt::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseJwt__ctor_mBCB4AB92D2B7C6AF884876DC7C97E0D02389673E (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, const RuntimeMethod* method) ;
+// System.DateTime Unity.Services.Authentication.Models.BaseJwt::ConvertTimestamp(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7 (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, int32_t ___timestamp0, const RuntimeMethod* method) ;
+// System.DateTimeOffset System.DateTimeOffset::FromUnixTimeSeconds(System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 DateTimeOffset_FromUnixTimeSeconds_mE1FA5E04CCCE8A0E8903C9DACC64526C721C0A47 (int64_t ___seconds0, const RuntimeMethod* method) ;
+// System.DateTime System.DateTimeOffset::get_DateTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTimeOffset_get_DateTime_mDF6DC57E7A5647D8B964D3FD5B6855E7D66EF324 (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) ;
+// System.Void System.Exception::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F (Exception_t* __this, String_t* ___message0, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public AuthenticationAsyncOperation()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_AsyncOperation = new AsyncOperation();
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_0 = (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0*)il2cpp_codegen_object_new(AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AsyncOperation__ctor_m39B9682C2896CAA23CAC25FCF9D902C19EBF11DE(L_0, NULL);
+		__this->___m_AsyncOperation_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_AsyncOperation_0), (void*)L_0);
+		// m_AsyncOperation.SetInProgress();
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_1 = __this->___m_AsyncOperation_0;
+		NullCheck(L_1);
+		AsyncOperation_SetInProgress_mF9F046353697ECEB9B2FD83E3193E8C050BCC860(L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::Fail(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) 
+{
+	{
+		// Fail(AuthenticationException.Create(errorCode, message, innerException));
+		int32_t L_0 = ___errorCode0;
+		String_t* L_1 = ___message1;
+		Exception_t* L_2 = ___innerException2;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_3;
+		L_3 = AuthenticationException_Create_mE1E6C1F3DF918B0DBCD40D720049396EE93093F0(L_0, L_1, L_2, NULL);
+		AuthenticationAsyncOperation_Fail_mBCD364F5EBF265ECC916506704490852E8E7DEB3(__this, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::Fail(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_Fail_mBCD364F5EBF265ECC916506704490852E8E7DEB3 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Exception_t* ___exception0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* G_B5_0 = NULL;
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* G_B4_0 = NULL;
+	{
+		// if (exception is RequestFailedException)
+		Exception_t* L_0 = ___exception0;
+		V_0 = (bool)((!(((RuntimeObject*)(RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)((RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)IsInstClass((RuntimeObject*)L_0, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		// m_Exception = (RequestFailedException)exception;
+		Exception_t* L_2 = ___exception0;
+		__this->___m_Exception_1 = ((RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)CastclassClass((RuntimeObject*)L_2, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var));
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Exception_1), (void*)((RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)CastclassClass((RuntimeObject*)L_2, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var)));
+		goto IL_0033;
+	}
+
+IL_001e:
+	{
+		// m_Exception = new RequestFailedException(CommonErrorCodes.Unknown, exception.Message, exception);
+		Exception_t* L_3 = ___exception0;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_3);
+		Exception_t* L_5 = ___exception0;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_6 = (RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)il2cpp_codegen_object_new(RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		RequestFailedException__ctor_m5F2BC9B778764EF58CA947E789CAEEAD27341C7A(L_6, 0, L_4, L_5, NULL);
+		__this->___m_Exception_1 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Exception_1), (void*)L_6);
+	}
+
+IL_0033:
+	{
+		// Logger.LogException(m_Exception);
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_7 = __this->___m_Exception_1;
+		Logger_LogException_m2532F898D427E3B5F2F6E3CA979AE1260869B476(L_7, NULL);
+		// BeforeFail?.Invoke(this);
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_8 = __this->___BeforeFail_2;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_9 = L_8;
+		G_B4_0 = L_9;
+		if (L_9)
+		{
+			G_B5_0 = L_9;
+			goto IL_004b;
+		}
+	}
+	{
+		goto IL_0052;
+	}
+
+IL_004b:
+	{
+		NullCheck(G_B5_0);
+		Action_1_Invoke_m5499BDEE8B46ABC32AF2E9F689AB2079F620C672_inline(G_B5_0, __this, NULL);
+	}
+
+IL_0052:
+	{
+		// m_AsyncOperation.Fail(m_Exception);
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_10 = __this->___m_AsyncOperation_0;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_11 = __this->___m_Exception_1;
+		NullCheck(L_10);
+		AsyncOperation_Fail_m863A1DBBA999B7B0EA18739E519AACFF0054A5DF(L_10, L_11, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::Succeed()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_Succeed_mED8FB66D82A18579EC1B4D34F718D693E64C9743 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// m_AsyncOperation.Succeed();
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_0 = __this->___m_AsyncOperation_0;
+		NullCheck(L_0);
+		AsyncOperation_Succeed_mE56F6B7EC1E7A92BD743C0B4E8D4EC85C1F07A28(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::add_BeforeFail(System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_add_BeforeFail_mDAD353FA6413E1CC9BB304D5DB7C7BC506DD141F (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* V_0 = NULL;
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* V_1 = NULL;
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* V_2 = NULL;
+	{
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_0 = __this->___BeforeFail_2;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_2 = V_1;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)Castclass((RuntimeObject*)L_4, Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var));
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB** L_5 = (&__this->___BeforeFail_2);
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_6 = V_2;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_7 = V_1;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_9 = V_0;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)L_9) == ((RuntimeObject*)(Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::remove_BeforeFail(System.Action`1<Unity.Services.Authentication.AuthenticationAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_remove_BeforeFail_mC3D53472F35BA7B4E8433B390EFF9851367A5E0C (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* V_0 = NULL;
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* V_1 = NULL;
+	Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* V_2 = NULL;
+	{
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_0 = __this->___BeforeFail_2;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_2 = V_1;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)Castclass((RuntimeObject*)L_4, Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var));
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB** L_5 = (&__this->___BeforeFail_2);
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_6 = V_2;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_7 = V_1;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_9 = V_0;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)L_9) == ((RuntimeObject*)(Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Boolean Unity.Services.Authentication.AuthenticationAsyncOperation::get_IsDone()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationAsyncOperation_get_IsDone_mED0E92C0E7D81064D93745CD90C818127CE42C63 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_AsyncOperation.IsDone;
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_0 = __this->___m_AsyncOperation_0;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = AsyncOperation_get_IsDone_mFABF133C322E1F709C84DF9FA4C57C25AE1B28D0_inline(L_0, NULL);
+		return L_1;
+	}
+}
+// Unity.Services.Core.Internal.AsyncOperationStatus Unity.Services.Authentication.AuthenticationAsyncOperation::get_Status()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AuthenticationAsyncOperation_get_Status_mA2239698A3C23F4D98F53AB25F16F0F4879DBADF (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_AsyncOperation.Status;
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_0 = __this->___m_AsyncOperation_0;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = AsyncOperation_get_Status_m0A936D453514234140366F6C2318ECA656CF3A87_inline(L_0, NULL);
+		return L_1;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::add_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_add_Completed_mCC5B125D68F3DE2E75B5DFA3A49E2AA9A259572A (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// add => m_AsyncOperation.Completed += value;
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_0 = __this->___m_AsyncOperation_0;
+		Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* L_1 = ___value0;
+		NullCheck(L_0);
+		AsyncOperation_add_Completed_m3BF706D0128F8660347D12C9C4F4DCBB580EC67F(L_0, L_1, NULL);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::remove_Completed(System.Action`1<Unity.Services.Core.Internal.IAsyncOperation>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_remove_Completed_m96B30FB6BF669C0B63F5D44C492CFCDC646EBDD7 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// remove => m_AsyncOperation.Completed -= value;
+		AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* L_0 = __this->___m_AsyncOperation_0;
+		Action_1_tFA335D452858C05643AEE3281C1E75D39F76AE50* L_1 = ___value0;
+		NullCheck(L_0);
+		AsyncOperation_remove_Completed_mE76C24A21D1799C3979DBA0823F181CFEFCFB228(L_0, L_1, NULL);
+		return;
+	}
+}
+// Unity.Services.Core.RequestFailedException Unity.Services.Authentication.AuthenticationAsyncOperation::get_Exception()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* AuthenticationAsyncOperation_get_Exception_mE8D6E42481B873D50E094488DB0579445AC6F304 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_Exception;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_0 = __this->___m_Exception_1;
+		return L_0;
+	}
+}
+// System.Exception Unity.Services.Authentication.AuthenticationAsyncOperation::Unity.Services.Core.Internal.IAsyncOperation.get_Exception()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Exception_t* AuthenticationAsyncOperation_Unity_Services_Core_Internal_IAsyncOperation_get_Exception_m6603CCDAF6ABE16ACFCF49DAB478C744B37EB300 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_Exception;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_0 = __this->___m_Exception_1;
+		return L_0;
+	}
+}
+// System.Boolean Unity.Services.Authentication.AuthenticationAsyncOperation::System.Collections.IEnumerator.MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationAsyncOperation_System_Collections_IEnumerator_MoveNext_m9DBAAF6F59DCC24A006D13D9D1A469ADED653244 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// bool IEnumerator.MoveNext() => !IsDone;
+		bool L_0;
+		L_0 = AuthenticationAsyncOperation_get_IsDone_mED0E92C0E7D81064D93745CD90C818127CE42C63(__this, NULL);
+		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationAsyncOperation::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationAsyncOperation_System_Collections_IEnumerator_Reset_m8784E416B7AC3C825555834E9CA5DAE0586C0EF8 (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// void IEnumerator.Reset() {}
+		return;
+	}
+}
+// System.Object Unity.Services.Authentication.AuthenticationAsyncOperation::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationAsyncOperation_System_Collections_IEnumerator_get_Current_m36C0D20910A0E998D3F7070F7D7CC6D6F7AF680E (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// object IEnumerator.Current => null;
+		return NULL;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationException::.ctor(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationException__ctor_m9DB0261958C40C53C2AFCB000415B96A3EC9E944 (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* __this, int32_t ___errorCode0, String_t* ___message1, const RuntimeMethod* method) 
+{
+	{
+		// public AuthenticationException(int errorCode, string message) : base(errorCode, message)
+		int32_t L_0 = ___errorCode0;
+		String_t* L_1 = ___message1;
+		RequestFailedException__ctor_mE50ABBA68C3EC48A3D31EE97594E2909FF7501F7(__this, L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationException::.ctor(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationException__ctor_mE85564838F285C5EB1D1B7B417BC3A2E8D3FE3CF (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* __this, int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) 
+{
+	{
+		// : base(errorCode, message, innerException)
+		int32_t L_0 = ___errorCode0;
+		String_t* L_1 = ___message1;
+		Exception_t* L_2 = ___innerException2;
+		RequestFailedException__ctor_m5F2BC9B778764EF58CA947E789CAEEAD27341C7A(__this, L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// Unity.Services.Core.RequestFailedException Unity.Services.Authentication.AuthenticationException::Create(System.Int32,System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* AuthenticationException_Create_mE1E6C1F3DF918B0DBCD40D720049396EE93093F0 (int32_t ___errorCode0, String_t* ___message1, Exception_t* ___innerException2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* V_1 = NULL;
+	{
+		// if (errorCode < AuthenticationErrorCodes.MinValue)
+		int32_t L_0 = ___errorCode0;
+		V_0 = (bool)((((int32_t)L_0) < ((int32_t)((int32_t)10000)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// return new RequestFailedException(errorCode, message, innerException);
+		int32_t L_2 = ___errorCode0;
+		String_t* L_3 = ___message1;
+		Exception_t* L_4 = ___innerException2;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_5 = (RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)il2cpp_codegen_object_new(RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		RequestFailedException__ctor_m5F2BC9B778764EF58CA947E789CAEEAD27341C7A(L_5, L_2, L_3, L_4, NULL);
+		V_1 = L_5;
+		goto IL_0025;
+	}
+
+IL_0019:
+	{
+		// return new AuthenticationException(errorCode, message, innerException);
+		int32_t L_6 = ___errorCode0;
+		String_t* L_7 = ___message1;
+		Exception_t* L_8 = ___innerException2;
+		AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* L_9 = (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3*)il2cpp_codegen_object_new(AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		AuthenticationException__ctor_mE85564838F285C5EB1D1B7B417BC3A2E8D3FE3CF(L_9, L_6, L_7, L_8, NULL);
+		V_1 = L_9;
+		goto IL_0025;
+	}
+
+IL_0025:
+	{
+		// }
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_10 = V_1;
+		return L_10;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationNetworkClient::.ctor(System.String,System.String,Unity.Services.Core.Environments.Internal.IEnvironments,Unity.Services.Authentication.ICodeChallengeGenerator,Unity.Services.Authentication.Utilities.INetworkingUtilities)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationNetworkClient__ctor_m0D5F810B7528B37E23EB85CEC0066ED37B98DA59 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___authenticationHost0, String_t* ___projectId1, RuntimeObject* ___environment2, RuntimeObject* ___codeChallengeGenerator3, RuntimeObject* ___networkClient4, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1459AA156A3CC61BE3445EF580D2A5FB14EA4CE8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral27712C5B80373B2C269D5C45C3A29ACA8E10A63B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2E8E67C620487DD60223D455B640C5D17B3EE354);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64F0B93C5B7055DDA721986BA7566D27276D2FDD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6F5EC7239B41C242FCB23B64D91DA0070FC1C044);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77B5A95080D1AC66E0C734381A240DBAF39BB2C9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral88797218BED4E88AF105C4417B4296F4CE5EE4BC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral93EEA4A28E7258C679658D99B1B19C8099D532C8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9A2C107486E2353981192A25079D4547A4EFC7C3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE160FC59F4EF7F755804916A69BE8D785CD5F97C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE4EF956D8605C91DE8D8A5036BA8A8E5C713A5CC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE90370157D82330EBA0740F6D47984F414315AA1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// internal AuthenticationNetworkClient(string authenticationHost,
+		//                                      string projectId,
+		//                                      IEnvironments environment,
+		//                                      ICodeChallengeGenerator codeChallengeGenerator,
+		//                                      INetworkingUtilities networkClient)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_NetworkClient = networkClient;
+		RuntimeObject* L_0 = ___networkClient4;
+		__this->___m_NetworkClient_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NetworkClient_11), (void*)L_0);
+		// m_CodeChallengeGenerator = codeChallengeGenerator;
+		RuntimeObject* L_1 = ___codeChallengeGenerator3;
+		__this->___m_CodeChallengeGenerator_12 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CodeChallengeGenerator_12), (void*)L_1);
+		// m_OAuthClientId = "default";
+		__this->___m_OAuthClientId_22 = _stringLiteral6F5EC7239B41C242FCB23B64D91DA0070FC1C044;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_OAuthClientId_22), (void*)_stringLiteral6F5EC7239B41C242FCB23B64D91DA0070FC1C044);
+		// m_WellKnownUrl = authenticationHost + k_WellKnownUrlStem;
+		String_t* L_2 = ___authenticationHost0;
+		String_t* L_3;
+		L_3 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_2, _stringLiteralE4EF956D8605C91DE8D8A5036BA8A8E5C713A5CC, NULL);
+		__this->___m_WellKnownUrl_13 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_WellKnownUrl_13), (void*)L_3);
+		// m_AnonymousUrl = authenticationHost + k_AnonymousUrlStem;
+		String_t* L_4 = ___authenticationHost0;
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_4, _stringLiteralE160FC59F4EF7F755804916A69BE8D785CD5F97C, NULL);
+		__this->___m_AnonymousUrl_14 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_AnonymousUrl_14), (void*)L_5);
+		// m_SessionTokenUrl = authenticationHost + k_SessionTokenUrlStem;
+		String_t* L_6 = ___authenticationHost0;
+		String_t* L_7;
+		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_6, _stringLiteral9A2C107486E2353981192A25079D4547A4EFC7C3, NULL);
+		__this->___m_SessionTokenUrl_15 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SessionTokenUrl_15), (void*)L_7);
+		// m_ExternalTokenUrl = authenticationHost + k_ExternalTokenUrlStem;
+		String_t* L_8 = ___authenticationHost0;
+		String_t* L_9;
+		L_9 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_8, _stringLiteralE90370157D82330EBA0740F6D47984F414315AA1, NULL);
+		__this->___m_ExternalTokenUrl_16 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ExternalTokenUrl_16), (void*)L_9);
+		// m_LinkExternalTokenUrl = authenticationHost + k_LinkExternalTokenUrlStem;
+		String_t* L_10 = ___authenticationHost0;
+		String_t* L_11;
+		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_10, _stringLiteral93EEA4A28E7258C679658D99B1B19C8099D532C8, NULL);
+		__this->___m_LinkExternalTokenUrl_17 = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_LinkExternalTokenUrl_17), (void*)L_11);
+		// m_OAuthUrl = authenticationHost + k_OAuthUrlStem;
+		String_t* L_12 = ___authenticationHost0;
+		String_t* L_13;
+		L_13 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_12, _stringLiteral27712C5B80373B2C269D5C45C3A29ACA8E10A63B, NULL);
+		__this->___m_OAuthUrl_18 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_OAuthUrl_18), (void*)L_13);
+		// m_OAuthTokenUrl = authenticationHost + k_OAuthTokenUrlStem;
+		String_t* L_14 = ___authenticationHost0;
+		String_t* L_15;
+		L_15 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_14, _stringLiteral88797218BED4E88AF105C4417B4296F4CE5EE4BC, NULL);
+		__this->___m_OAuthTokenUrl_19 = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_OAuthTokenUrl_19), (void*)L_15);
+		// m_OAuthRevokeTokenUrl = authenticationHost + k_OauthRevokeStem;
+		String_t* L_16 = ___authenticationHost0;
+		String_t* L_17;
+		L_17 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_16, _stringLiteral2E8E67C620487DD60223D455B640C5D17B3EE354, NULL);
+		__this->___m_OAuthRevokeTokenUrl_20 = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_OAuthRevokeTokenUrl_20), (void*)L_17);
+		// m_EnvironmentComponent = environment;
+		RuntimeObject* L_18 = ___environment2;
+		__this->___m_EnvironmentComponent_24 = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_EnvironmentComponent_24), (void*)L_18);
+		// m_CommonHeaders = new Dictionary<string, string>
+		// {
+		//     ["ProjectId"] = projectId,
+		//     // The Error-Version header enables RFC7807HttpError error responses
+		//     ["Error-Version"] = "v1"
+		// };
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_19 = (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)il2cpp_codegen_object_new(Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		NullCheck(L_19);
+		Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052(L_19, Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_20 = L_19;
+		String_t* L_21 = ___projectId1;
+		NullCheck(L_20);
+		Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2(L_20, _stringLiteral1459AA156A3CC61BE3445EF580D2A5FB14EA4CE8, L_21, Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_22 = L_20;
+		NullCheck(L_22);
+		Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2(L_22, _stringLiteral77B5A95080D1AC66E0C734381A240DBAF39BB2C9, _stringLiteral64F0B93C5B7055DDA721986BA7566D27276D2FDD, Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		__this->___m_CommonHeaders_21 = L_22;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CommonHeaders_21), (void*)L_22);
+		// }
+		return;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys> Unity.Services.Authentication.AuthenticationNetworkClient::GetWellKnownKeys()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_GetWellKnownKeys_m3D42DFBAEFD2703A9488142B7DDF0C1A4CB1757C (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_Get_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_m2D3DAD5104A9E5BE1B8DB213B74DF6B18F32A428_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		// return m_NetworkClient.Get<WellKnownKeys>(m_WellKnownUrl);
+		RuntimeObject* L_0 = __this->___m_NetworkClient_11;
+		String_t* L_1 = __this->___m_WellKnownUrl_13;
+		NullCheck(L_0);
+		RuntimeObject* L_2;
+		L_2 = GenericInterfaceFuncInvoker3< RuntimeObject*, String_t*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_Get_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_m2D3DAD5104A9E5BE1B8DB213B74DF6B18F32A428_RuntimeMethod_var, L_0, L_1, (RuntimeObject*)NULL, 1);
+		V_0 = L_2;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		RuntimeObject* L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationNetworkClient::SetOAuthClient(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationNetworkClient_SetOAuthClient_m7DDC1AD10D62FA5FDC79C7AF6A2DE01DC38BCF44 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___oAuthClientId0, const RuntimeMethod* method) 
+{
+	{
+		// m_OAuthClientId = oAuthClientId;
+		String_t* L_0 = ___oAuthClientId0;
+		__this->___m_OAuthClientId_22 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_OAuthClientId_22), (void*)L_0);
+		// }
+		return;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.AuthenticationNetworkClient::SignInAnonymously()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_SignInAnonymously_mBACBB961BEE1AC92CED97153FA328DC48814E2B0 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_Post_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4FF04A941BA16EA71363962E2E84D1BEF8F9C228_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		// return m_NetworkClient.Post<SignInResponse>(m_AnonymousUrl, WithEnvironment(GetCommonHeaders()));
+		RuntimeObject* L_0 = __this->___m_NetworkClient_11;
+		String_t* L_1 = __this->___m_AnonymousUrl_14;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_2;
+		L_2 = AuthenticationNetworkClient_GetCommonHeaders_mA91AF9F13338A7B915A99B61CC71874D75CB1C2F(__this, NULL);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_3;
+		L_3 = AuthenticationNetworkClient_WithEnvironment_m9B313EFCA29F2D7457AE5029FA31443331CC5AFC(__this, L_2, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_4;
+		L_4 = GenericInterfaceFuncInvoker3< RuntimeObject*, String_t*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_Post_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4FF04A941BA16EA71363962E2E84D1BEF8F9C228_RuntimeMethod_var, L_0, L_1, L_3, 1);
+		V_0 = L_4;
+		goto IL_0022;
+	}
+
+IL_0022:
+	{
+		// }
+		RuntimeObject* L_5 = V_0;
+		return L_5;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.AuthenticationNetworkClient::SignInWithSessionToken(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_SignInWithSessionToken_m0301992060355CF7F9156A7F94C7E23DCF08B027 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___token0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		// return m_NetworkClient.PostJson<SignInResponse>(m_SessionTokenUrl, new SessionTokenRequest
+		// {
+		//     SessionToken = token
+		// }, WithEnvironment(GetCommonHeaders()));
+		RuntimeObject* L_0 = __this->___m_NetworkClient_11;
+		String_t* L_1 = __this->___m_SessionTokenUrl_15;
+		SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C* L_2 = (SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C*)il2cpp_codegen_object_new(SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		SessionTokenRequest__ctor_m50B49F66C062091CD769D7B04769C66CA3A64CD0(L_2, NULL);
+		SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C* L_3 = L_2;
+		String_t* L_4 = ___token0;
+		NullCheck(L_3);
+		L_3->___SessionToken_0 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___SessionToken_0), (void*)L_4);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_5;
+		L_5 = AuthenticationNetworkClient_GetCommonHeaders_mA91AF9F13338A7B915A99B61CC71874D75CB1C2F(__this, NULL);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_6;
+		L_6 = AuthenticationNetworkClient_WithEnvironment_m9B313EFCA29F2D7457AE5029FA31443331CC5AFC(__this, L_5, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_7;
+		L_7 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, RuntimeObject*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var, L_0, L_1, L_3, L_6, 1);
+		V_0 = L_7;
+		goto IL_002e;
+	}
+
+IL_002e:
+	{
+		// }
+		RuntimeObject* L_8 = V_0;
+		return L_8;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.AuthenticationNetworkClient::SignInWithExternalToken(Unity.Services.Authentication.Models.ExternalTokenRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_SignInWithExternalToken_m29D4305A8FCFA118FB0FFC0F342E74F1992A9DF4 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* ___externalToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		// return m_NetworkClient.PostJson<SignInResponse>(m_ExternalTokenUrl, externalToken, WithEnvironment(GetCommonHeaders()));
+		RuntimeObject* L_0 = __this->___m_NetworkClient_11;
+		String_t* L_1 = __this->___m_ExternalTokenUrl_16;
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = ___externalToken0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_3;
+		L_3 = AuthenticationNetworkClient_GetCommonHeaders_mA91AF9F13338A7B915A99B61CC71874D75CB1C2F(__this, NULL);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_4;
+		L_4 = AuthenticationNetworkClient_WithEnvironment_m9B313EFCA29F2D7457AE5029FA31443331CC5AFC(__this, L_3, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_5;
+		L_5 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, RuntimeObject*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var, L_0, L_1, L_2, L_4, 1);
+		V_0 = L_5;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		// }
+		RuntimeObject* L_6 = V_0;
+		return L_6;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.AuthenticationNetworkClient::LinkWithExternalToken(System.String,Unity.Services.Authentication.Models.ExternalTokenRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_LinkWithExternalToken_mED48D711B8F70920DDEC7070E678D82BABA89283 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___accessToken0, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* ___externalToken1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		// return m_NetworkClient.PostJson<SignInResponse>(m_LinkExternalTokenUrl, externalToken, WithEnvironment(WithAccessToken(GetCommonHeaders(), accessToken)));
+		RuntimeObject* L_0 = __this->___m_NetworkClient_11;
+		String_t* L_1 = __this->___m_LinkExternalTokenUrl_17;
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = ___externalToken1;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_3;
+		L_3 = AuthenticationNetworkClient_GetCommonHeaders_mA91AF9F13338A7B915A99B61CC71874D75CB1C2F(__this, NULL);
+		String_t* L_4 = ___accessToken0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_5;
+		L_5 = AuthenticationNetworkClient_WithAccessToken_m4AE9B063983685468194A0909E905DCE6DDD96C7(__this, L_3, L_4, NULL);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_6;
+		L_6 = AuthenticationNetworkClient_WithEnvironment_m9B313EFCA29F2D7457AE5029FA31443331CC5AFC(__this, L_5, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_7;
+		L_7 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, RuntimeObject*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostJson_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_mF46970F96EC85AE291F41C8438841DBA77F6B0BC_RuntimeMethod_var, L_0, L_1, L_2, L_6, 1);
+		V_0 = L_7;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		// }
+		RuntimeObject* L_8 = V_0;
+		return L_8;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthAuthCodeResponse> Unity.Services.Authentication.AuthenticationNetworkClient::RequestAuthCode(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_RequestAuthCode_m63335086CE6829B8037131E6D3E500E8E233FF80 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___idToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICodeChallengeGenerator_tF562B3B1458E869807326F5B138F1B49690BD5DE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostForm_TisOAuthAuthCodeResponse_t819F40E54DE14BF799F56EE8243D8BDA04040E7C_m4A8E30156345E4ED3BAD9F4C2DEF4BDC1E051B74_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral063CF8D39471E989CB65BB9D666850AA223AFB9E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4366449D1BB04F580364AB0FD15FBD1E1E033D6B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A97118D426618B5C413DD90A9DFC97F3B050575);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB88088E5036DDBE9F6C1AA395AD7F15FBA25AECF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	{
+		// m_SessionChallengeCode = m_CodeChallengeGenerator.GenerateCode();
+		RuntimeObject* L_0 = __this->___m_CodeChallengeGenerator_12;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Unity.Services.Authentication.ICodeChallengeGenerator::GenerateCode() */, ICodeChallengeGenerator_tF562B3B1458E869807326F5B138F1B49690BD5DE_il2cpp_TypeInfo_var, L_0);
+		__this->___m_SessionChallengeCode_23 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SessionChallengeCode_23), (void*)L_1);
+		// var payload = $"client_id={m_OAuthClientId}&" +
+		//     $"response_type={k_AuthResponseType}&" +
+		//     $"id_token={idToken}&" +
+		//     $"state={m_CodeChallengeGenerator.GenerateStateString()}&" +
+		//     $"scope={k_OAuthScope}&" +
+		//     $"code_challenge={S256EncodeChallenge(m_SessionChallengeCode)}&" +
+		//     $"code_challenge_method={k_ChallengeMethod}";
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
+		String_t* L_5 = __this->___m_OAuthClientId_22;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_4;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, _stringLiteralB88088E5036DDBE9F6C1AA395AD7F15FBA25AECF);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralB88088E5036DDBE9F6C1AA395AD7F15FBA25AECF);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
+		String_t* L_8 = ___idToken0;
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_8);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = L_7;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteral063CF8D39471E989CB65BB9D666850AA223AFB9E);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral063CF8D39471E989CB65BB9D666850AA223AFB9E);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_9;
+		RuntimeObject* L_11 = __this->___m_CodeChallengeGenerator_12;
+		NullCheck(L_11);
+		String_t* L_12;
+		L_12 = InterfaceFuncInvoker0< String_t* >::Invoke(1 /* System.String Unity.Services.Authentication.ICodeChallengeGenerator::GenerateStateString() */, ICodeChallengeGenerator_tF562B3B1458E869807326F5B138F1B49690BD5DE_il2cpp_TypeInfo_var, L_11);
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_12);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_12);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = L_10;
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, _stringLiteral4366449D1BB04F580364AB0FD15FBD1E1E033D6B);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral4366449D1BB04F580364AB0FD15FBD1E1E033D6B);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_13;
+		String_t* L_15 = __this->___m_SessionChallengeCode_23;
+		String_t* L_16;
+		L_16 = AuthenticationNetworkClient_S256EncodeChallenge_mA45F2D5B843B45CD270DFDFFC7827D8F6668D85D(__this, L_15, NULL);
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, L_16);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)L_16);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = L_14;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, _stringLiteral8A97118D426618B5C413DD90A9DFC97F3B050575);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)_stringLiteral8A97118D426618B5C413DD90A9DFC97F3B050575);
+		String_t* L_18;
+		L_18 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_17, NULL);
+		V_0 = L_18;
+		// return m_NetworkClient.PostForm<OAuthAuthCodeResponse>(m_OAuthUrl, payload, m_CommonHeaders);
+		RuntimeObject* L_19 = __this->___m_NetworkClient_11;
+		String_t* L_20 = __this->___m_OAuthUrl_18;
+		String_t* L_21 = V_0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_22 = __this->___m_CommonHeaders_21;
+		NullCheck(L_19);
+		RuntimeObject* L_23;
+		L_23 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, String_t*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostForm_TisOAuthAuthCodeResponse_t819F40E54DE14BF799F56EE8243D8BDA04040E7C_m4A8E30156345E4ED3BAD9F4C2DEF4BDC1E051B74_RuntimeMethod_var, L_19, L_20, L_21, L_22, 1);
+		V_1 = L_23;
+		goto IL_008d;
+	}
+
+IL_008d:
+	{
+		// }
+		RuntimeObject* L_24 = V_1;
+		return L_24;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::S256EncodeChallenge(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_S256EncodeChallenge_mA45F2D5B843B45CD270DFDFFC7827D8F6668D85D (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___code0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* V_0 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_2 = NULL;
+	String_t* V_3 = NULL;
+	{
+		// using (var sha256 = SHA256.Create())
+		SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_0;
+		L_0 = SHA256_Create_m41FBBA07C26677E1028E44E3530AC1BA17D26BBC(NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0026:
+			{// begin finally (depth: 1)
+				{
+					SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_0030;
+					}
+				}
+				{
+					SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_0030:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			// var codeVerifierBytes = Encoding.UTF8.GetBytes(code);
+			Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_3;
+			L_3 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
+			String_t* L_4 = ___code0;
+			NullCheck(L_3);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5;
+			L_5 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_3, L_4);
+			V_1 = L_5;
+			// var codeVerifierHash = sha256.ComputeHash(codeVerifierBytes);
+			SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_6 = V_0;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_1;
+			NullCheck(L_6);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8;
+			L_8 = HashAlgorithm_ComputeHash_mC9CD24714D75A8D61F12509BF952A26347FF22FB(L_6, L_7, NULL);
+			V_2 = L_8;
+			// return UrlSafeBase64Encode(codeVerifierHash);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = V_2;
+			String_t* L_10;
+			L_10 = AuthenticationNetworkClient_UrlSafeBase64Encode_m2B368AA21E569034377FC08BAFB74E51A4305628(__this, L_9, NULL);
+			V_3 = L_10;
+			goto IL_0031;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0031:
+	{
+		// }
+		String_t* L_11 = V_3;
+		return L_11;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::UrlSafeBase64Encode(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_UrlSafeBase64Encode_m2B368AA21E569034377FC08BAFB74E51A4305628 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___input0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1FA13CA565DC9B5105D70A528D26A6FC7A57049E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// return Convert.ToBase64String(input)
+		//     .Replace('+', '-')
+		//     .Replace('/', '_')
+		//     .Replace("=", "");
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___input0;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Convert_ToBase64String_mD0680EF77270244071965AFA1207921C73EEA323(L_0, NULL);
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF(L_1, ((int32_t)43), ((int32_t)45), NULL);
+		NullCheck(L_2);
+		String_t* L_3;
+		L_3 = String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF(L_2, ((int32_t)47), ((int32_t)95), NULL);
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_3, _stringLiteral1FA13CA565DC9B5105D70A528D26A6FC7A57049E, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
+		V_0 = L_4;
+		goto IL_002b;
+	}
+
+IL_002b:
+	{
+		// }
+		String_t* L_5 = V_0;
+		return L_5;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::ExtractAuthCode(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthAuthCodeResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_ExtractAuthCode_m19F0372ED63334568C96A8995A5DF9D190A675DB (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, RuntimeObject* ___authCodeRequest0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_tE555426EA4479EA10B2FC774004BF7533B0DAB42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0DD32B18A388C5F1A6BAFD3629759260C61F767C);
+		s_Il2CppMethodInitialized = true;
+	}
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* V_0 = NULL;
+	String_t* V_1 = NULL;
+	Exception_t* V_2 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		// var locationUri = new Uri(authCodeRequest.ResponseHeaders["Location"]);
+		RuntimeObject* L_0 = ___authCodeRequest0;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(8 /* System.Collections.Generic.IDictionary`2<System.String,System.String> Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthAuthCodeResponse>::get_ResponseHeaders() */, IWebRequest_1_tE555426EA4479EA10B2FC774004BF7533B0DAB42_il2cpp_TypeInfo_var, L_0);
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = InterfaceFuncInvoker1< String_t*, String_t* >::Invoke(0 /* TValue System.Collections.Generic.IDictionary`2<System.String,System.String>::get_Item(TKey) */, IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var, L_1, _stringLiteral0DD32B18A388C5F1A6BAFD3629759260C61F767C);
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_3 = (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)il2cpp_codegen_object_new(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Uri__ctor_m6CA436E6AD2768A121FA851CBEEFA3623E849D3A(L_3, L_2, NULL);
+		V_0 = L_3;
+		// return ExtractAuthCode(locationUri.ToString(), locationUri.Query);
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_4 = V_0;
+		NullCheck(L_4);
+		String_t* L_5;
+		L_5 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_4);
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_6 = V_0;
+		NullCheck(L_6);
+		String_t* L_7;
+		L_7 = Uri_get_Query_m17DEC663263C486C8C8177AF9C4BFE2FFBE51178(L_6, NULL);
+		String_t* L_8;
+		L_8 = AuthenticationNetworkClient_ExtractAuthCode_mC0AB64045052B054060988AE26934BA07FC3A6E2(__this, L_5, L_7, NULL);
+		V_1 = L_8;
+		goto IL_0050;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_002d;
+		}
+		throw e;
+	}
+
+CATCH_002d:
+	{// begin catch(System.Exception)
+		// catch (Exception ex)
+		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// Logger.LogError("Failed to extract auth code. " + ex.Message);
+		Exception_t* L_9 = V_2;
+		NullCheck(L_9);
+		String_t* L_10;
+		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_9);
+		String_t* L_11;
+		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9BFD678133B3B79B23BAF9441A1BD053A447DC8F)), L_10, NULL);
+		Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8(L_11, NULL);
+		// Logger.LogException(ex);
+		Exception_t* L_12 = V_2;
+		Logger_LogException_m2532F898D427E3B5F2F6E3CA979AE1260869B476(L_12, NULL);
+		// return null;
+		V_1 = (String_t*)NULL;
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0050;
+	}// end catch (depth: 1)
+
+IL_0050:
+	{
+		// }
+		String_t* L_13 = V_1;
+		return L_13;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::ExtractAuthCode(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_ExtractAuthCode_mC0AB64045052B054060988AE26934BA07FC3A6E2 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___locationUri0, String_t* ___query1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral60A2E461CC4A1D49199A67B5216F128319CE63CC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD621D0010945E36D547156BC95881968C096B637);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	String_t* V_1 = NULL;
+	bool V_2 = false;
+	String_t* V_3 = NULL;
+	{
+		// var queryParams = HttpUtilities.ParseQueryString(query);
+		String_t* L_0 = ___query1;
+		RuntimeObject* L_1;
+		L_1 = HttpUtilities_ParseQueryString_m1C7C46237E72120005DFE046ACEEB0710A148122(L_0, NULL);
+		V_0 = L_1;
+		// if (!queryParams.TryGetValue("code", out code))
+		RuntimeObject* L_2 = V_0;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = InterfaceFuncInvoker2< bool, String_t*, String_t** >::Invoke(7 /* System.Boolean System.Collections.Generic.IDictionary`2<System.String,System.String>::TryGetValue(TKey,TValue&) */, IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var, L_2, _stringLiteral60A2E461CC4A1D49199A67B5216F128319CE63CC, (&V_1));
+		V_2 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_2;
+		if (!L_4)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// Logger.LogError($"Failed to extract auth code. Query parameter 'code' is not found. Location: {locationUri}");
+		String_t* L_5 = ___locationUri0;
+		String_t* L_6;
+		L_6 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD621D0010945E36D547156BC95881968C096B637, L_5, NULL);
+		Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8(L_6, NULL);
+	}
+
+IL_002f:
+	{
+		// return code;
+		String_t* L_7 = V_1;
+		V_3 = L_7;
+		goto IL_0033;
+	}
+
+IL_0033:
+	{
+		// }
+		String_t* L_8 = V_3;
+		return L_8;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthTokenResponse> Unity.Services.Authentication.AuthenticationNetworkClient::RequestOAuthToken(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_RequestOAuthToken_mDB55B7E259DD54D64721465B5CBAD880A684A4B1 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___authCode0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00420C520F15D0B0F9AF23CEF4CE0EE71BACFD66);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA389DA709F3CFA7E1C35D8DA42B74663535E9D57);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	{
+		// var payload = $"client_id={m_OAuthClientId}" +
+		//     "&grant_type=authorization_code" +
+		//     $"&code_verifier={m_SessionChallengeCode}" +
+		//     $"&code={authCode}";
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, _stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		String_t* L_3 = __this->___m_OAuthClientId_22;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_2;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, _stringLiteral00420C520F15D0B0F9AF23CEF4CE0EE71BACFD66);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral00420C520F15D0B0F9AF23CEF4CE0EE71BACFD66);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
+		String_t* L_6 = __this->___m_SessionChallengeCode_23;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_6);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_5;
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, _stringLiteralA389DA709F3CFA7E1C35D8DA42B74663535E9D57);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralA389DA709F3CFA7E1C35D8DA42B74663535E9D57);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
+		String_t* L_9 = ___authCode0;
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, L_9);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_9);
+		String_t* L_10;
+		L_10 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_8, NULL);
+		V_0 = L_10;
+		// return m_NetworkClient.PostForm<OAuthTokenResponse>(m_OAuthTokenUrl, payload, m_CommonHeaders);
+		RuntimeObject* L_11 = __this->___m_NetworkClient_11;
+		String_t* L_12 = __this->___m_OAuthTokenUrl_19;
+		String_t* L_13 = V_0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_14 = __this->___m_CommonHeaders_21;
+		NullCheck(L_11);
+		RuntimeObject* L_15;
+		L_15 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, String_t*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var, L_11, L_12, L_13, L_14, 1);
+		V_1 = L_15;
+		goto IL_0057;
+	}
+
+IL_0057:
+	{
+		// }
+		RuntimeObject* L_16 = V_1;
+		return L_16;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthTokenResponse> Unity.Services.Authentication.AuthenticationNetworkClient::RefreshOAuthToken(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_RefreshOAuthToken_m3A2648B5023136E96E3278684652D09A4F9CF641 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___refreshToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC5A0910C0D3254F50FE56CC14FA8998F0B8AAFD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0DC7C66D6ABB7483F3666B9237D6E5EBEAA9B19);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	{
+		// var payload = "grant_type=refresh_token" +
+		//     $"&client_id={m_OAuthClientId}" +
+		//     $"&refresh_token={refreshToken}";
+		String_t* L_0 = __this->___m_OAuthClientId_22;
+		String_t* L_1 = ___refreshToken0;
+		String_t* L_2;
+		L_2 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralE0DC7C66D6ABB7483F3666B9237D6E5EBEAA9B19, L_0, _stringLiteralAC5A0910C0D3254F50FE56CC14FA8998F0B8AAFD, L_1, NULL);
+		V_0 = L_2;
+		// return m_NetworkClient.PostForm<OAuthTokenResponse>(m_OAuthTokenUrl, payload, m_CommonHeaders, 5);
+		RuntimeObject* L_3 = __this->___m_NetworkClient_11;
+		String_t* L_4 = __this->___m_OAuthTokenUrl_19;
+		String_t* L_5 = V_0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_6 = __this->___m_CommonHeaders_21;
+		NullCheck(L_3);
+		RuntimeObject* L_7;
+		L_7 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, String_t*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var, L_3, L_4, L_5, L_6, 5);
+		V_1 = L_7;
+		goto IL_0034;
+	}
+
+IL_0034:
+	{
+		// }
+		RuntimeObject* L_8 = V_1;
+		return L_8;
+	}
+}
+// Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthTokenResponse> Unity.Services.Authentication.AuthenticationNetworkClient::RevokeOAuthToken(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationNetworkClient_RevokeOAuthToken_mA9C295D7132E4A0238CBF325AB593E83158F5A29 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, String_t* ___accessToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAE6B586536DCC58E642B6D3B9D4C296C35DA9468);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	{
+		// var payload = $"client_id={m_OAuthClientId}&token={accessToken}";
+		String_t* L_0 = __this->___m_OAuthClientId_22;
+		String_t* L_1 = ___accessToken0;
+		String_t* L_2;
+		L_2 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralB8D0920F1B8D46F01BF10D613C3177F3B5ACB0F2, L_0, _stringLiteralAE6B586536DCC58E642B6D3B9D4C296C35DA9468, L_1, NULL);
+		V_0 = L_2;
+		// return m_NetworkClient.PostForm<OAuthTokenResponse>(m_OAuthRevokeTokenUrl, payload, m_CommonHeaders);
+		RuntimeObject* L_3 = __this->___m_NetworkClient_11;
+		String_t* L_4 = __this->___m_OAuthRevokeTokenUrl_20;
+		String_t* L_5 = V_0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_6 = __this->___m_CommonHeaders_21;
+		NullCheck(L_3);
+		RuntimeObject* L_7;
+		L_7 = GenericInterfaceFuncInvoker4< RuntimeObject*, String_t*, String_t*, RuntimeObject*, int32_t >::Invoke(INetworkingUtilities_PostForm_TisOAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B_m041EC90C067FDF17AE6F0B91BAF0B43A938B6308_RuntimeMethod_var, L_3, L_4, L_5, L_6, 1);
+		V_1 = L_7;
+		goto IL_0034;
+	}
+
+IL_0034:
+	{
+		// }
+		RuntimeObject* L_8 = V_1;
+		return L_8;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationNetworkClient::ExtractAccessToken(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthTokenResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationNetworkClient_ExtractAccessToken_m742B9938AD215A13DC0E49572639667E111AAC7A (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, RuntimeObject* ___authCodeRequest0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t1EC35A8CBA06ABC11A837661D9E749BC675F9335_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// return authCodeRequest.ResponseBody.AccessToken;
+		RuntimeObject* L_0 = ___authCodeRequest0;
+		NullCheck(L_0);
+		OAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B* L_1;
+		L_1 = InterfaceFuncInvoker0< OAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B* >::Invoke(6 /* T Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.OAuthTokenResponse>::get_ResponseBody() */, IWebRequest_1_t1EC35A8CBA06ABC11A837661D9E749BC675F9335_il2cpp_TypeInfo_var, L_0);
+		NullCheck(L_1);
+		String_t* L_2 = L_1->___AccessToken_0;
+		V_0 = L_2;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		// }
+		String_t* L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::WithAccessToken(System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* AuthenticationNetworkClient_WithAccessToken_m4AE9B063983685468194A0909E905DCE6DDD96C7 (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___headers0, String_t* ___accessToken1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D5A3AE3D2B0B5E5AF5AB489000D9B88FA11E907);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC2DA60AE96E2C9EF3EAF20897A5AA957AFDF64EC);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* V_0 = NULL;
+	{
+		// headers["Authorization"] = "Bearer " + accessToken;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_0 = ___headers0;
+		String_t* L_1 = ___accessToken1;
+		String_t* L_2;
+		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralC2DA60AE96E2C9EF3EAF20897A5AA957AFDF64EC, L_1, NULL);
+		NullCheck(L_0);
+		Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2(L_0, _stringLiteral9D5A3AE3D2B0B5E5AF5AB489000D9B88FA11E907, L_2, Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		// return headers;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_3 = ___headers0;
+		V_0 = L_3;
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		// }
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::WithEnvironment(System.Collections.Generic.Dictionary`2<System.String,System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* AuthenticationNetworkClient_WithEnvironment_m9B313EFCA29F2D7457AE5029FA31443331CC5AFC (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___headers0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral141957AF910C5B886304F115D2479EA72DD92035);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* V_2 = NULL;
+	{
+		// var env = m_EnvironmentComponent.Current;
+		RuntimeObject* L_0 = __this->___m_EnvironmentComponent_24;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Unity.Services.Core.Environments.Internal.IEnvironments::get_Current() */, IEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_il2cpp_TypeInfo_var, L_0);
+		V_0 = L_1;
+		// if (!string.IsNullOrEmpty(env))
+		String_t* L_2 = V_0;
+		bool L_3;
+		L_3 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_2, NULL);
+		V_1 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// headers["UnityEnvironment"] = m_EnvironmentComponent.Current;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_5 = ___headers0;
+		RuntimeObject* L_6 = __this->___m_EnvironmentComponent_24;
+		NullCheck(L_6);
+		String_t* L_7;
+		L_7 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Unity.Services.Core.Environments.Internal.IEnvironments::get_Current() */, IEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_il2cpp_TypeInfo_var, L_6);
+		NullCheck(L_5);
+		Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2(L_5, _stringLiteral141957AF910C5B886304F115D2479EA72DD92035, L_7, Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+	}
+
+IL_0033:
+	{
+		// return headers;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_8 = ___headers0;
+		V_2 = L_8;
+		goto IL_0037;
+	}
+
+IL_0037:
+	{
+		// }
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_9 = V_2;
+		return L_9;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.String,System.String> Unity.Services.Authentication.AuthenticationNetworkClient::GetCommonHeaders()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* AuthenticationNetworkClient_GetCommonHeaders_mA91AF9F13338A7B915A99B61CC71874D75CB1C2F (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m1D3CFAA07F0EE9405CAF58853C2E25690A51D0F9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* V_0 = NULL;
+	{
+		// return new Dictionary<string, string>(m_CommonHeaders);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_0 = __this->___m_CommonHeaders_21;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_1 = (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)il2cpp_codegen_object_new(Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Dictionary_2__ctor_m1D3CFAA07F0EE9405CAF58853C2E25690A51D0F9(L_1, L_0, Dictionary_2__ctor_m1D3CFAA07F0EE9405CAF58853C2E25690A51D0F9_RuntimeMethod_var);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		// }
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_2 = V_0;
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Unity.Services.Authentication.IAuthenticationService Unity.Services.Authentication.AuthenticationService::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationService_get_Instance_m84EBB538A503492BD441FFB825CF257EE1365BD1 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static IAuthenticationService Instance { get; internal set; }
+		RuntimeObject* L_0 = ((AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_StaticFields*)il2cpp_codegen_static_fields_for(AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationService::set_Instance(Unity.Services.Authentication.IAuthenticationService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationService_set_Instance_mF6E5CECFA4F9F11AD6628770749F28B73904F1F3 (RuntimeObject* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static IAuthenticationService Instance { get; internal set; }
+		RuntimeObject* L_0 = ___value0;
+		((AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_StaticFields*)il2cpp_codegen_static_fields_for(AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_StaticFields*)il2cpp_codegen_static_fields_for(AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::add_StateChanged(System.Action`2<Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_add_StateChanged_mBE274D0D90C92E68F11E4CB76F1B6A0CBA92D51E (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* V_0 = NULL;
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* V_1 = NULL;
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* V_2 = NULL;
+	{
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_0 = __this->___StateChanged_17;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_1 = V_0;
+		V_1 = L_1;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_2 = V_1;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*)Castclass((RuntimeObject*)L_4, Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537_il2cpp_TypeInfo_var));
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537** L_5 = (&__this->___StateChanged_17);
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_6 = V_2;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_7 = V_1;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_9 = V_0;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*)L_9) == ((RuntimeObject*)(Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::remove_StateChanged(System.Action`2<Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_remove_StateChanged_m9358488CEDD7D856B563EB07592DBFFCE6644000 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* V_0 = NULL;
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* V_1 = NULL;
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* V_2 = NULL;
+	{
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_0 = __this->___StateChanged_17;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_1 = V_0;
+		V_1 = L_1;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_2 = V_1;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*)Castclass((RuntimeObject*)L_4, Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537_il2cpp_TypeInfo_var));
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537** L_5 = (&__this->___StateChanged_17);
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_6 = V_2;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_7 = V_1;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_9 = V_0;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*)L_9) == ((RuntimeObject*)(Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::add_SignInFailed(System.Action`1<Unity.Services.Core.RequestFailedException>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_add_SignInFailed_m9260DB451A02F56C93A92418596B2D7A79EC8B01 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* V_0 = NULL;
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* V_1 = NULL;
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* V_2 = NULL;
+	{
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_0 = __this->___SignInFailed_18;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_2 = V_1;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)Castclass((RuntimeObject*)L_4, Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var));
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860** L_5 = (&__this->___SignInFailed_18);
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_6 = V_2;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_7 = V_1;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_9 = V_0;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)L_9) == ((RuntimeObject*)(Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::remove_SignInFailed(System.Action`1<Unity.Services.Core.RequestFailedException>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_remove_SignInFailed_m11D5F7E981019A03E7A4161F8DDA9376FC24BD82 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* V_0 = NULL;
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* V_1 = NULL;
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* V_2 = NULL;
+	{
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_0 = __this->___SignInFailed_18;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_2 = V_1;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)Castclass((RuntimeObject*)L_4, Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var));
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860** L_5 = (&__this->___SignInFailed_18);
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_6 = V_2;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_7 = V_1;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_9 = V_0;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)L_9) == ((RuntimeObject*)(Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::add_SignedIn(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_add_SignedIn_mEF92B74D192609D12FC1D4C4A876FE386705AD8C (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___SignedIn_19;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (&__this->___SignedIn_19);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::remove_SignedIn(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_remove_SignedIn_m379A905529DB2306A0067247A896348CC44024D3 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___SignedIn_19;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (&__this->___SignedIn_19);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::add_SignedOut(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_add_SignedOut_mCCEB16EC3898F15248866478B3F87355F3C780E7 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___SignedOut_20;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (&__this->___SignedOut_20);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::remove_SignedOut(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_remove_SignedOut_m4455B51ED0B978C1E0F244F12260549C1387A74B (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___SignedOut_20;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (&__this->___SignedOut_20);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::get_IsSignedIn()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationServiceInternal_get_IsSignedIn_mCF8CDE17E3B5F2ACDCF556705C025DA48D5671FB (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	int32_t G_B4_0 = 0;
+	{
+		// State == AuthenticationState.Authorized ||
+		// State == AuthenticationState.Refreshing ||
+		// State == AuthenticationState.Expired;
+		int32_t L_0;
+		L_0 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		if ((((int32_t)L_0) == ((int32_t)3)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_1;
+		L_1 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		if ((((int32_t)L_1) == ((int32_t)4)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_2;
+		L_2 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		G_B4_0 = ((((int32_t)L_2) == ((int32_t)5))? 1 : 0);
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B4_0 = 1;
+	}
+
+IL_001e:
+	{
+		return (bool)G_B4_0;
+	}
+}
+// System.Boolean Unity.Services.Authentication.AuthenticationServiceInternal::get_IsAuthorized()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuthenticationServiceInternal_get_IsAuthorized_m617D4F6C205F90145F46BA9C4069B3B9BC87CD8D (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	int32_t G_B3_0 = 0;
+	{
+		// State == AuthenticationState.Authorized ||
+		// State == AuthenticationState.Refreshing;
+		int32_t L_0;
+		L_0 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		if ((((int32_t)L_0) == ((int32_t)3)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		int32_t L_1;
+		L_1 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		G_B3_0 = ((((int32_t)L_1) == ((int32_t)4))? 1 : 0);
+		goto IL_0015;
+	}
+
+IL_0014:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0015:
+	{
+		return (bool)G_B3_0;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationServiceInternal::get_AccessToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationServiceInternal_get_AccessToken_m7B4AC5988045E8F833AE7E31782030743B96E8F2 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string AccessToken { get; private set; }
+		String_t* L_0 = __this->___U3CAccessTokenU3Ek__BackingField_21;
+		return L_0;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::set_AccessToken(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_AccessToken_mCA6812FEB9BEE46E4C936835F0B81274A4ADF519 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public string AccessToken { get; private set; }
+		String_t* L_0 = ___value0;
+		__this->___U3CAccessTokenU3Ek__BackingField_21 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAccessTokenU3Ek__BackingField_21), (void*)L_0);
+		return;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationServiceInternal::get_PlayerId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationServiceInternal_get_PlayerId_mA599BD2E88C01DD4168B1A49BC193BF76CD471AA (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	String_t* G_B3_0 = NULL;
+	{
+		// IsSignedIn ? m_PlayerId : null;
+		bool L_0;
+		L_0 = AuthenticationServiceInternal_get_IsSignedIn_mCF8CDE17E3B5F2ACDCF556705C025DA48D5671FB(__this, NULL);
+		if (L_0)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		G_B3_0 = ((String_t*)(NULL));
+		goto IL_0011;
+	}
+
+IL_000b:
+	{
+		String_t* L_1 = __this->___m_PlayerId_15;
+		G_B3_0 = L_1;
+	}
+
+IL_0011:
+	{
+		return G_B3_0;
+	}
+}
+// Unity.Services.Authentication.AuthenticationState Unity.Services.Authentication.AuthenticationServiceInternal::get_State()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal AuthenticationState State { get; set; }
+		int32_t L_0 = __this->___U3CStateU3Ek__BackingField_22;
+		return L_0;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::set_State(Unity.Services.Authentication.AuthenticationState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_State_mBE3362F5E6AAA06DA3D0D9CFA6CE38C5A5991FA1 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal AuthenticationState State { get; set; }
+		int32_t L_0 = ___value0;
+		__this->___U3CStateU3Ek__BackingField_22 = L_0;
+		return;
+	}
+}
+// Unity.Services.Authentication.Models.WellKnownKeys Unity.Services.Authentication.AuthenticationServiceInternal::get_WellKnownKeys()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* AuthenticationServiceInternal_get_WellKnownKeys_m413980717CA743861F20F5BE752831315F0B519D (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal WellKnownKeys WellKnownKeys { get; private set; }
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_0 = __this->___U3CWellKnownKeysU3Ek__BackingField_23;
+		return L_0;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::set_WellKnownKeys(Unity.Services.Authentication.Models.WellKnownKeys)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_WellKnownKeys_m829E05331FF7572A43CA5CCF93CCCD8E00F3E7F3 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal WellKnownKeys WellKnownKeys { get; private set; }
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_0 = ___value0;
+		__this->___U3CWellKnownKeysU3Ek__BackingField_23 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CWellKnownKeysU3Ek__BackingField_23), (void*)L_0);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::.ctor(Unity.Services.Authentication.IAuthenticationNetworkClient,Unity.Services.Authentication.IJwtDecoder,Unity.Services.Authentication.Utilities.ICache,Unity.Services.Authentication.Utilities.IScheduler,Unity.Services.Authentication.Utilities.IDateTimeWrapper)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal__ctor_m13900FE930302252C8B99FC4C40C93C8F0704CDC (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, RuntimeObject* ___networkClient0, RuntimeObject* ___jwtDecoder1, RuntimeObject* ___cache2, RuntimeObject* ___scheduler3, RuntimeObject* ___dateTime4, const RuntimeMethod* method) 
+{
+	{
+		// internal AuthenticationServiceInternal(IAuthenticationNetworkClient networkClient,
+		//                                        IJwtDecoder jwtDecoder,
+		//                                        ICache cache,
+		//                                        IScheduler scheduler,
+		//                                        IDateTimeWrapper dateTime)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_NetworkClient = networkClient;
+		RuntimeObject* L_0 = ___networkClient0;
+		__this->___m_NetworkClient_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_NetworkClient_9), (void*)L_0);
+		// m_JwtDecoder = jwtDecoder;
+		RuntimeObject* L_1 = ___jwtDecoder1;
+		__this->___m_JwtDecoder_10 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_JwtDecoder_10), (void*)L_1);
+		// m_Cache = cache;
+		RuntimeObject* L_2 = ___cache2;
+		__this->___m_Cache_11 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Cache_11), (void*)L_2);
+		// m_Scheduler = scheduler;
+		RuntimeObject* L_3 = ___scheduler3;
+		__this->___m_Scheduler_12 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Scheduler_12), (void*)L_3);
+		// m_DateTime = dateTime;
+		RuntimeObject* L_4 = ___dateTime4;
+		__this->___m_DateTime_13 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DateTime_13), (void*)L_4);
+		// State = AuthenticationState.SignedOut;
+		AuthenticationServiceInternal_set_State_mBE3362F5E6AAA06DA3D0D9CFA6CE38C5A5991FA1_inline(__this, 0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::GetWellKnownKeys(Unity.Services.Authentication.AuthenticationAsyncOperation,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_GetWellKnownKeys_m3E9005A2035FC2A78854CD11E33E293D697AF280 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___asyncOperation0, int32_t ___attempt1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass48_0_U3CGetWellKnownKeysU3Eb__0_mB8D8A3DD3287A260B417BD99DD01E5DC02AF779E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
+	{
+		U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* L_0 = (U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass48_0__ctor_mDB365B0EE77D490844A986981F3E914E15015C44(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* L_1 = V_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* L_2 = V_0;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_3 = ___asyncOperation0;
+		NullCheck(L_2);
+		L_2->___asyncOperation_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___asyncOperation_1), (void*)L_3);
+		U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* L_4 = V_0;
+		int32_t L_5 = ___attempt1;
+		NullCheck(L_4);
+		L_4->___attempt_2 = L_5;
+		// if (WellKnownKeys == null)
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_6;
+		L_6 = AuthenticationServiceInternal_get_WellKnownKeys_m413980717CA743861F20F5BE752831315F0B519D_inline(__this, NULL);
+		V_1 = (bool)((((RuntimeObject*)(WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292*)L_6) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_7 = V_1;
+		if (!L_7)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		// var wellKnownKeysRequest = m_NetworkClient.GetWellKnownKeys();
+		RuntimeObject* L_8 = __this->___m_NetworkClient_9;
+		NullCheck(L_8);
+		RuntimeObject* L_9;
+		L_9 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys> Unity.Services.Authentication.IAuthenticationNetworkClient::GetWellKnownKeys() */, IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var, L_8);
+		V_2 = L_9;
+		// wellKnownKeysRequest.Completed += resp => WellKnownKeysReceived(asyncOperation, resp, attempt);
+		RuntimeObject* L_10 = V_2;
+		U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* L_11 = V_0;
+		Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5* L_12 = (Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5*)il2cpp_codegen_object_new(Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		Action_1__ctor_mA9C476D6E560DE0A32E1A48C34B43437F6FD0005(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass48_0_U3CGetWellKnownKeysU3Eb__0_mB8D8A3DD3287A260B417BD99DD01E5DC02AF779E_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		InterfaceActionInvoker1< Action_1_t2FFA19861378FCA91EBAAC2AD3BCEC3E9D9EDBC5* >::Invoke(0 /* System.Void Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>::add_Completed(System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<T>>) */, IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var, L_10, L_12);
+	}
+
+IL_004a:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::WellKnownKeysReceived(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_WellKnownKeysReceived_m31821AED6B5059F4670618E0C27C2D09E235935C (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___asyncOperation0, RuntimeObject* ___response1, int32_t ___attempt2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_HandleServerError_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_mD6FD94B7681C055E27D132613DD3A5D0674EAF34_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEF2BFEB3CE669AED6916F2510227D9758DF039EE);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	Exception_t* V_3 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// if (response.RequestFailed)
+			RuntimeObject* L_0 = ___response1;
+			NullCheck(L_0);
+			bool L_1;
+			L_1 = InterfaceFuncInvoker0< bool >::Invoke(2 /* System.Boolean Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>::get_RequestFailed() */, IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var, L_0);
+			V_0 = L_1;
+			bool L_2 = V_0;
+			if (!L_2)
+			{
+				goto IL_0058_1;
+			}
+		}
+		{
+			// if (attempt < k_WellKnownKeysMaxAttempt)
+			int32_t L_3 = ___attempt2;
+			V_1 = (bool)((((int32_t)L_3) < ((int32_t)3))? 1 : 0);
+			bool L_4 = V_1;
+			if (!L_4)
+			{
+				goto IL_004b_1;
+			}
+		}
+		{
+			// Logger.LogWarning($"Well-known keys request failed (attempt: {attempt}): {response.ResponseCode}, {response.ErrorMessage}");
+			int32_t L_5 = ___attempt2;
+			int32_t L_6 = L_5;
+			RuntimeObject* L_7 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_6);
+			RuntimeObject* L_8 = ___response1;
+			NullCheck(L_8);
+			int64_t L_9;
+			L_9 = InterfaceFuncInvoker0< int64_t >::Invoke(7 /* System.Int64 Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>::get_ResponseCode() */, IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var, L_8);
+			int64_t L_10 = L_9;
+			RuntimeObject* L_11 = Box(Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var, &L_10);
+			RuntimeObject* L_12 = ___response1;
+			NullCheck(L_12);
+			String_t* L_13;
+			L_13 = InterfaceFuncInvoker0< String_t* >::Invoke(5 /* System.String Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>::get_ErrorMessage() */, IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var, L_12);
+			String_t* L_14;
+			L_14 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteralEF2BFEB3CE669AED6916F2510227D9758DF039EE, L_7, L_11, L_13, NULL);
+			Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB(L_14, NULL);
+			// GetWellKnownKeys(asyncOperation, attempt + 1);
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_15 = ___asyncOperation0;
+			int32_t L_16 = ___attempt2;
+			AuthenticationServiceInternal_GetWellKnownKeys_m3E9005A2035FC2A78854CD11E33E293D697AF280(__this, L_15, ((int32_t)il2cpp_codegen_add(L_16, 1)), NULL);
+			goto IL_0056_1;
+		}
+
+IL_004b_1:
+		{
+			// HandleServerError(asyncOperation, response);
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_17 = ___asyncOperation0;
+			RuntimeObject* L_18 = ___response1;
+			bool L_19;
+			L_19 = AuthenticationServiceInternal_HandleServerError_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_mD6FD94B7681C055E27D132613DD3A5D0674EAF34(__this, L_17, L_18, AuthenticationServiceInternal_HandleServerError_TisWellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292_mD6FD94B7681C055E27D132613DD3A5D0674EAF34_RuntimeMethod_var);
+		}
+
+IL_0056_1:
+		{
+			// return;
+			goto IL_009d;
+		}
+
+IL_0058_1:
+		{
+			// WellKnownKeys = response.ResponseBody;
+			RuntimeObject* L_20 = ___response1;
+			NullCheck(L_20);
+			WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_21;
+			L_21 = InterfaceFuncInvoker0< WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* >::Invoke(6 /* T Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>::get_ResponseBody() */, IWebRequest_1_t327E34E72856319C189F2D05CA0831DA6D04E7B4_il2cpp_TypeInfo_var, L_20);
+			AuthenticationServiceInternal_set_WellKnownKeys_m829E05331FF7572A43CA5CCF93CCCD8E00F3E7F3_inline(__this, L_21, NULL);
+			// if (State == AuthenticationState.VerifyingAccessToken)
+			int32_t L_22;
+			L_22 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+			V_2 = (bool)((((int32_t)L_22) == ((int32_t)2))? 1 : 0);
+			bool L_23 = V_2;
+			if (!L_23)
+			{
+				goto IL_0087_1;
+			}
+		}
+		{
+			// CompleteSignIn(asyncOperation, m_DelayedTokenRequest.ResponseBody);
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_24 = ___asyncOperation0;
+			RuntimeObject* L_25 = __this->___m_DelayedTokenRequest_14;
+			NullCheck(L_25);
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_26;
+			L_26 = InterfaceFuncInvoker0< SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* >::Invoke(6 /* T Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ResponseBody() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_25);
+			AuthenticationServiceInternal_CompleteSignIn_m97FC06962BB5CB365C74B6CD8B705FB594EA07C8(__this, L_24, L_26, NULL);
+		}
+
+IL_0087_1:
+		{
+			goto IL_009d;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_008a;
+		}
+		throw e;
+	}
+
+CATCH_008a:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_3 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// asyncOperation.Fail(CommonErrorCodes.Unknown, "Unknown error receiving well-known keys response.", e);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_27 = ___asyncOperation0;
+		Exception_t* L_28 = V_3;
+		NullCheck(L_27);
+		AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28(L_27, 0, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral72129450AE06DEA77C55240A9CFFCC9CACFFA761)), L_28, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_009d;
+	}// end catch (depth: 1)
+
+IL_009d:
+	{
+		// }
+		return;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInAnonymouslyAsync()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInAnonymouslyAsync_m9824E096F95D47FA251FB75A0DB5BDB72D312FDD (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_2 = NULL;
+	{
+		// if (State == AuthenticationState.SignedOut)
+		int32_t L_0;
+		L_0 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		// if (!string.IsNullOrEmpty(ReadSessionToken()))
+		String_t* L_2;
+		L_2 = AuthenticationServiceInternal_ReadSessionToken_m88CE89E9A04556185439D8017BEB68D104C272ED(__this, NULL);
+		bool L_3;
+		L_3 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_2, NULL);
+		V_1 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		// return SignInWithSessionTokenAsync();
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AuthenticationServiceInternal_SignInWithSessionTokenAsync_mDFB90D538FE42F7BA8E349005577179BABC84785(__this, NULL);
+		V_2 = L_5;
+		goto IL_0053;
+	}
+
+IL_002b:
+	{
+		// return StartSigningIn(m_NetworkClient.SignInAnonymously()).AsTask();
+		RuntimeObject* L_6 = __this->___m_NetworkClient_9;
+		NullCheck(L_6);
+		RuntimeObject* L_7;
+		L_7 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.IAuthenticationNetworkClient::SignInAnonymously() */, IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var, L_6);
+		RuntimeObject* L_8;
+		L_8 = AuthenticationServiceInternal_StartSigningIn_m30687FA8DD7CB1A83E74D20E6EBEFAF4AB8E604F(__this, L_7, (bool)0, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_9;
+		L_9 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_8, NULL);
+		V_2 = L_9;
+		goto IL_0053;
+	}
+
+IL_0045:
+	{
+		// return AlreadySignedInError().AsTask();
+		RuntimeObject* L_10;
+		L_10 = AuthenticationServiceInternal_AlreadySignedInError_m768B0F384D2B6FCF614B993606BC688E5B8263F7(__this, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_11;
+		L_11 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_10, NULL);
+		V_2 = L_11;
+		goto IL_0053;
+	}
+
+IL_0053:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_12 = V_2;
+		return L_12;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithAppleAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInWithAppleAsync_m7264DE1A69C5F6DEE8B76FA0E24420272479FA6E (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___idToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3588789C48AB78DB91B054AB1061B98B63526313);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return SignInWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderApple,
+		//     Token = idToken
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteral3588789C48AB78DB91B054AB1061B98B63526313;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteral3588789C48AB78DB91B054AB1061B98B63526313);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___idToken0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_SignInWithExternalToken_mB52512B07CA5392837815F2F9FC46E1CDAFBAF16(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::LinkWithAppleAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_LinkWithAppleAsync_m89BAB2CF3F3E1FF5BF0F5A19DCF1518E3192AA78 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___idToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3588789C48AB78DB91B054AB1061B98B63526313);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return LinkWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderApple,
+		//     Token = idToken
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteral3588789C48AB78DB91B054AB1061B98B63526313;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteral3588789C48AB78DB91B054AB1061B98B63526313);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___idToken0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_LinkWithExternalToken_m0B98C8B675CADF7FD06AF88A40BF40A33ACC6653(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithGoogleAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInWithGoogleAsync_mCB798336013CDBE797D0F64F9EEF5C58685FE211 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___idToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return SignInWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderGoogle,
+		//     Token = idToken
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___idToken0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_SignInWithExternalToken_mB52512B07CA5392837815F2F9FC46E1CDAFBAF16(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::LinkWithGoogleAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_LinkWithGoogleAsync_m189AE5CC386F864502FFCC142DC44A272C946395 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___idToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return LinkWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderGoogle,
+		//     Token = idToken
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteralAFA0228517D559C72225EDC64521ED7E04459E89);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___idToken0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_LinkWithExternalToken_m0B98C8B675CADF7FD06AF88A40BF40A33ACC6653(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithFacebookAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInWithFacebookAsync_mC80C9DBE60B0E8EC1106799170775FA2DF17B1D2 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___accessToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return SignInWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderFacebook,
+		//     Token = accessToken
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___accessToken0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_SignInWithExternalToken_mB52512B07CA5392837815F2F9FC46E1CDAFBAF16(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::LinkWithFacebookAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_LinkWithFacebookAsync_m60A649A683B8EF62AD4115DD301E6274ABDB04DF (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___accessToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return LinkWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderFacebook,
+		//     Token = accessToken
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteral4D5367EBDE22F22AB910D2E11BF07B236BD5EB37);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___accessToken0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_LinkWithExternalToken_m0B98C8B675CADF7FD06AF88A40BF40A33ACC6653(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithSteamAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInWithSteamAsync_mC8C6552432ACFA6D229FE1ACA7C7B9D044CEA576 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___sessionTicket0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return SignInWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderSteam,
+		//     Token = sessionTicket
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___sessionTicket0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_SignInWithExternalToken_mB52512B07CA5392837815F2F9FC46E1CDAFBAF16(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::LinkWithSteamAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_LinkWithSteamAsync_m3CE531A3C18D3540F8E06DF81CF7518B5FC19F0E (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___sessionTicket0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF);
+		s_Il2CppMethodInitialized = true;
+	}
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return LinkWithExternalToken(new ExternalTokenRequest
+		// {
+		//     IdProvider = k_IdProviderSteam,
+		//     Token = sessionTicket
+		// }).AsTask();
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_0 = (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6*)il2cpp_codegen_object_new(ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4(L_0, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___IdProvider_0 = _stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___IdProvider_0), (void*)_stringLiteral550BDD0FDB52916B1F38EF82E2C5D1473B9113CF);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_2 = L_1;
+		String_t* L_3 = ___sessionTicket0;
+		NullCheck(L_2);
+		L_2->___Token_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Token_1), (void*)L_3);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_LinkWithExternalToken_m0B98C8B675CADF7FD06AF88A40BF40A33ACC6653(__this, L_2, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_5;
+		L_5 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_4, NULL);
+		V_0 = L_5;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_6 = V_0;
+		return L_6;
+	}
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithExternalToken(Unity.Services.Authentication.Models.ExternalTokenRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_SignInWithExternalToken_mB52512B07CA5392837815F2F9FC46E1CDAFBAF16 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* ___externalToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	RuntimeObject* V_1 = NULL;
+	{
+		// if (State == AuthenticationState.SignedOut)
+		int32_t L_0;
+		L_0 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		// return StartSigningIn(m_NetworkClient.SignInWithExternalToken(externalToken));
+		RuntimeObject* L_2 = __this->___m_NetworkClient_9;
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_3 = ___externalToken0;
+		NullCheck(L_2);
+		RuntimeObject* L_4;
+		L_4 = InterfaceFuncInvoker1< RuntimeObject*, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* >::Invoke(3 /* Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.IAuthenticationNetworkClient::SignInWithExternalToken(Unity.Services.Authentication.Models.ExternalTokenRequest) */, IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var, L_2, L_3);
+		RuntimeObject* L_5;
+		L_5 = AuthenticationServiceInternal_StartSigningIn_m30687FA8DD7CB1A83E74D20E6EBEFAF4AB8E604F(__this, L_4, (bool)0, NULL);
+		V_1 = L_5;
+		goto IL_002e;
+	}
+
+IL_0025:
+	{
+		// return AlreadySignedInError();
+		RuntimeObject* L_6;
+		L_6 = AuthenticationServiceInternal_AlreadySignedInError_m768B0F384D2B6FCF614B993606BC688E5B8263F7(__this, NULL);
+		V_1 = L_6;
+		goto IL_002e;
+	}
+
+IL_002e:
+	{
+		// }
+		RuntimeObject* L_7 = V_1;
+		return L_7;
+	}
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::LinkWithExternalToken(Unity.Services.Authentication.Models.ExternalTokenRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_LinkWithExternalToken_m0B98C8B675CADF7FD06AF88A40BF40A33ACC6653 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* ___externalToken0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass60_0_U3CLinkWithExternalTokenU3Eb__0_m30161E872D501B08573CD206F6CB8FC34E7A55EB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD7276E51514232F10F0BDD940C7D25FA88F1E666);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
+	RuntimeObject* V_3 = NULL;
+	{
+		U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* L_0 = (U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass60_0__ctor_m65B98D801B61766A56D0115EDBD97C322E513721(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* L_1 = V_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		// var operation = new AuthenticationAsyncOperation();
+		U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* L_2 = V_0;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_3 = (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*)il2cpp_codegen_object_new(AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546(L_3, NULL);
+		NullCheck(L_2);
+		L_2->___operation_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___operation_1), (void*)L_3);
+		// if (IsAuthorized)
+		bool L_4;
+		L_4 = AuthenticationServiceInternal_get_IsAuthorized_m617D4F6C205F90145F46BA9C4069B3B9BC87CD8D(__this, NULL);
+		V_1 = L_4;
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		// var linkResult = m_NetworkClient.LinkWithExternalToken(AccessToken, externalToken);
+		RuntimeObject* L_6 = __this->___m_NetworkClient_9;
+		String_t* L_7;
+		L_7 = AuthenticationServiceInternal_get_AccessToken_m7B4AC5988045E8F833AE7E31782030743B96E8F2_inline(__this, NULL);
+		ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* L_8 = ___externalToken0;
+		NullCheck(L_6);
+		RuntimeObject* L_9;
+		L_9 = InterfaceFuncInvoker2< RuntimeObject*, String_t*, ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* >::Invoke(4 /* Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.IAuthenticationNetworkClient::LinkWithExternalToken(System.String,Unity.Services.Authentication.Models.ExternalTokenRequest) */, IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var, L_6, L_7, L_8);
+		V_2 = L_9;
+		// linkResult.Completed += request => LinkResponseReceived(operation, request);
+		RuntimeObject* L_10 = V_2;
+		U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* L_11 = V_0;
+		Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* L_12 = (Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D*)il2cpp_codegen_object_new(Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		Action_1__ctor_mE363ABAE204C244BBACF63C643A1D028F34239E0(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass60_0_U3CLinkWithExternalTokenU3Eb__0_m30161E872D501B08573CD206F6CB8FC34E7A55EB_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		InterfaceActionInvoker1< Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* >::Invoke(0 /* System.Void Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::add_Completed(System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<T>>) */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_10, L_12);
+		goto IL_0071;
+	}
+
+IL_004d:
+	{
+		// Logger.LogWarning("The player is not authorized. Wait until authorized before attempting to link.");
+		Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB(_stringLiteralD7276E51514232F10F0BDD940C7D25FA88F1E666, NULL);
+		// operation.Fail(AuthenticationErrorCodes.ClientInvalidUserState, "The player is not authorized. Wait until authorized before attempting to link.");
+		U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* L_13 = V_0;
+		NullCheck(L_13);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_14 = L_13->___operation_1;
+		NullCheck(L_14);
+		AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28(L_14, ((int32_t)10000), _stringLiteralD7276E51514232F10F0BDD940C7D25FA88F1E666, (Exception_t*)NULL, NULL);
+	}
+
+IL_0071:
+	{
+		// return operation;
+		U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* L_15 = V_0;
+		NullCheck(L_15);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_16 = L_15->___operation_1;
+		V_3 = L_16;
+		goto IL_007a;
+	}
+
+IL_007a:
+	{
+		// }
+		RuntimeObject* L_17 = V_3;
+		return L_17;
+	}
+}
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithSessionTokenAsync()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationServiceInternal_SignInWithSessionTokenAsync_mDFB90D538FE42F7BA8E349005577179BABC84785 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_0 = NULL;
+	{
+		// return SignInWithSessionToken(false).AsTask();
+		RuntimeObject* L_0;
+		L_0 = AuthenticationServiceInternal_SignInWithSessionToken_mE068C18D9D3E84C3EB2AEDEE3FFF7EA0D36D343D(__this, (bool)0, NULL);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_1;
+		L_1 = AsyncOperationExtensions_AsTask_m639FEC1B981FCEFE41D206E5EE798158E523BE41(L_0, NULL);
+		V_0 = L_1;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_2 = V_0;
+		return L_2;
+	}
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::SignInWithSessionToken(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_SignInWithSessionToken_mE068C18D9D3E84C3EB2AEDEE3FFF7EA0D36D343D (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, bool ___isRefreshRequest0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	RuntimeObject* V_3 = NULL;
+	{
+		// var sessionToken = ReadSessionToken();
+		String_t* L_0;
+		L_0 = AuthenticationServiceInternal_ReadSessionToken_m88CE89E9A04556185439D8017BEB68D104C272ED(__this, NULL);
+		V_0 = L_0;
+		// if (State == AuthenticationState.SignedOut || isRefreshRequest)
+		int32_t L_1;
+		L_1 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		bool L_2 = ___isRefreshRequest0;
+		V_1 = (bool)((int32_t)(((((int32_t)L_1) == ((int32_t)0))? 1 : 0)|(int32_t)L_2));
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		// if (string.IsNullOrEmpty(sessionToken))
+		String_t* L_4 = V_0;
+		bool L_5;
+		L_5 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_4, NULL);
+		V_2 = L_5;
+		bool L_6 = V_2;
+		if (!L_6)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// return SessionTokenNotExistsError();
+		RuntimeObject* L_7;
+		L_7 = AuthenticationServiceInternal_SessionTokenNotExistsError_mAF088B7273D544AB0937F651A22E60225779FDEB(__this, NULL);
+		V_3 = L_7;
+		goto IL_004b;
+	}
+
+IL_002c:
+	{
+		// return StartSigningIn(m_NetworkClient.SignInWithSessionToken(sessionToken), isRefreshRequest);
+		RuntimeObject* L_8 = __this->___m_NetworkClient_9;
+		String_t* L_9 = V_0;
+		NullCheck(L_8);
+		RuntimeObject* L_10;
+		L_10 = InterfaceFuncInvoker1< RuntimeObject*, String_t* >::Invoke(2 /* Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse> Unity.Services.Authentication.IAuthenticationNetworkClient::SignInWithSessionToken(System.String) */, IAuthenticationNetworkClient_tE658B0A498F07181701BE84B065AE424CF9CB86D_il2cpp_TypeInfo_var, L_8, L_9);
+		bool L_11 = ___isRefreshRequest0;
+		RuntimeObject* L_12;
+		L_12 = AuthenticationServiceInternal_StartSigningIn_m30687FA8DD7CB1A83E74D20E6EBEFAF4AB8E604F(__this, L_10, L_11, NULL);
+		V_3 = L_12;
+		goto IL_004b;
+	}
+
+IL_0042:
+	{
+		// return AlreadySignedInError();
+		RuntimeObject* L_13;
+		L_13 = AuthenticationServiceInternal_AlreadySignedInError_m768B0F384D2B6FCF614B993606BC688E5B8263F7(__this, NULL);
+		V_3 = L_13;
+		goto IL_004b;
+	}
+
+IL_004b:
+	{
+		// }
+		RuntimeObject* L_14 = V_3;
+		return L_14;
+	}
+}
+// System.String Unity.Services.Authentication.AuthenticationServiceInternal::ReadSessionToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationServiceInternal_ReadSessionToken_m88CE89E9A04556185439D8017BEB68D104C272ED (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* G_B2_0 = NULL;
+	String_t* G_B1_0 = NULL;
+	{
+		// return m_Cache.GetString(k_CacheKeySessionToken) ?? string.Empty;
+		RuntimeObject* L_0 = __this->___m_Cache_11;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = InterfaceFuncInvoker1< String_t*, String_t* >::Invoke(3 /* System.String Unity.Services.Authentication.Utilities.ICache::GetString(System.String) */, ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var, L_0, _stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		String_t* L_2 = L_1;
+		G_B1_0 = L_2;
+		if (L_2)
+		{
+			G_B2_0 = L_2;
+			goto IL_001a;
+		}
+	}
+	{
+		String_t* L_3 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		G_B2_0 = L_3;
+	}
+
+IL_001a:
+	{
+		V_0 = G_B2_0;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		// }
+		String_t* L_4 = V_0;
+		return L_4;
+	}
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::StartSigningIn(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_StartSigningIn_m30687FA8DD7CB1A83E74D20E6EBEFAF4AB8E604F (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, RuntimeObject* ___signInRequest0, bool ___isRefreshRequest1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__0_m979ACCE6209E593F21636F99393161F144CCD52F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__1_mC2E61A07B993149891B60BADED084A98CBE43E20_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* V_0 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	RuntimeObject* V_3 = NULL;
+	{
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_0 = (U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass64_0__ctor_m546E76834473A4879801D58A66104651A5D23BE4(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_1 = V_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		// var asyncOp = CreateSignInAsyncOperation();
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_2 = V_0;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_3;
+		L_3 = AuthenticationServiceInternal_CreateSignInAsyncOperation_m38C64A03C8D1646219DC015DC942E38C504B3581(__this, NULL);
+		NullCheck(L_2);
+		L_2->___asyncOp_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___asyncOp_1), (void*)L_3);
+		// if (!isRefreshRequest)
+		bool L_4 = ___isRefreshRequest1;
+		V_1 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// ChangeState(AuthenticationState.SigningIn);
+		AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F(__this, 1, NULL);
+	}
+
+IL_002c:
+	{
+		// GetWellKnownKeys(asyncOp, 0);
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_6 = V_0;
+		NullCheck(L_6);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_7 = L_6->___asyncOp_1;
+		AuthenticationServiceInternal_GetWellKnownKeys_m3E9005A2035FC2A78854CD11E33E293D697AF280(__this, L_7, 0, NULL);
+		// if (isRefreshRequest)
+		bool L_8 = ___isRefreshRequest1;
+		V_2 = L_8;
+		bool L_9 = V_2;
+		if (!L_9)
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		// signInRequest.Completed += request => RefreshResponseReceived(request);
+		RuntimeObject* L_10 = ___signInRequest0;
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_11 = V_0;
+		Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* L_12 = (Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D*)il2cpp_codegen_object_new(Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		Action_1__ctor_mE363ABAE204C244BBACF63C643A1D028F34239E0(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__0_m979ACCE6209E593F21636F99393161F144CCD52F_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		InterfaceActionInvoker1< Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* >::Invoke(0 /* System.Void Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::add_Completed(System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<T>>) */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_10, L_12);
+		goto IL_006b;
+	}
+
+IL_0056:
+	{
+		// signInRequest.Completed += request => SignInResponseReceived(asyncOp, request);
+		RuntimeObject* L_13 = ___signInRequest0;
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_14 = V_0;
+		Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* L_15 = (Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D*)il2cpp_codegen_object_new(Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D_il2cpp_TypeInfo_var);
+		NullCheck(L_15);
+		Action_1__ctor_mE363ABAE204C244BBACF63C643A1D028F34239E0(L_15, L_14, (intptr_t)((void*)U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__1_mC2E61A07B993149891B60BADED084A98CBE43E20_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
+		InterfaceActionInvoker1< Action_1_t0E7FB8D36AF6F4DB6F129D3196F11378C094C21D* >::Invoke(0 /* System.Void Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::add_Completed(System.Action`1<Unity.Services.Authentication.Utilities.IWebRequest`1<T>>) */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_13, L_15);
+	}
+
+IL_006b:
+	{
+		// return asyncOp;
+		U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* L_16 = V_0;
+		NullCheck(L_16);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_17 = L_16->___asyncOp_1;
+		V_3 = L_17;
+		goto IL_0074;
+	}
+
+IL_0074:
+	{
+		// }
+		RuntimeObject* L_18 = V_3;
+		return L_18;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::SignOut()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_SignOut_m498695B59594FC656559861BB6F8BEFBFA2D19B0 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_ScheduledRefresh_mCEB91C4C7C5AC7319195A2EFCCDDC93F65E11C79_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		// if (State != AuthenticationState.SignedOut)
+		int32_t L_0;
+		L_0 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		V_0 = (bool)((!(((uint32_t)L_0) <= ((uint32_t)0)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		// AccessToken = null;
+		AuthenticationServiceInternal_set_AccessToken_mCA6812FEB9BEE46E4C936835F0B81274A4ADF519_inline(__this, (String_t*)NULL, NULL);
+		// m_AccessTokenExpiryTime = default;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* L_2 = (&__this->___m_AccessTokenExpiryTime_16);
+		il2cpp_codegen_initobj(L_2, sizeof(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D));
+		// m_PlayerId = null;
+		__this->___m_PlayerId_15 = (String_t*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PlayerId_15), (void*)(String_t*)NULL);
+		// m_Cache.DeleteKey(k_CacheKeySessionToken);
+		RuntimeObject* L_3 = __this->___m_Cache_11;
+		NullCheck(L_3);
+		InterfaceActionInvoker1< String_t* >::Invoke(1 /* System.Void Unity.Services.Authentication.Utilities.ICache::DeleteKey(System.String) */, ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var, L_3, _stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		// m_Scheduler.CancelAction(ScheduledRefresh);
+		RuntimeObject* L_4 = __this->___m_Scheduler_12;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_5, __this, (intptr_t)((void*)AuthenticationServiceInternal_ScheduledRefresh_mCEB91C4C7C5AC7319195A2EFCCDDC93F65E11C79_RuntimeMethod_var), NULL);
+		NullCheck(L_4);
+		InterfaceActionInvoker1< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(2 /* System.Void Unity.Services.Authentication.Utilities.IScheduler::CancelAction(System.Action) */, IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var, L_4, L_5);
+		// ChangeState(AuthenticationState.SignedOut);
+		AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F(__this, 0, NULL);
+	}
+
+IL_005c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::SignInResponseReceived(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_SignInResponseReceived_m6C9EC85EF8296F671A27528FAE8DDE0C0C98FB62 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	Exception_t* V_2 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// if (HandleServerError(operation, request))
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_0 = ___operation0;
+			RuntimeObject* L_1 = ___request1;
+			bool L_2;
+			L_2 = AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF(__this, L_0, L_1, AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF_RuntimeMethod_var);
+			V_0 = L_2;
+			bool L_3 = V_0;
+			if (!L_3)
+			{
+				goto IL_0011_1;
+			}
+		}
+		{
+			// return;
+			goto IL_0057;
+		}
+
+IL_0011_1:
+		{
+			// if (WellKnownKeys == null)
+			WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_4;
+			L_4 = AuthenticationServiceInternal_get_WellKnownKeys_m413980717CA743861F20F5BE752831315F0B519D_inline(__this, NULL);
+			V_1 = (bool)((((RuntimeObject*)(WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292*)L_4) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+			bool L_5 = V_1;
+			if (!L_5)
+			{
+				goto IL_0031_1;
+			}
+		}
+		{
+			// m_DelayedTokenRequest = request;
+			RuntimeObject* L_6 = ___request1;
+			__this->___m_DelayedTokenRequest_14 = L_6;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DelayedTokenRequest_14), (void*)L_6);
+			// ChangeState(AuthenticationState.VerifyingAccessToken);
+			AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F(__this, 2, NULL);
+			goto IL_0041_1;
+		}
+
+IL_0031_1:
+		{
+			// CompleteSignIn(operation, request.ResponseBody);
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_7 = ___operation0;
+			RuntimeObject* L_8 = ___request1;
+			NullCheck(L_8);
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_9;
+			L_9 = InterfaceFuncInvoker0< SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* >::Invoke(6 /* T Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ResponseBody() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_8);
+			AuthenticationServiceInternal_CompleteSignIn_m97FC06962BB5CB365C74B6CD8B705FB594EA07C8(__this, L_7, L_9, NULL);
+		}
+
+IL_0041_1:
+		{
+			goto IL_0057;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0044;
+		}
+		throw e;
+	}
+
+CATCH_0044:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// operation.Fail(CommonErrorCodes.Unknown, "Unknown error receiving SignIn response.", e);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_10 = ___operation0;
+		Exception_t* L_11 = V_2;
+		NullCheck(L_10);
+		AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28(L_10, 0, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral05399353FFE33FD801B0B6965CCE63207FFB2C7B)), L_11, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0057;
+	}// end catch (depth: 1)
+
+IL_0057:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::LinkResponseReceived(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_LinkResponseReceived_mA6B2E1C4E4251418143CEB62442B3D9CBEF9F901 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, RuntimeObject* ___request1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Exception_t* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// if (HandleServerError(operation, request))
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_0 = ___operation0;
+			RuntimeObject* L_1 = ___request1;
+			bool L_2;
+			L_2 = AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF(__this, L_0, L_1, AuthenticationServiceInternal_HandleServerError_TisSignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816_m4ACB565AA2B69EFD7749E463BC4AE0AAE0EA37BF_RuntimeMethod_var);
+			V_0 = L_2;
+			bool L_3 = V_0;
+			if (!L_3)
+			{
+				goto IL_0011_1;
+			}
+		}
+		{
+			// return;
+			goto IL_002e;
+		}
+
+IL_0011_1:
+		{
+			// operation.Succeed();
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_4 = ___operation0;
+			NullCheck(L_4);
+			AuthenticationAsyncOperation_Succeed_mED8FB66D82A18579EC1B4D34F718D693E64C9743(L_4, NULL);
+			goto IL_002e;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_001b;
+		}
+		throw e;
+	}
+
+CATCH_001b:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// operation.Fail(CommonErrorCodes.Unknown, "Unknown error receiving link response.", e);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_5 = ___operation0;
+		Exception_t* L_6 = V_1;
+		NullCheck(L_5);
+		AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28(L_5, 0, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0F135BF8FF941BA6F2B951EF67E50180FB7EEC18)), L_6, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_002e;
+	}// end catch (depth: 1)
+
+IL_002e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::CompleteSignIn(Unity.Services.Authentication.AuthenticationAsyncOperation,Unity.Services.Authentication.Models.SignInResponse)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_CompleteSignIn_m97FC06962BB5CB365C74B6CD8B705FB594EA07C8 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* ___response1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_ScheduledRefresh_mCEB91C4C7C5AC7319195A2EFCCDDC93F65E11C79_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IJwtDecoder_Decode_TisAccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F_m06699E5EE8C942C395EB39550DF21F118A5F1ADD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral069E76898DCED02EA1198EDF60D34460ED12B74D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		s_Il2CppMethodInitialized = true;
+	}
+	AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F* V_0 = NULL;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Exception_t* V_4 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	int32_t G_B6_0 = 0;
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// var accessTokenDecoded = m_JwtDecoder.Decode<AccessToken>(response.IdToken, WellKnownKeys);
+			RuntimeObject* L_0 = __this->___m_JwtDecoder_10;
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_1 = ___response1;
+			NullCheck(L_1);
+			String_t* L_2 = L_1->___IdToken_1;
+			WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_3;
+			L_3 = AuthenticationServiceInternal_get_WellKnownKeys_m413980717CA743861F20F5BE752831315F0B519D_inline(__this, NULL);
+			NullCheck(L_0);
+			AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F* L_4;
+			L_4 = GenericInterfaceFuncInvoker2< AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F*, String_t*, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* >::Invoke(IJwtDecoder_Decode_TisAccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F_m06699E5EE8C942C395EB39550DF21F118A5F1ADD_RuntimeMethod_var, L_0, L_2, L_3);
+			V_0 = L_4;
+			// if (accessTokenDecoded == null)
+			AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F* L_5 = V_0;
+			V_1 = (bool)((((RuntimeObject*)(AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F*)L_5) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+			bool L_6 = V_1;
+			if (!L_6)
+			{
+				goto IL_0038_1;
+			}
+		}
+		{
+			// operation.Fail(CommonErrorCodes.InvalidToken, "Failed to decode and verify access token.");
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_7 = ___operation0;
+			NullCheck(L_7);
+			AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28(L_7, ((int32_t)51), _stringLiteral069E76898DCED02EA1198EDF60D34460ED12B74D, (Exception_t*)NULL, NULL);
+			goto IL_00d1_1;
+		}
+
+IL_0038_1:
+		{
+			// AccessToken = response.IdToken;
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_8 = ___response1;
+			NullCheck(L_8);
+			String_t* L_9 = L_8->___IdToken_1;
+			AuthenticationServiceInternal_set_AccessToken_mCA6812FEB9BEE46E4C936835F0B81274A4ADF519_inline(__this, L_9, NULL);
+			// m_PlayerId = response.UserId;
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_10 = ___response1;
+			NullCheck(L_10);
+			String_t* L_11 = L_10->___UserId_0;
+			__this->___m_PlayerId_15 = L_11;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PlayerId_15), (void*)L_11);
+			// m_Cache.SetString(k_CacheKeySessionToken, response.SessionToken);
+			RuntimeObject* L_12 = __this->___m_Cache_11;
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_13 = ___response1;
+			NullCheck(L_13);
+			String_t* L_14 = L_13->___SessionToken_2;
+			NullCheck(L_12);
+			InterfaceActionInvoker2< String_t*, String_t* >::Invoke(2 /* System.Void Unity.Services.Authentication.Utilities.ICache::SetString(System.String,System.String) */, ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var, L_12, _stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990, L_14);
+			// var expiry = response.ExpiresIn > k_AccessTokenRefreshBuffer ? response.ExpiresIn - k_AccessTokenRefreshBuffer : response.ExpiresIn;
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_15 = ___response1;
+			NullCheck(L_15);
+			int32_t L_16 = L_15->___ExpiresIn_3;
+			if ((((int32_t)L_16) > ((int32_t)((int32_t)120))))
+			{
+				goto IL_007b_1;
+			}
+		}
+		{
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_17 = ___response1;
+			NullCheck(L_17);
+			int32_t L_18 = L_17->___ExpiresIn_3;
+			G_B6_0 = L_18;
+			goto IL_0084_1;
+		}
+
+IL_007b_1:
+		{
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_19 = ___response1;
+			NullCheck(L_19);
+			int32_t L_20 = L_19->___ExpiresIn_3;
+			G_B6_0 = ((int32_t)il2cpp_codegen_subtract(L_20, ((int32_t)120)));
+		}
+
+IL_0084_1:
+		{
+			V_2 = G_B6_0;
+			// m_AccessTokenExpiryTime = m_DateTime.UtcNow.AddSeconds(response.ExpiresIn - k_AccessTokenExpiryBuffer);
+			RuntimeObject* L_21 = __this->___m_DateTime_13;
+			NullCheck(L_21);
+			DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_22;
+			L_22 = InterfaceFuncInvoker0< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(1 /* System.DateTime Unity.Services.Authentication.Utilities.IDateTimeWrapper::get_UtcNow() */, IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var, L_21);
+			V_3 = L_22;
+			SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_23 = ___response1;
+			NullCheck(L_23);
+			int32_t L_24 = L_23->___ExpiresIn_3;
+			DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_25;
+			L_25 = DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81((&V_3), ((double)((int32_t)il2cpp_codegen_subtract(L_24, ((int32_t)20)))), NULL);
+			__this->___m_AccessTokenExpiryTime_16 = L_25;
+			// m_Scheduler.ScheduleAction(ScheduledRefresh, expiry);
+			RuntimeObject* L_26 = __this->___m_Scheduler_12;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_27 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+			NullCheck(L_27);
+			Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_27, __this, (intptr_t)((void*)AuthenticationServiceInternal_ScheduledRefresh_mCEB91C4C7C5AC7319195A2EFCCDDC93F65E11C79_RuntimeMethod_var), NULL);
+			int32_t L_28 = V_2;
+			NullCheck(L_26);
+			InterfaceActionInvoker2< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*, int32_t >::Invoke(1 /* System.Void Unity.Services.Authentication.Utilities.IScheduler::ScheduleAction(System.Action,System.Int32) */, IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var, L_26, L_27, L_28);
+			// ChangeState(AuthenticationState.Authorized);
+			AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F(__this, 3, NULL);
+			// operation.Succeed();
+			AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_29 = ___operation0;
+			NullCheck(L_29);
+			AuthenticationAsyncOperation_Succeed_mED8FB66D82A18579EC1B4D34F718D693E64C9743(L_29, NULL);
+		}
+
+IL_00d1_1:
+		{
+			goto IL_00e9;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_00d4;
+		}
+		throw e;
+	}
+
+CATCH_00d4:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// operation.Fail(CommonErrorCodes.Unknown, "Unknown error completing sign-in.", e);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_30 = ___operation0;
+		Exception_t* L_31 = V_4;
+		NullCheck(L_30);
+		AuthenticationAsyncOperation_Fail_m10FF744F7014A4E1585CA4E3559EAD6C8D051D28(L_30, 0, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF67B63DDDBE53FE39B3D99C2D009C6DF09C38E70)), L_31, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_00e9;
+	}// end catch (depth: 1)
+
+IL_00e9:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::ScheduledRefresh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_ScheduledRefresh_mCEB91C4C7C5AC7319195A2EFCCDDC93F65E11C79 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		// if (m_AccessTokenExpiryTime > m_DateTime.UtcNow)
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0 = __this->___m_AccessTokenExpiryTime_16;
+		RuntimeObject* L_1 = __this->___m_DateTime_13;
+		NullCheck(L_1);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_2;
+		L_2 = InterfaceFuncInvoker0< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(1 /* System.DateTime Unity.Services.Authentication.Utilities.IDateTimeWrapper::get_UtcNow() */, IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var, L_1);
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = DateTime_op_GreaterThan_m8F1FA3C039A0148FC1500E790A77CB44F025EA9F(L_0, L_2, NULL);
+		V_0 = L_3;
+		bool L_4 = V_0;
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// RefreshAccessToken();
+		AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A(__this, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::RefreshAccessToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// if (IsSignedIn)
+		bool L_0;
+		L_0 = AuthenticationServiceInternal_get_IsSignedIn_mCF8CDE17E3B5F2ACDCF556705C025DA48D5671FB(__this, NULL);
+		V_0 = L_0;
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// if (State != AuthenticationState.Expired)
+		int32_t L_2;
+		L_2 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		V_1 = (bool)((((int32_t)((((int32_t)L_2) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// ChangeState(AuthenticationState.Refreshing);
+		AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F(__this, 4, NULL);
+	}
+
+IL_0026:
+	{
+		// SignInWithSessionToken(true);
+		RuntimeObject* L_4;
+		L_4 = AuthenticationServiceInternal_SignInWithSessionToken_mE068C18D9D3E84C3EB2AEDEE3FFF7EA0D36D343D(__this, (bool)1, NULL);
+	}
+
+IL_002f:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::RefreshResponseReceived(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_RefreshResponseReceived_m8B4AA8A6EE546A32473B117F6A21A7ACB136AAB1 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, RuntimeObject* ___request0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral14B5EE6FCFD86D67EDBE48E605EB1010F8C38C8F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4BE0C724DF0778AB44291FE22681FE3735239D7F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5A5357BFF4777961C0ED9DFB11AC98AFAF29AF93);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE226315A889E342809A09A15505207F9977AF600);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* V_3 = NULL;
+	bool V_4 = false;
+	int32_t G_B4_0 = 0;
+	{
+		// if (request.RequestFailed)
+		RuntimeObject* L_0 = ___request0;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = InterfaceFuncInvoker0< bool >::Invoke(2 /* System.Boolean Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_RequestFailed() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_0);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_00a9;
+		}
+	}
+	{
+		// Logger.LogError($"Request failed: {request.ResponseCode}, {request.ErrorMessage}");
+		RuntimeObject* L_3 = ___request0;
+		NullCheck(L_3);
+		int64_t L_4;
+		L_4 = InterfaceFuncInvoker0< int64_t >::Invoke(7 /* System.Int64 Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ResponseCode() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_3);
+		int64_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var, &L_5);
+		RuntimeObject* L_7 = ___request0;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = InterfaceFuncInvoker0< String_t* >::Invoke(5 /* System.String Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ErrorMessage() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_7);
+		String_t* L_9;
+		L_9 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral5A5357BFF4777961C0ED9DFB11AC98AFAF29AF93, L_6, L_8, NULL);
+		Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8(L_9, NULL);
+		// if (request.ServerError && request.ResponseCode < 500)
+		RuntimeObject* L_10 = ___request0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = InterfaceFuncInvoker0< bool >::Invoke(4 /* System.Boolean Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ServerError() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_10);
+		if (!L_11)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		RuntimeObject* L_12 = ___request0;
+		NullCheck(L_12);
+		int64_t L_13;
+		L_13 = InterfaceFuncInvoker0< int64_t >::Invoke(7 /* System.Int64 Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ResponseCode() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_12);
+		G_B4_0 = ((((int64_t)L_13) < ((int64_t)((int64_t)((int32_t)500))))? 1 : 0);
+		goto IL_0049;
+	}
+
+IL_0048:
+	{
+		G_B4_0 = 0;
+	}
+
+IL_0049:
+	{
+		V_1 = (bool)G_B4_0;
+		bool L_14 = V_1;
+		if (!L_14)
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		// Logger.LogWarning("Failed to refresh access token due to server error, signing out.");
+		Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB(_stringLiteral14B5EE6FCFD86D67EDBE48E605EB1010F8C38C8F, NULL);
+		// SignOut();
+		AuthenticationServiceInternal_SignOut_m498695B59594FC656559861BB6F8BEFBFA2D19B0(__this, NULL);
+		goto IL_00a6;
+	}
+
+IL_0063:
+	{
+		// Logger.LogWarning("Failed to refresh access token due to network error or internal server error, will retry later.");
+		Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB(_stringLiteralE226315A889E342809A09A15505207F9977AF600, NULL);
+		// m_Scheduler.ScheduleAction(RefreshAccessToken, k_ExpiredRefreshAttemptFrequency);
+		RuntimeObject* L_15 = __this->___m_Scheduler_12;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_16 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_16, __this, (intptr_t)((void*)AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
+		InterfaceActionInvoker2< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*, int32_t >::Invoke(1 /* System.Void Unity.Services.Authentication.Utilities.IScheduler::ScheduleAction(System.Action,System.Int32) */, IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var, L_15, L_16, ((int32_t)300));
+		// if (State != AuthenticationState.Expired)
+		int32_t L_17;
+		L_17 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		V_2 = (bool)((((int32_t)((((int32_t)L_17) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_18 = V_2;
+		if (!L_18)
+		{
+			goto IL_00a5;
+		}
+	}
+	{
+		// Expire();
+		AuthenticationServiceInternal_Expire_m8C6099E18DC51230DE98008291F7C59CE4956593(__this, NULL);
+	}
+
+IL_00a5:
+	{
+	}
+
+IL_00a6:
+	{
+		goto IL_00fc;
+	}
+
+IL_00a9:
+	{
+		// var asyncOp = new AuthenticationAsyncOperation();
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_19 = (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*)il2cpp_codegen_object_new(AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		NullCheck(L_19);
+		AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546(L_19, NULL);
+		V_3 = L_19;
+		// CompleteSignIn(asyncOp, request.ResponseBody);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_20 = V_3;
+		RuntimeObject* L_21 = ___request0;
+		NullCheck(L_21);
+		SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* L_22;
+		L_22 = InterfaceFuncInvoker0< SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* >::Invoke(6 /* T Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>::get_ResponseBody() */, IWebRequest_1_t135DB8A6D737745D575B3186DF00CA7BF2CE9F30_il2cpp_TypeInfo_var, L_21);
+		AuthenticationServiceInternal_CompleteSignIn_m97FC06962BB5CB365C74B6CD8B705FB594EA07C8(__this, L_20, L_22, NULL);
+		// if (asyncOp.Status == AsyncOperationStatus.Succeeded)
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_23 = V_3;
+		NullCheck(L_23);
+		int32_t L_24;
+		L_24 = AuthenticationAsyncOperation_get_Status_mA2239698A3C23F4D98F53AB25F16F0F4879DBADF(L_23, NULL);
+		V_4 = (bool)((((int32_t)L_24) == ((int32_t)2))? 1 : 0);
+		bool L_25 = V_4;
+		if (!L_25)
+		{
+			goto IL_00d1;
+		}
+	}
+	{
+		goto IL_00fb;
+	}
+
+IL_00d1:
+	{
+		// Logger.LogWarning("The access token is not valid. Retry JWKS and refresh again.");
+		Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB(_stringLiteral4BE0C724DF0778AB44291FE22681FE3735239D7F, NULL);
+		// m_Scheduler.ScheduleAction(RefreshAccessToken, k_ExpiredRefreshAttemptFrequency);
+		RuntimeObject* L_26 = __this->___m_Scheduler_12;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_27 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_27);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_27, __this, (intptr_t)((void*)AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A_RuntimeMethod_var), NULL);
+		NullCheck(L_26);
+		InterfaceActionInvoker2< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*, int32_t >::Invoke(1 /* System.Void Unity.Services.Authentication.Utilities.IScheduler::ScheduleAction(System.Action,System.Int32) */, IScheduler_tD82B941368A9EF93AC92E55AC54E423A38FBD10E_il2cpp_TypeInfo_var, L_26, L_27, ((int32_t)300));
+	}
+
+IL_00fb:
+	{
+	}
+
+IL_00fc:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::ApplicationUnpaused()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_ApplicationUnpaused_mE7796F651FD4A16FD011C8D3ADD9429F527BE099 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		// if (IsAuthorized &&
+		//     m_DateTime.UtcNow > m_AccessTokenExpiryTime)
+		bool L_0;
+		L_0 = AuthenticationServiceInternal_get_IsAuthorized_m617D4F6C205F90145F46BA9C4069B3B9BC87CD8D(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		RuntimeObject* L_1 = __this->___m_DateTime_13;
+		NullCheck(L_1);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_2;
+		L_2 = InterfaceFuncInvoker0< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(1 /* System.DateTime Unity.Services.Authentication.Utilities.IDateTimeWrapper::get_UtcNow() */, IDateTimeWrapper_t0192789336FE01759B2A431EFE827180D2E0CF29_il2cpp_TypeInfo_var, L_1);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_3 = __this->___m_AccessTokenExpiryTime_16;
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = DateTime_op_GreaterThan_m8F1FA3C039A0148FC1500E790A77CB44F025EA9F(L_2, L_3, NULL);
+		G_B3_0 = ((int32_t)(L_4));
+		goto IL_0022;
+	}
+
+IL_0021:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0022:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_5 = V_0;
+		if (!L_5)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		// Expire();
+		AuthenticationServiceInternal_Expire_m8C6099E18DC51230DE98008291F7C59CE4956593(__this, NULL);
+		// RefreshAccessToken();
+		AuthenticationServiceInternal_RefreshAccessToken_m2C134A5C423AD1E8A9165116CF12F3547A7EB97A(__this, NULL);
+	}
+
+IL_0036:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::Expire()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_Expire_m8C6099E18DC51230DE98008291F7C59CE4956593 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// AccessToken = null;
+		AuthenticationServiceInternal_set_AccessToken_mCA6812FEB9BEE46E4C936835F0B81274A4ADF519_inline(__this, (String_t*)NULL, NULL);
+		// m_AccessTokenExpiryTime = default;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* L_0 = (&__this->___m_AccessTokenExpiryTime_16);
+		il2cpp_codegen_initobj(L_0, sizeof(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D));
+		// ChangeState(AuthenticationState.Expired);
+		AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F(__this, 5, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::ChangeState(Unity.Services.Authentication.AuthenticationState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_ChangeState_m91558470DA842D246FA2DC42F92E8602E719A61F (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___newState0, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		// var oldState = State;
+		int32_t L_0;
+		L_0 = AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline(__this, NULL);
+		V_0 = L_0;
+		// State = newState;
+		int32_t L_1 = ___newState0;
+		AuthenticationServiceInternal_set_State_mBE3362F5E6AAA06DA3D0D9CFA6CE38C5A5991FA1_inline(__this, L_1, NULL);
+		// HandleStateChanged(oldState, newState);
+		int32_t L_2 = V_0;
+		int32_t L_3 = ___newState0;
+		AuthenticationServiceInternal_HandleStateChanged_mA91EB55BD7CB58B1D54CE9AFBF300671A11E5082(__this, L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::HandleStateChanged(Unity.Services.Authentication.AuthenticationState,Unity.Services.Authentication.AuthenticationState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_HandleStateChanged_mA91EB55BD7CB58B1D54CE9AFBF300671A11E5082 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___oldState0, int32_t ___newState1, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	bool V_2 = false;
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* G_B2_0 = NULL;
+	Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* G_B1_0 = NULL;
+	int32_t G_B10_0 = 0;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B13_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B12_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B18_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B17_0 = NULL;
+	{
+		// StateChanged?.Invoke(oldState, newState);
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_0 = __this->___StateChanged_17;
+		Action_2_t3885175063AC85E130D1D84F533BDC9D6727A537* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000d;
+		}
+	}
+	{
+		goto IL_0015;
+	}
+
+IL_000d:
+	{
+		int32_t L_2 = ___oldState0;
+		int32_t L_3 = ___newState1;
+		NullCheck(G_B2_0);
+		Action_2_Invoke_m5990E16EB63DD4F10939145AD950E5D0FB683630_inline(G_B2_0, L_2, L_3, NULL);
+	}
+
+IL_0015:
+	{
+		// switch (newState)
+		int32_t L_4 = ___newState1;
+		V_1 = L_4;
+		int32_t L_5 = V_1;
+		V_0 = L_5;
+		int32_t L_6 = V_0;
+		if (!L_6)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		goto IL_001e;
+	}
+
+IL_001e:
+	{
+		int32_t L_7 = V_0;
+		if ((((int32_t)L_7) == ((int32_t)3)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		goto IL_0060;
+	}
+
+IL_0024:
+	{
+		// if (oldState != AuthenticationState.Refreshing &&
+		//     oldState != AuthenticationState.Expired)
+		int32_t L_8 = ___oldState0;
+		if ((((int32_t)L_8) == ((int32_t)4)))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		int32_t L_9 = ___oldState0;
+		G_B10_0 = ((((int32_t)((((int32_t)L_9) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0032;
+	}
+
+IL_0031:
+	{
+		G_B10_0 = 0;
+	}
+
+IL_0032:
+	{
+		V_2 = (bool)G_B10_0;
+		bool L_10 = V_2;
+		if (!L_10)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		// SignedIn?.Invoke();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_11 = __this->___SignedIn_19;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_12 = L_11;
+		G_B12_0 = L_12;
+		if (L_12)
+		{
+			G_B13_0 = L_12;
+			goto IL_0043;
+		}
+	}
+	{
+		goto IL_0049;
+	}
+
+IL_0043:
+	{
+		NullCheck(G_B13_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B13_0, NULL);
+	}
+
+IL_0049:
+	{
+	}
+
+IL_004a:
+	{
+		// break;
+		goto IL_0060;
+	}
+
+IL_004c:
+	{
+		// SignedOut?.Invoke();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_13 = __this->___SignedOut_20;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_14 = L_13;
+		G_B17_0 = L_14;
+		if (L_14)
+		{
+			G_B18_0 = L_14;
+			goto IL_0058;
+		}
+	}
+	{
+		goto IL_005e;
+	}
+
+IL_0058:
+	{
+		NullCheck(G_B18_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B18_0, NULL);
+	}
+
+IL_005e:
+	{
+		// break;
+		goto IL_0060;
+	}
+
+IL_0060:
+	{
+		// }
+		return;
+	}
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::AlreadySignedInError()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_AlreadySignedInError_m768B0F384D2B6FCF614B993606BC688E5B8263F7 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral118DD8D39E0E902C46C352245BD0D8CF150CBFEA);
+		s_Il2CppMethodInitialized = true;
+	}
+	AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* V_0 = NULL;
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	{
+		// var exception = new AuthenticationException(
+		//     AuthenticationErrorCodes.ClientInvalidUserState,
+		//     "The player is already signed in. Sign out before attempting to sign in again.");
+		AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* L_0 = (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3*)il2cpp_codegen_object_new(AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AuthenticationException__ctor_m9DB0261958C40C53C2AFCB000415B96A3EC9E944(L_0, ((int32_t)10000), _stringLiteral118DD8D39E0E902C46C352245BD0D8CF150CBFEA, NULL);
+		V_0 = L_0;
+		// var asyncOp = new AuthenticationAsyncOperation();
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_1 = (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*)il2cpp_codegen_object_new(AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546(L_1, NULL);
+		V_1 = L_1;
+		// asyncOp.Fail(exception);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_2 = V_1;
+		AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* L_3 = V_0;
+		NullCheck(L_2);
+		AuthenticationAsyncOperation_Fail_mBCD364F5EBF265ECC916506704490852E8E7DEB3(L_2, L_3, NULL);
+		// return asyncOp;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_4 = V_1;
+		V_2 = L_4;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		// }
+		RuntimeObject* L_5 = V_2;
+		return L_5;
+	}
+}
+// Unity.Services.Core.Internal.IAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::SessionTokenNotExistsError()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationServiceInternal_SessionTokenNotExistsError_mAF088B7273D544AB0937F651A22E60225779FDEB (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9118BD0CAA037C7CB5A295148D715E5D7BB54A65);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		s_Il2CppMethodInitialized = true;
+	}
+	AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* V_0 = NULL;
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	{
+		// var exception = new AuthenticationException(
+		//     AuthenticationErrorCodes.ClientNoActiveSession,
+		//     "There is no cached session token.");
+		AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* L_0 = (AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3*)il2cpp_codegen_object_new(AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AuthenticationException__ctor_m9DB0261958C40C53C2AFCB000415B96A3EC9E944(L_0, ((int32_t)10001), _stringLiteral9118BD0CAA037C7CB5A295148D715E5D7BB54A65, NULL);
+		V_0 = L_0;
+		// m_Cache.DeleteKey(k_CacheKeySessionToken);
+		RuntimeObject* L_1 = __this->___m_Cache_11;
+		NullCheck(L_1);
+		InterfaceActionInvoker1< String_t* >::Invoke(1 /* System.Void Unity.Services.Authentication.Utilities.ICache::DeleteKey(System.String) */, ICache_t5D77F55171080E12BD7398C6012542FC2BDD2051_il2cpp_TypeInfo_var, L_1, _stringLiteralAE7E6AE60C8EC55BA909CC1BA73A40DC066F9990);
+		// var asyncOp = new AuthenticationAsyncOperation();
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_2 = (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*)il2cpp_codegen_object_new(AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546(L_2, NULL);
+		V_1 = L_2;
+		// asyncOp.Fail(exception);
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_3 = V_1;
+		AuthenticationException_tB035991B8F9E6DDB3E6EF7D5829B4C7E4E677FB3* L_4 = V_0;
+		NullCheck(L_3);
+		AuthenticationAsyncOperation_Fail_mBCD364F5EBF265ECC916506704490852E8E7DEB3(L_3, L_4, NULL);
+		// return asyncOp;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_5 = V_1;
+		V_2 = L_5;
+		goto IL_0034;
+	}
+
+IL_0034:
+	{
+		// }
+		RuntimeObject* L_6 = V_2;
+		return L_6;
+	}
+}
+// Unity.Services.Authentication.AuthenticationAsyncOperation Unity.Services.Authentication.AuthenticationServiceInternal::CreateSignInAsyncOperation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* AuthenticationServiceInternal_CreateSignInAsyncOperation_m38C64A03C8D1646219DC015DC942E38C504B3581 (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_SendSignInFailedEvent_m7F9BC187D103F816D990928BDB855BB1551B23DF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* V_0 = NULL;
+	AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* V_1 = NULL;
+	{
+		// var asyncOp = new AuthenticationAsyncOperation();
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_0 = (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3*)il2cpp_codegen_object_new(AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AuthenticationAsyncOperation__ctor_mF532E61338535518ECE6A225FCAE4933B7653546(L_0, NULL);
+		V_0 = L_0;
+		// asyncOp.BeforeFail += SendSignInFailedEvent;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_1 = V_0;
+		Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB* L_2 = (Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB*)il2cpp_codegen_object_new(Action_1_t447AA0F6A02E18CDBAFC236DB76B10C8BF691EFB_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Action_1__ctor_m1363A3318AB3F7DD8329FFCDDC59E5A7F0DEBF51(L_2, __this, (intptr_t)((void*)AuthenticationServiceInternal_SendSignInFailedEvent_m7F9BC187D103F816D990928BDB855BB1551B23DF_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
+		AuthenticationAsyncOperation_add_BeforeFail_mDAD353FA6413E1CC9BB304D5DB7C7BC506DD141F(L_1, L_2, NULL);
+		// return asyncOp;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_3 = V_0;
+		V_1 = L_3;
+		goto IL_001e;
+	}
+
+IL_001e:
+	{
+		// }
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_4 = V_1;
+		return L_4;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal::SendSignInFailedEvent(Unity.Services.Authentication.AuthenticationAsyncOperation)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_SendSignInFailedEvent_m7F9BC187D103F816D990928BDB855BB1551B23DF (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* ___operation0, const RuntimeMethod* method) 
+{
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* G_B2_0 = NULL;
+	Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* G_B1_0 = NULL;
+	{
+		// SignInFailed?.Invoke(operation.Exception);
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_0 = __this->___SignInFailed_18;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000d;
+		}
+	}
+	{
+		goto IL_0019;
+	}
+
+IL_000d:
+	{
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_2 = ___operation0;
+		NullCheck(L_2);
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_3;
+		L_3 = AuthenticationAsyncOperation_get_Exception_mE8D6E42481B873D50E094488DB0579445AC6F304_inline(L_2, NULL);
+		NullCheck(G_B2_0);
+		Action_1_Invoke_mC5DAA9EF72C51CDD3FB0A88D333E75CD14ECC367_inline(G_B2_0, L_3, NULL);
+	}
+
+IL_0019:
+	{
+		// SignOut();
+		AuthenticationServiceInternal_SignOut_m498695B59594FC656559861BB6F8BEFBFA2D19B0(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Int32 Unity.Services.Authentication.AuthenticationServiceInternal::MapErrorCodes(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AuthenticationServiceInternal_MapErrorCodes_m5F1136A87D6DC68D31B6C1E6B13B27EBDF82D6DF (String_t* ___serverErrorTitle0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3F356137CA88ED48EB67D737BE3B186689AF3BDA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5007D8D0381075039AADFA5A7B7117BF4299AF46);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6682BD0725A4AB34573ADAA351C3058894511A91);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCEB5ADD24A8B3212AEDF863D68D2927C47646EE2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE66AC7975C1CCC8A26B104524EA620350F1EAA46);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		// switch (serverErrorTitle)
+		String_t* L_0 = ___serverErrorTitle0;
+		V_1 = L_0;
+		String_t* L_1 = V_1;
+		V_0 = L_1;
+		String_t* L_2 = V_0;
+		bool L_3;
+		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_2, _stringLiteral5007D8D0381075039AADFA5A7B7117BF4299AF46, NULL);
+		if (L_3)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		String_t* L_4 = V_0;
+		bool L_5;
+		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, _stringLiteralCEB5ADD24A8B3212AEDF863D68D2927C47646EE2, NULL);
+		if (L_5)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		String_t* L_6 = V_0;
+		bool L_7;
+		L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, _stringLiteral6682BD0725A4AB34573ADAA351C3058894511A91, NULL);
+		if (L_7)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		String_t* L_8 = V_0;
+		bool L_9;
+		L_9 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_8, _stringLiteral3F356137CA88ED48EB67D737BE3B186689AF3BDA, NULL);
+		if (L_9)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		goto IL_0058;
+	}
+
+IL_003b:
+	{
+		// return AuthenticationErrorCodes.AccountAlreadyLinked;
+		V_2 = ((int32_t)10003);
+		goto IL_006d;
+	}
+
+IL_0043:
+	{
+		// return AuthenticationErrorCodes.InvalidParameters;
+		V_2 = ((int32_t)10002);
+		goto IL_006d;
+	}
+
+IL_004b:
+	{
+		// return AuthenticationErrorCodes.InvalidParameters;
+		V_2 = ((int32_t)10002);
+		goto IL_006d;
+	}
+
+IL_0053:
+	{
+		// return CommonErrorCodes.InvalidToken;
+		V_2 = ((int32_t)51);
+		goto IL_006d;
+	}
+
+IL_0058:
+	{
+		// Debug.LogWarning("Unknown server error: " + serverErrorTitle);
+		String_t* L_10 = ___serverErrorTitle0;
+		String_t* L_11;
+		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE66AC7975C1CCC8A26B104524EA620350F1EAA46, L_10, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_11, NULL);
+		// return CommonErrorCodes.Unknown;
+		V_2 = 0;
+		goto IL_006d;
+	}
+
+IL_006d:
+	{
+		// }
+		int32_t L_12 = V_2;
+		return L_12;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass48_0__ctor_mDB365B0EE77D490844A986981F3E914E15015C44 (U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass48_0::<GetWellKnownKeys>b__0(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.WellKnownKeys>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass48_0_U3CGetWellKnownKeysU3Eb__0_mB8D8A3DD3287A260B417BD99DD01E5DC02AF779E (U3CU3Ec__DisplayClass48_0_t61900F4AEE1DAB22CB081B428A017D5E26C75051* __this, RuntimeObject* ___resp0, const RuntimeMethod* method) 
+{
+	{
+		// wellKnownKeysRequest.Completed += resp => WellKnownKeysReceived(asyncOperation, resp, attempt);
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_0 = __this->___U3CU3E4__this_0;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_1 = __this->___asyncOperation_1;
+		RuntimeObject* L_2 = ___resp0;
+		int32_t L_3 = __this->___attempt_2;
+		NullCheck(L_0);
+		AuthenticationServiceInternal_WellKnownKeysReceived_m31821AED6B5059F4670618E0C27C2D09E235935C(L_0, L_1, L_2, L_3, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass60_0__ctor_m65B98D801B61766A56D0115EDBD97C322E513721 (U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass60_0::<LinkWithExternalToken>b__0(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass60_0_U3CLinkWithExternalTokenU3Eb__0_m30161E872D501B08573CD206F6CB8FC34E7A55EB (U3CU3Ec__DisplayClass60_0_tBA92E3E1A619C945DA283BBB34788D879C28DF21* __this, RuntimeObject* ___request0, const RuntimeMethod* method) 
+{
+	{
+		// linkResult.Completed += request => LinkResponseReceived(operation, request);
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_0 = __this->___U3CU3E4__this_0;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_1 = __this->___operation_1;
+		RuntimeObject* L_2 = ___request0;
+		NullCheck(L_0);
+		AuthenticationServiceInternal_LinkResponseReceived_mA6B2E1C4E4251418143CEB62442B3D9CBEF9F901(L_0, L_1, L_2, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0__ctor_m546E76834473A4879801D58A66104651A5D23BE4 (U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0::<StartSigningIn>b__0(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__0_m979ACCE6209E593F21636F99393161F144CCD52F (U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* __this, RuntimeObject* ___request0, const RuntimeMethod* method) 
+{
+	{
+		// signInRequest.Completed += request => RefreshResponseReceived(request);
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_0 = __this->___U3CU3E4__this_0;
+		RuntimeObject* L_1 = ___request0;
+		NullCheck(L_0);
+		AuthenticationServiceInternal_RefreshResponseReceived_m8B4AA8A6EE546A32473B117F6A21A7ACB136AAB1(L_0, L_1, NULL);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationServiceInternal/<>c__DisplayClass64_0::<StartSigningIn>b__1(Unity.Services.Authentication.Utilities.IWebRequest`1<Unity.Services.Authentication.Models.SignInResponse>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0_U3CStartSigningInU3Eb__1_mC2E61A07B993149891B60BADED084A98CBE43E20 (U3CU3Ec__DisplayClass64_0_tE04AE6CEF5F5D278781CDEC87C373128942421FF* __this, RuntimeObject* ___request0, const RuntimeMethod* method) 
+{
+	{
+		// signInRequest.Completed += request => SignInResponseReceived(asyncOp, request);
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_0 = __this->___U3CU3E4__this_0;
+		AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* L_1 = __this->___asyncOp_1;
+		RuntimeObject* L_2 = ___request0;
+		NullCheck(L_0);
+		AuthenticationServiceInternal_SignInResponseReceived_m6C9EC85EF8296F671A27528FAE8DDE0C0C98FB62(L_0, L_1, L_2, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.CodeChallengeGenerator::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodeChallengeGenerator__ctor_m66BB925BCB168A053F6FFD450DC1C76B3C549E10 (CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringBuilder_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// internal CodeChallengeGenerator()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_CodeBuilder = new StringBuilder(k_CodeLength);
+		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		StringBuilder__ctor_m2619CA8D2C3476DF1A302D9D941498BB1C6164C5(L_0, ((int32_t)128), NULL);
+		__this->___m_CodeBuilder_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CodeBuilder_2), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.String Unity.Services.Authentication.CodeChallengeGenerator::GenerateCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CodeChallengeGenerator_GenerateCode_m0EF72A1820416002843A68AAE0BF74BCF953003E (CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64961BD849FAD6BFF8F01E214325B1482B355DFA);
+		s_Il2CppMethodInitialized = true;
+	}
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170* V_1 = NULL;
+	int32_t V_2 = 0;
+	bool V_3 = false;
+	String_t* V_4 = NULL;
+	{
+		// var randomBytes = new byte[k_CodeLength];
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)128));
+		V_0 = L_0;
+		// using (var randomNumberGenerator = new RNGCryptoServiceProvider())
+		RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170* L_1 = (RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170*)il2cpp_codegen_object_new(RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		RNGCryptoServiceProvider__ctor_m605146E692C0209B3FFE83F7AC94335CA089CA09(L_1, NULL);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001e:
+			{// begin finally (depth: 1)
+				{
+					RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170* L_2 = V_1;
+					if (!L_2)
+					{
+						goto IL_0028;
+					}
+				}
+				{
+					RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170* L_3 = V_1;
+					NullCheck(L_3);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_3);
+				}
+
+IL_0028:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			// randomNumberGenerator.GetBytes(randomBytes);
+			RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170* L_4 = V_1;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = V_0;
+			NullCheck(L_4);
+			VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(6 /* System.Void System.Security.Cryptography.RandomNumberGenerator::GetBytes(System.Byte[]) */, L_4, L_5);
+			goto IL_0029;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0029:
+	{
+		// m_CodeBuilder.Clear();
+		StringBuilder_t* L_6 = __this->___m_CodeBuilder_2;
+		NullCheck(L_6);
+		StringBuilder_t* L_7;
+		L_7 = StringBuilder_Clear_m2D76F6533574F40A4E3E2DC4E730277CBD0AF8F6(L_6, NULL);
+		// for (var i = 0; i < k_CodeLength; i++)
+		V_2 = 0;
+		goto IL_0063;
+	}
+
+IL_0039:
+	{
+		// m_CodeBuilder.Append(k_CodeChars[randomBytes[i] % k_CodeChars.Length]);
+		StringBuilder_t* L_8 = __this->___m_CodeBuilder_2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = V_0;
+		int32_t L_10 = V_2;
+		NullCheck(L_9);
+		int32_t L_11 = L_10;
+		uint8_t L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		NullCheck(_stringLiteral64961BD849FAD6BFF8F01E214325B1482B355DFA);
+		int32_t L_13;
+		L_13 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(_stringLiteral64961BD849FAD6BFF8F01E214325B1482B355DFA, NULL);
+		NullCheck(_stringLiteral64961BD849FAD6BFF8F01E214325B1482B355DFA);
+		Il2CppChar L_14;
+		L_14 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(_stringLiteral64961BD849FAD6BFF8F01E214325B1482B355DFA, ((int32_t)((int32_t)L_12%L_13)), NULL);
+		NullCheck(L_8);
+		StringBuilder_t* L_15;
+		L_15 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_8, L_14, NULL);
+		// for (var i = 0; i < k_CodeLength; i++)
+		int32_t L_16 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_16, 1));
+	}
+
+IL_0063:
+	{
+		// for (var i = 0; i < k_CodeLength; i++)
+		int32_t L_17 = V_2;
+		V_3 = (bool)((((int32_t)L_17) < ((int32_t)((int32_t)128)))? 1 : 0);
+		bool L_18 = V_3;
+		if (L_18)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// return m_CodeBuilder.ToString();
+		StringBuilder_t* L_19 = __this->___m_CodeBuilder_2;
+		NullCheck(L_19);
+		String_t* L_20;
+		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_19);
+		V_4 = L_20;
+		goto IL_007e;
+	}
+
+IL_007e:
+	{
+		// }
+		String_t* L_21 = V_4;
+		return L_21;
+	}
+}
+// System.String Unity.Services.Authentication.CodeChallengeGenerator::GenerateStateString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CodeChallengeGenerator_GenerateStateString_m56A8705E4C616E4DD59F14C58DD09EABC82AB979 (CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17* __this, const RuntimeMethod* method) 
+{
+	Guid_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	String_t* V_1 = NULL;
+	{
+		// return Guid.NewGuid().ToString();
+		Guid_t L_0;
+		L_0 = Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD(NULL);
+		V_0 = L_0;
+		String_t* L_1;
+		L_1 = Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C((&V_0), NULL);
+		V_1 = L_1;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		// }
+		String_t* L_2 = V_1;
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.AccessTokenComponent::.ctor(Unity.Services.Authentication.IAuthenticationService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccessTokenComponent__ctor_m8A83A80795B870841D75E8ACE09DDDA33A312220 (AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2* __this, RuntimeObject* ___service0, const RuntimeMethod* method) 
+{
+	{
+		// public AccessTokenComponent(IAuthenticationService service)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_AuthenticationService = service;
+		RuntimeObject* L_0 = ___service0;
+		__this->___m_AuthenticationService_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_AuthenticationService_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.String Unity.Services.Authentication.AccessTokenComponent::get_AccessToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AccessTokenComponent_get_AccessToken_m70FC319ED7E39A53D5C17E775FD052D466F29ED8 (AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string AccessToken => m_AuthenticationService.AccessToken;
+		RuntimeObject* L_0 = __this->___m_AuthenticationService_0;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(1 /* System.String Unity.Services.Authentication.IAuthenticationService::get_AccessToken() */, IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var, L_0);
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Threading.Tasks.Task Unity.Services.Authentication.AuthenticationPackageInitializer::Initialize(Unity.Services.Core.Internal.CoreRegistry)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AuthenticationPackageInitializer_Initialize_m7203F9CF9F2E4231A87F06FDF19613C853874047 (AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E* __this, CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* ___registry0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistry_GetServiceComponent_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mB14B4F5C7C715C037C3D0B96AD44CFBC570659AF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistry_RegisterServiceComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m96E3BC38CB35E7DE66A2138E255D9138290E0719_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistry_RegisterServiceComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_m76EE03A1259101C248F840059C28D021440190D3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral30582D3073E84B43D5FF2D77B3D111122A050829);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD1074749CB9993BB9DEDCC6BD306CA84F53FA616);
+		s_Il2CppMethodInitialized = true;
+	}
+	DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* V_0 = NULL;
+	NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* V_1 = NULL;
+	AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* V_2 = NULL;
+	AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* V_3 = NULL;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* V_4 = NULL;
+	{
+		// var dateTime = new DateTimeWrapper();
+		DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* L_0 = (DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E*)il2cpp_codegen_object_new(DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		DateTimeWrapper__ctor_mD7341469CDCCE234FFD35274D114172641144C11(L_0, NULL);
+		V_0 = L_0;
+		// var networkUtilities = new NetworkingUtilities(Scheduler.Instance);
+		RuntimeObject* L_1;
+		L_1 = Scheduler_get_Instance_mC3FD4E903B8F35F3EED1369D40170F1533E1A468(NULL);
+		NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* L_2 = (NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837*)il2cpp_codegen_object_new(NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		NetworkingUtilities__ctor_m0E9E78601B583135C8CA8D53D0A5D814E27CAD11(L_2, L_1, NULL);
+		V_1 = L_2;
+		// var networkClient = new AuthenticationNetworkClient(k_UasHost,
+		//     Application.cloudProjectId,
+		//     registry.GetServiceComponent<IEnvironments>(),
+		//     new CodeChallengeGenerator(),
+		//     networkUtilities);
+		String_t* L_3;
+		L_3 = Application_get_cloudProjectId_m84C5E847485178EEDA2E56E5EF72B0A740453EF9(NULL);
+		CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* L_4 = ___registry0;
+		NullCheck(L_4);
+		RuntimeObject* L_5;
+		L_5 = CoreRegistry_GetServiceComponent_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mB14B4F5C7C715C037C3D0B96AD44CFBC570659AF(L_4, CoreRegistry_GetServiceComponent_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mB14B4F5C7C715C037C3D0B96AD44CFBC570659AF_RuntimeMethod_var);
+		CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17* L_6 = (CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17*)il2cpp_codegen_object_new(CodeChallengeGenerator_t7CFB8D021F4CE443579D118A2C0069FA54611A17_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		CodeChallengeGenerator__ctor_m66BB925BCB168A053F6FFD450DC1C76B3C549E10(L_6, NULL);
+		NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* L_7 = V_1;
+		AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* L_8 = (AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8*)il2cpp_codegen_object_new(AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		AuthenticationNetworkClient__ctor_m0D5F810B7528B37E23EB85CEC0066ED37B98DA59(L_8, _stringLiteralD1074749CB9993BB9DEDCC6BD306CA84F53FA616, L_3, L_5, L_6, L_7, NULL);
+		V_2 = L_8;
+		// var authenticationService = new AuthenticationServiceInternal(networkClient,
+		//     new JwtDecoder(dateTime),
+		//     new PlayerPrefsCache("unity.services.authentication"),
+		//     Scheduler.Instance,
+		//     dateTime);
+		AuthenticationNetworkClient_t24A4BD9F033431B7CC64DB81938AF02BE4CE6EE8* L_9 = V_2;
+		DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* L_10 = V_0;
+		JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* L_11 = (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484*)il2cpp_codegen_object_new(JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		JwtDecoder__ctor_m353AA4C1FE6B9AB45C97587597DD94F8150691A4(L_11, L_10, NULL);
+		PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* L_12 = (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E*)il2cpp_codegen_object_new(PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		PlayerPrefsCache__ctor_m4677B3EA4BDF476DEBFC0C864B28992BA6DD8A87(L_12, _stringLiteral30582D3073E84B43D5FF2D77B3D111122A050829, NULL);
+		RuntimeObject* L_13;
+		L_13 = Scheduler_get_Instance_mC3FD4E903B8F35F3EED1369D40170F1533E1A468(NULL);
+		DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* L_14 = V_0;
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_15 = (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B*)il2cpp_codegen_object_new(AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B_il2cpp_TypeInfo_var);
+		NullCheck(L_15);
+		AuthenticationServiceInternal__ctor_m13900FE930302252C8B99FC4C40C93C8F0704CDC(L_15, L_9, L_11, L_12, L_13, L_14, NULL);
+		V_3 = L_15;
+		// AuthenticationService.Instance = authenticationService;
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_16 = V_3;
+		AuthenticationService_set_Instance_mF6E5CECFA4F9F11AD6628770749F28B73904F1F3_inline(L_16, NULL);
+		// registry.RegisterServiceComponent<IPlayerId>(new PlayerIdComponent(authenticationService));
+		CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* L_17 = ___registry0;
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_18 = V_3;
+		PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* L_19 = (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19*)il2cpp_codegen_object_new(PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19_il2cpp_TypeInfo_var);
+		NullCheck(L_19);
+		PlayerIdComponent__ctor_mB88AF23D52904F21AEB5868839CEFF5004861088(L_19, L_18, NULL);
+		NullCheck(L_17);
+		CoreRegistry_RegisterServiceComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_m76EE03A1259101C248F840059C28D021440190D3(L_17, L_19, CoreRegistry_RegisterServiceComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_m76EE03A1259101C248F840059C28D021440190D3_RuntimeMethod_var);
+		// registry.RegisterServiceComponent<IAccessToken>(new AccessTokenComponent(authenticationService));
+		CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* L_20 = ___registry0;
+		AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* L_21 = V_3;
+		AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2* L_22 = (AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2*)il2cpp_codegen_object_new(AccessTokenComponent_tC4B5154C4B212D8B1169CD8D29916E29B3D961C2_il2cpp_TypeInfo_var);
+		NullCheck(L_22);
+		AccessTokenComponent__ctor_m8A83A80795B870841D75E8ACE09DDDA33A312220(L_22, L_21, NULL);
+		NullCheck(L_20);
+		CoreRegistry_RegisterServiceComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m96E3BC38CB35E7DE66A2138E255D9138290E0719(L_20, L_22, CoreRegistry_RegisterServiceComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m96E3BC38CB35E7DE66A2138E255D9138290E0719_RuntimeMethod_var);
+		// return Task.CompletedTask;
+		il2cpp_codegen_runtime_class_init_inline(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_23;
+		L_23 = Task_get_CompletedTask_m1567097D0142D009DC8F9B70DA2C55DA651D55E9_inline(NULL);
+		V_4 = L_23;
+		goto IL_0075;
+	}
+
+IL_0075:
+	{
+		// }
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_24 = V_4;
+		return L_24;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationPackageInitializer::Register()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationPackageInitializer_Register_mFBA2D2FB318E6DBACF9D6CE54C20748A71DBD4E3 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistration_DependsOn_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mF32D3AEE8770313EFCC77D92013AF760CBABCD64_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistration_ProvidesComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m93F4FBA0C705D7D86490EBD4E70005983E16BFA0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistration_ProvidesComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_mE4D416BE760057F83FE86BA2FEF5753E1B44BE69_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistry_RegisterPackage_TisAuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_m7F81ECFF18FBDFC0E59A8302DC62E3B420173E7A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// CoreRegistry.Instance.RegisterPackage(new AuthenticationPackageInitializer())
+		//     .DependsOn<IEnvironments>()
+		//     .ProvidesComponent<IPlayerId>()
+		//     .ProvidesComponent<IAccessToken>();
+		CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* L_0;
+		L_0 = CoreRegistry_get_Instance_m73A64BD3CB78EF5AC698D1635B5872CEB9F9AFE2_inline(NULL);
+		AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E* L_1 = (AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E*)il2cpp_codegen_object_new(AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AuthenticationPackageInitializer__ctor_m7CCECFA94D25D61294F3A9A2FCEB6CCA2B401130(L_1, NULL);
+		NullCheck(L_0);
+		CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 L_2;
+		L_2 = CoreRegistry_RegisterPackage_TisAuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_m7F81ECFF18FBDFC0E59A8302DC62E3B420173E7A(L_0, L_1, CoreRegistry_RegisterPackage_TisAuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E_m7F81ECFF18FBDFC0E59A8302DC62E3B420173E7A_RuntimeMethod_var);
+		V_0 = L_2;
+		CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 L_3;
+		L_3 = CoreRegistration_DependsOn_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mF32D3AEE8770313EFCC77D92013AF760CBABCD64((&V_0), CoreRegistration_DependsOn_TisIEnvironments_t9DCAF0398EB856DBE771A9C2D7B120661D628CB7_mF32D3AEE8770313EFCC77D92013AF760CBABCD64_RuntimeMethod_var);
+		V_0 = L_3;
+		CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 L_4;
+		L_4 = CoreRegistration_ProvidesComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_mE4D416BE760057F83FE86BA2FEF5753E1B44BE69((&V_0), CoreRegistration_ProvidesComponent_TisIPlayerId_t6A7BAE55B4D78E87B15B9261828E897BAACBF913_mE4D416BE760057F83FE86BA2FEF5753E1B44BE69_RuntimeMethod_var);
+		V_0 = L_4;
+		CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 L_5;
+		L_5 = CoreRegistration_ProvidesComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m93F4FBA0C705D7D86490EBD4E70005983E16BFA0((&V_0), CoreRegistration_ProvidesComponent_TisIAccessToken_t8A8955010FD3200218D16D50699C60F922877720_m93F4FBA0C705D7D86490EBD4E70005983E16BFA0_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.AuthenticationPackageInitializer::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationPackageInitializer__ctor_m7CCECFA94D25D61294F3A9A2FCEB6CCA2B401130 (AuthenticationPackageInitializer_t743FD6E189BC34E026FFE4AC223C6E2446DD615E* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Unity.Services.Authentication.PlayerIdComponent::get_PlayerId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerIdComponent_get_PlayerId_m3B26D7263EE5FF703A96397CA7F8359EFC2B3E63 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string PlayerId => m_AuthenticationService.PlayerId;
+		RuntimeObject* L_0 = __this->___m_AuthenticationService_0;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(2 /* System.String Unity.Services.Authentication.IAuthenticationService::get_PlayerId() */, IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var, L_0);
+		return L_1;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::add_PlayerIdChanged(System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_add_PlayerIdChanged_mBA0004B0877D77624016EB806E5721855ACBF3A4 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* V_0 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* V_1 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* V_2 = NULL;
+	{
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = __this->___PlayerIdChanged_1;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_2 = V_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)Castclass((RuntimeObject*)L_4, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var));
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A** L_5 = (&__this->___PlayerIdChanged_1);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_6 = V_2;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_7 = V_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_9 = V_0;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)L_9) == ((RuntimeObject*)(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::remove_PlayerIdChanged(System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_remove_PlayerIdChanged_mC99DA59304B6D42A076C0F355D95A89A4554DB8E (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* V_0 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* V_1 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* V_2 = NULL;
+	{
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = __this->___PlayerIdChanged_1;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_2 = V_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)Castclass((RuntimeObject*)L_4, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var));
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A** L_5 = (&__this->___PlayerIdChanged_1);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_6 = V_2;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_7 = V_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_9 = V_0;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)L_9) == ((RuntimeObject*)(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::.ctor(Unity.Services.Authentication.IAuthenticationService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent__ctor_mB88AF23D52904F21AEB5868839CEFF5004861088 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, RuntimeObject* ___service0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerIdComponent_OnAuthenticationSignInFailed_mAAEA7D424139FBB82A3164A1CD5A333F201242A1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerIdComponent_OnAuthenticationSignedIn_m0E02EF11593EB434D9FA0D1C86090CBF9353C075_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerIdComponent_OnAuthenticationSignedOut_mF2BC0F83B2DA26BFA1E72E273BE1AB152DADEA15_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public PlayerIdComponent(IAuthenticationService service)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_AuthenticationService = service;
+		RuntimeObject* L_0 = ___service0;
+		__this->___m_AuthenticationService_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_AuthenticationService_0), (void*)L_0);
+		// m_AuthenticationService.SignedIn += OnAuthenticationSignedIn;
+		RuntimeObject* L_1 = __this->___m_AuthenticationService_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)PlayerIdComponent_OnAuthenticationSignedIn_m0E02EF11593EB434D9FA0D1C86090CBF9353C075_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
+		InterfaceActionInvoker1< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(3 /* System.Void Unity.Services.Authentication.IAuthenticationService::add_SignedIn(System.Action) */, IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var, L_1, L_2);
+		// m_AuthenticationService.SignedOut += OnAuthenticationSignedOut;
+		RuntimeObject* L_3 = __this->___m_AuthenticationService_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_4 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_4, __this, (intptr_t)((void*)PlayerIdComponent_OnAuthenticationSignedOut_mF2BC0F83B2DA26BFA1E72E273BE1AB152DADEA15_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
+		InterfaceActionInvoker1< Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* >::Invoke(5 /* System.Void Unity.Services.Authentication.IAuthenticationService::add_SignedOut(System.Action) */, IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var, L_3, L_4);
+		// m_AuthenticationService.SignInFailed += OnAuthenticationSignInFailed;
+		RuntimeObject* L_5 = __this->___m_AuthenticationService_0;
+		Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* L_6 = (Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860*)il2cpp_codegen_object_new(Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Action_1__ctor_mAB078D5C3E59EC79FCD9B4BAD5E23E38FD951815(L_6, __this, (intptr_t)((void*)PlayerIdComponent_OnAuthenticationSignInFailed_mAAEA7D424139FBB82A3164A1CD5A333F201242A1_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
+		InterfaceActionInvoker1< Action_1_tBF3D0A2B57171A142B7E5430B25E9CFF5F30B860* >::Invoke(7 /* System.Void Unity.Services.Authentication.IAuthenticationService::add_SignInFailed(System.Action`1<Unity.Services.Core.RequestFailedException>) */, IAuthenticationService_tFE9A837104B06EF3DFCDA3A7D2B59DC2FF2A1737_il2cpp_TypeInfo_var, L_5, L_6);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::OnAuthenticationSignInFailed(Unity.Services.Core.RequestFailedException)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_OnAuthenticationSignInFailed_mAAEA7D424139FBB82A3164A1CD5A333F201242A1 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* ___error0, const RuntimeMethod* method) 
+{
+	{
+		// NotifyPlayerChanged();
+		PlayerIdComponent_NotifyPlayerChanged_m407D0F182A3245D1A01BA68797D92E33915A7E46(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::OnAuthenticationSignedOut()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_OnAuthenticationSignedOut_mF2BC0F83B2DA26BFA1E72E273BE1AB152DADEA15 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, const RuntimeMethod* method) 
+{
+	{
+		// NotifyPlayerChanged();
+		PlayerIdComponent_NotifyPlayerChanged_m407D0F182A3245D1A01BA68797D92E33915A7E46(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::OnAuthenticationSignedIn()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_OnAuthenticationSignedIn_m0E02EF11593EB434D9FA0D1C86090CBF9353C075 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, const RuntimeMethod* method) 
+{
+	{
+		// NotifyPlayerChanged();
+		PlayerIdComponent_NotifyPlayerChanged_m407D0F182A3245D1A01BA68797D92E33915A7E46(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.PlayerIdComponent::NotifyPlayerChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerIdComponent_NotifyPlayerChanged_m407D0F182A3245D1A01BA68797D92E33915A7E46 (PlayerIdComponent_tFE65166B068798263264F18955AE2990D4274D19* __this, const RuntimeMethod* method) 
+{
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* G_B2_0 = NULL;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* G_B1_0 = NULL;
+	{
+		// PlayerIdChanged?.Invoke(PlayerId);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = __this->___PlayerIdChanged_1;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000d;
+		}
+	}
+	{
+		goto IL_0019;
+	}
+
+IL_000d:
+	{
+		String_t* L_2;
+		L_2 = PlayerIdComponent_get_PlayerId_m3B26D7263EE5FF703A96397CA7F8359EFC2B3E63(__this, NULL);
+		NullCheck(G_B2_0);
+		Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline(G_B2_0, L_2, NULL);
+	}
+
+IL_0019:
+	{
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.JwtDecoder::.ctor(Unity.Services.Authentication.Utilities.IDateTimeWrapper)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JwtDecoder__ctor_m353AA4C1FE6B9AB45C97587597DD94F8150691A4 (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, RuntimeObject* ___dateTime0, const RuntimeMethod* method) 
+{
+	{
+		// internal JwtDecoder(IDateTimeWrapper dateTime)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_DateTime = dateTime;
+		RuntimeObject* L_0 = ___dateTime0;
+		__this->___m_DateTime_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DateTime_2), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Boolean Unity.Services.Authentication.JwtDecoder::VerifySignature(System.String,System.String,System.String,Unity.Services.Authentication.Models.WellKnownKeys,System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JwtDecoder_VerifySignature_m90BB6672BE1C994147F73C51AB6C6845460E234A (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___header0, String_t* ___keyId1, String_t* ___payload2, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___keys3, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature4, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral98DC5CC9FB1CF6E407FEE201642AC8D774BB85CB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAA77D5693A0F444FC4C8236C0AEED70B164CFF58);
+		s_Il2CppMethodInitialized = true;
+	}
+	WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* V_0 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	{
+		// var key = GetKey(keyId, keys);
+		String_t* L_0 = ___keyId1;
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_1 = ___keys3;
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_2;
+		L_2 = JwtDecoder_GetKey_mBA9377CA21E9478EB1CD5D27D83D6F6CAAE52C7E(__this, L_0, L_1, NULL);
+		V_0 = L_2;
+		// if (key != null)
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_3 = V_0;
+		V_1 = (bool)((!(((RuntimeObject*)(WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA*)L_3) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		// var verified = Verify(header, payload, signature, Base64UrlDecode(key.N), Base64UrlDecode(key.E));
+		String_t* L_5 = ___header0;
+		String_t* L_6 = ___payload2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = ___signature4;
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_8 = V_0;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___N_4;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10;
+		L_10 = JwtDecoder_Base64UrlDecode_m4FAC88A6795B97AF79655B79A4C8BF70242DD7B9(__this, L_9, NULL);
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_11 = V_0;
+		NullCheck(L_11);
+		String_t* L_12 = L_11->___E_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13;
+		L_13 = JwtDecoder_Base64UrlDecode_m4FAC88A6795B97AF79655B79A4C8BF70242DD7B9(__this, L_12, NULL);
+		bool L_14;
+		L_14 = JwtDecoder_Verify_mC246A9384C12081B0A751AC932DC0203B7999CF9(__this, L_5, L_6, L_7, L_10, L_13, NULL);
+		V_2 = L_14;
+		// if (!verified)
+		bool L_15 = V_2;
+		V_3 = (bool)((((int32_t)L_15) == ((int32_t)0))? 1 : 0);
+		bool L_16 = V_3;
+		if (!L_16)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		// Logger.LogError("Signature failed verification!");
+		Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8(_stringLiteralAA77D5693A0F444FC4C8236C0AEED70B164CFF58, NULL);
+	}
+
+IL_004c:
+	{
+		// return verified;
+		bool L_17 = V_2;
+		V_4 = L_17;
+		goto IL_0061;
+	}
+
+IL_0051:
+	{
+		// Logger.LogError("Unable to verify signature, does not use a well-known key ID.");
+		Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8(_stringLiteral98DC5CC9FB1CF6E407FEE201642AC8D774BB85CB, NULL);
+		// return false;
+		V_4 = (bool)0;
+		goto IL_0061;
+	}
+
+IL_0061:
+	{
+		// }
+		bool L_18 = V_4;
+		return L_18;
+	}
+}
+// Unity.Services.Authentication.Models.WellKnownKey Unity.Services.Authentication.JwtDecoder::GetKey(System.String,Unity.Services.Authentication.Models.WellKnownKeys)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* JwtDecoder_GetKey_mBA9377CA21E9478EB1CD5D27D83D6F6CAAE52C7E (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___keyId0, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___keys1, const RuntimeMethod* method) 
+{
+	WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9* V_0 = NULL;
+	int32_t V_1 = 0;
+	WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* V_2 = NULL;
+	bool V_3 = false;
+	WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* V_4 = NULL;
+	{
+		// foreach (var key in keys.Keys)
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_0 = ___keys1;
+		NullCheck(L_0);
+		WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9* L_1 = L_0->___Keys_0;
+		V_0 = L_1;
+		V_1 = 0;
+		goto IL_002d;
+	}
+
+IL_000d:
+	{
+		// foreach (var key in keys.Keys)
+		WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9* L_2 = V_0;
+		int32_t L_3 = V_1;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		V_2 = L_5;
+		// if (key.KeyId == keyId)
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_6 = V_2;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___KeyId_2;
+		String_t* L_8 = ___keyId0;
+		bool L_9;
+		L_9 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_7, L_8, NULL);
+		V_3 = L_9;
+		bool L_10 = V_3;
+		if (!L_10)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		// return key;
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_11 = V_2;
+		V_4 = L_11;
+		goto IL_0038;
+	}
+
+IL_0028:
+	{
+		int32_t L_12 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+	}
+
+IL_002d:
+	{
+		// foreach (var key in keys.Keys)
+		int32_t L_13 = V_1;
+		WellKnownKeyU5BU5D_t52F2F96C2F726CA388E163284FF144D922CA06A9* L_14 = V_0;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return null;
+		V_4 = (WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA*)NULL;
+		goto IL_0038;
+	}
+
+IL_0038:
+	{
+		// }
+		WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* L_15 = V_4;
+		return L_15;
+	}
+}
+// System.Boolean Unity.Services.Authentication.JwtDecoder::Verify(System.String,System.String,System.Byte[],System.Byte[],System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JwtDecoder_Verify_mC246A9384C12081B0A751AC932DC0203B7999CF9 (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___header0, String_t* ___payload1, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___signature2, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___modulus3, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___exponent4, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral158B6A1BFB4007A30B92DF912CBC29F2328168DD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		s_Il2CppMethodInitialized = true;
+	}
+	RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* V_0 = NULL;
+	RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* V_2 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_3 = NULL;
+	RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3* V_4 = NULL;
+	bool V_5 = false;
+	{
+		// using (var rsa = new RSACryptoServiceProvider())
+		RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* L_0 = (RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C*)il2cpp_codegen_object_new(RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		RSACryptoServiceProvider__ctor_mE4BC404364B89F41C863EC3860ED4B9D7DD7A06F(L_0, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_007b:
+			{// begin finally (depth: 1)
+				{
+					RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_0085;
+					}
+				}
+				{
+					RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_0085:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// rsa.ImportParameters(new RSAParameters
+				// {
+				//     Modulus = modulus,
+				//     Exponent = exponent
+				// });
+				RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* L_3 = V_0;
+				il2cpp_codegen_initobj((&V_1), sizeof(RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF));
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___modulus3;
+				(&V_1)->___Modulus_1 = L_4;
+				Il2CppCodeGenWriteBarrier((void**)(&(&V_1)->___Modulus_1), (void*)L_4);
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___exponent4;
+				(&V_1)->___Exponent_0 = L_5;
+				Il2CppCodeGenWriteBarrier((void**)(&(&V_1)->___Exponent_0), (void*)L_5);
+				RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF L_6 = V_1;
+				NullCheck(L_3);
+				VirtualActionInvoker1< RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF >::Invoke(12 /* System.Void System.Security.Cryptography.RSA::ImportParameters(System.Security.Cryptography.RSAParameters) */, L_3, L_6);
+				// using (var sha256 = SHA256.Create())
+				SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_7;
+				L_7 = SHA256_Create_m41FBBA07C26677E1028E44E3530AC1BA17D26BBC(NULL);
+				V_2 = L_7;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_0070_1:
+					{// begin finally (depth: 2)
+						{
+							SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_8 = V_2;
+							if (!L_8)
+							{
+								goto IL_007a_1;
+							}
+						}
+						{
+							SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_9 = V_2;
+							NullCheck(L_9);
+							InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_9);
+						}
+
+IL_007a_1:
+						{
+							return;
+						}
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					// var hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(header + '.' + payload));
+					SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* L_10 = V_2;
+					Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_11;
+					L_11 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
+					String_t* L_12 = ___header0;
+					String_t* L_13 = ___payload1;
+					String_t* L_14;
+					L_14 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_12, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D, L_13, NULL);
+					NullCheck(L_11);
+					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15;
+					L_15 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_11, L_14);
+					NullCheck(L_10);
+					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16;
+					L_16 = HashAlgorithm_ComputeHash_mC9CD24714D75A8D61F12509BF952A26347FF22FB(L_10, L_15, NULL);
+					V_3 = L_16;
+					// var rsaDeformatter = new RSAPKCS1SignatureDeformatter(rsa);
+					RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C* L_17 = V_0;
+					RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3* L_18 = (RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3*)il2cpp_codegen_object_new(RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3_il2cpp_TypeInfo_var);
+					NullCheck(L_18);
+					RSAPKCS1SignatureDeformatter__ctor_m791E4894429FB7772E9A930C4A8B10C47A07293F(L_18, L_17, NULL);
+					V_4 = L_18;
+					// rsaDeformatter.SetHashAlgorithm("SHA256");
+					RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3* L_19 = V_4;
+					NullCheck(L_19);
+					VirtualActionInvoker1< String_t* >::Invoke(5 /* System.Void System.Security.Cryptography.AsymmetricSignatureDeformatter::SetHashAlgorithm(System.String) */, L_19, _stringLiteral158B6A1BFB4007A30B92DF912CBC29F2328168DD);
+					// return rsaDeformatter.VerifySignature(hash, signature);
+					RSAPKCS1SignatureDeformatter_t3B1E70B8DA929C184C7599B50FB8DD4BF5CA7CB3* L_20 = V_4;
+					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_21 = V_3;
+					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_22 = ___signature2;
+					NullCheck(L_20);
+					bool L_23;
+					L_23 = VirtualFuncInvoker2< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(6 /* System.Boolean System.Security.Cryptography.AsymmetricSignatureDeformatter::VerifySignature(System.Byte[],System.Byte[]) */, L_20, L_21, L_22);
+					V_5 = L_23;
+					goto IL_0086;
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0086:
+	{
+		// }
+		bool L_24 = V_5;
+		return L_24;
+	}
+}
+// System.Byte[] Unity.Services.Authentication.JwtDecoder::Base64UrlDecode(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* JwtDecoder_Base64UrlDecode_m4FAC88A6795B97AF79655B79A4C8BF70242DD7B9 (JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484* __this, String_t* ___input0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t V_1 = 0;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_2 = NULL;
+	bool V_3 = false;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
+	{
+		// var output = input;
+		String_t* L_0 = ___input0;
+		V_0 = L_0;
+		// output = output.Replace('-', '+'); // 62nd char of encoding
+		String_t* L_1 = V_0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF(L_1, ((int32_t)45), ((int32_t)43), NULL);
+		V_0 = L_2;
+		// output = output.Replace('_', '/'); // 63rd char of encoding
+		String_t* L_3 = V_0;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = String_Replace_m86403DC5F422D8D5E1CFAAF255B103CB807EDAAF(L_3, ((int32_t)95), ((int32_t)47), NULL);
+		V_0 = L_4;
+		// var mod4 = input.Length % 4;
+		String_t* L_5 = ___input0;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_5, NULL);
+		V_1 = ((int32_t)(L_6%4));
+		// if (mod4 > 0)
+		int32_t L_7 = V_1;
+		V_3 = (bool)((((int32_t)L_7) > ((int32_t)0))? 1 : 0);
+		bool L_8 = V_3;
+		if (!L_8)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		// output += new string('=', 4 - mod4);
+		String_t* L_9 = V_0;
+		int32_t L_10 = V_1;
+		String_t* L_11;
+		L_11 = String_CreateString_mAA0705B41B390BDB42F67894B9B67C956814C71B(NULL, ((int32_t)61), ((int32_t)il2cpp_codegen_subtract(4, L_10)), NULL);
+		String_t* L_12;
+		L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_9, L_11, NULL);
+		V_0 = L_12;
+	}
+
+IL_003d:
+	{
+		// var converted = Convert.FromBase64String(output); // Standard base64 decoder
+		String_t* L_13 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14;
+		L_14 = Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C(L_13, NULL);
+		V_2 = L_14;
+		// return converted;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = V_2;
+		V_4 = L_15;
+		goto IL_0049;
+	}
+
+IL_0049:
+	{
+		// }
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16 = V_4;
+		return L_16;
+	}
+}
+// System.Void Unity.Services.Authentication.JwtDecoder::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JwtDecoder__cctor_mB3966E27A02C595EC3650919A62426EACF89C747 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// static readonly DateTime k_UnixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168((&L_0), ((int32_t)1970), 1, 1, 0, 0, 0, 0, 1, /*hidden argument*/NULL);
+		((JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_StaticFields*)il2cpp_codegen_static_fields_for(JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var))->___k_UnixEpoch_0 = L_0;
+		// static readonly char[] k_JwtSeparator = { '.' };
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)1);
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2 = L_1;
+		NullCheck(L_2);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)46));
+		((JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_StaticFields*)il2cpp_codegen_static_fields_for(JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var))->___k_JwtSeparator_1 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_StaticFields*)il2cpp_codegen_static_fields_for(JwtDecoder_tE0820E3E73ED0F5A22EEF7BB9DFA4EEF0C724484_il2cpp_TypeInfo_var))->___k_JwtSeparator_1), (void*)L_2);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Utilities.PlayerPrefsCache::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefsCache__ctor_m4677B3EA4BDF476DEBFC0C864B28992BA6DD8A87 (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* __this, String_t* ___prefix0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public PlayerPrefsCache(string prefix)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_Prefix = prefix + ".";
+		String_t* L_0 = ___prefix0;
+		String_t* L_1;
+		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_0, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D, NULL);
+		__this->___m_Prefix_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Prefix_0), (void*)L_1);
+		// }
+		return;
+	}
+}
+// System.Boolean Unity.Services.Authentication.Utilities.PlayerPrefsCache::HasKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayerPrefsCache_HasKey_mF703FEBF4FEEBD756ADB210CA87CD9A0AD32EE9A (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* __this, String_t* ___key0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		// return PlayerPrefs.HasKey(m_Prefix + key);
+		String_t* L_0 = __this->___m_Prefix_0;
+		String_t* L_1 = ___key0;
+		String_t* L_2;
+		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_0, L_1, NULL);
+		bool L_3;
+		L_3 = PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668(L_2, NULL);
+		V_0 = L_3;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		// }
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.PlayerPrefsCache::DeleteKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefsCache_DeleteKey_mBF8DCAF17077D5EAF8A4E17404ED0BA2D594BB32 (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* __this, String_t* ___key0, const RuntimeMethod* method) 
+{
+	{
+		// PlayerPrefs.DeleteKey(m_Prefix + key);
+		String_t* L_0 = __this->___m_Prefix_0;
+		String_t* L_1 = ___key0;
+		String_t* L_2;
+		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_0, L_1, NULL);
+		PlayerPrefs_DeleteKey_mF3A7857B52DCEF4139843CD28716788624C2AD30(L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.String Unity.Services.Authentication.Utilities.PlayerPrefsCache::GetString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerPrefsCache_GetString_m7BA447FA7507429C066648E93B68B8E6EE25607F (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* __this, String_t* ___key0, const RuntimeMethod* method) 
+{
+	String_t* V_0 = NULL;
+	{
+		// return PlayerPrefs.GetString(m_Prefix + key);
+		String_t* L_0 = __this->___m_Prefix_0;
+		String_t* L_1 = ___key0;
+		String_t* L_2;
+		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_0, L_1, NULL);
+		String_t* L_3;
+		L_3 = PlayerPrefs_GetString_mA4C9F842BF77E5572AB20EA087C7048F870D02AE(L_2, NULL);
+		V_0 = L_3;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		// }
+		String_t* L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.PlayerPrefsCache::SetString(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefsCache_SetString_mD4099954397962832C1FDDBC77B409AAAEBBAFA4 (PlayerPrefsCache_tBF573624195F112AB788D0FD46402B052070D34E* __this, String_t* ___key0, String_t* ___value1, const RuntimeMethod* method) 
+{
+	{
+		// PlayerPrefs.SetString(m_Prefix + key, value);
+		String_t* L_0 = __this->___m_Prefix_0;
+		String_t* L_1 = ___key0;
+		String_t* L_2;
+		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_0, L_1, NULL);
+		String_t* L_3 = ___value1;
+		PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256(L_2, L_3, NULL);
+		// PlayerPrefs.Save();
+		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.GameObject Unity.Services.Authentication.Utilities.ContainerObject::get_Container()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ContainerObject_get_Container_m308E7B5A31CAEF3F482467294D4A1CE3B26138FC (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral861931048A40F32AB45F0ED63E9CA0A3725C8228);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
+	{
+		// if (!s_Created)
+		bool L_0 = ((ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields*)il2cpp_codegen_static_fields_for(ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var))->___s_Created_0;
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		// s_Container = new GameObject("UnityServicesContainer")
+		// {
+		//     // NOTE: if users complain about this object cluttering up their heirarchy, we can also add HideInHierarchy.
+		//     hideFlags = HideFlags.NotEditable | HideFlags.DontSaveInEditor | HideFlags.DontSaveInBuild
+		// };
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_2, _stringLiteral861931048A40F32AB45F0ED63E9CA0A3725C8228, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = L_2;
+		NullCheck(L_3);
+		Object_set_hideFlags_mACB8BFC903FB3B01BBD427753E791BF28B5E33D4(L_3, ((int32_t)28), NULL);
+		((ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields*)il2cpp_codegen_static_fields_for(ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var))->___s_Container_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&((ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields*)il2cpp_codegen_static_fields_for(ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var))->___s_Container_1), (void*)L_3);
+		// Object.DontDestroyOnLoad(s_Container);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = ((ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields*)il2cpp_codegen_static_fields_for(ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var))->___s_Container_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7(L_4, NULL);
+		// s_Created = true;
+		((ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields*)il2cpp_codegen_static_fields_for(ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var))->___s_Created_0 = (bool)1;
+	}
+
+IL_0038:
+	{
+		// return s_Container;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = ((ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_StaticFields*)il2cpp_codegen_static_fields_for(ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5_il2cpp_TypeInfo_var))->___s_Container_1;
+		V_1 = L_5;
+		goto IL_0040;
+	}
+
+IL_0040:
+	{
+		// }
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = V_1;
+		return L_6;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.ContainerObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContainerObject__ctor_m92C60FAEFBD5620D54DBCCB6562DAEA11086D419 (ContainerObject_t9AEDCB33EA090D136CD5337288E258DB070FC4E5* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Double Unity.Services.Authentication.Utilities.DateTimeWrapper::SecondsSinceUnixEpoch()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double DateTimeWrapper_SecondsSinceUnixEpoch_m6735DA6027BC87855925562799D7726BA960DA1B (DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	double V_1 = 0.0;
+	{
+		// return Math.Round((DateTime.UtcNow - k_UnixEpoch).TotalSeconds);
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
+		L_0 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		il2cpp_codegen_runtime_class_init_inline(DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1 = ((DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_StaticFields*)il2cpp_codegen_static_fields_for(DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var))->___k_UnixEpoch_0;
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_2;
+		L_2 = DateTime_op_Subtraction_m64D26F5ABFAE6E166A7E567093D025F6C69F0123(L_0, L_1, NULL);
+		V_0 = L_2;
+		double L_3;
+		L_3 = TimeSpan_get_TotalSeconds_mED686E7CECE6A76A7DC38518698B9199DB8CDEA8((&V_0), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_4;
+		L_4 = bankers_round(L_3);
+		V_1 = L_4;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		// }
+		double L_5 = V_1;
+		return L_5;
+	}
+}
+// System.DateTime Unity.Services.Authentication.Utilities.DateTimeWrapper::get_UtcNow()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTimeWrapper_get_UtcNow_m84A0E1B5462D607FFE204F6214EFA7464095274D (DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public DateTime UtcNow => DateTime.UtcNow;
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
+		L_0 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		return L_0;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.DateTimeWrapper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeWrapper__ctor_mD7341469CDCCE234FFD35274D114172641144C11 (DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.DateTimeWrapper::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeWrapper__cctor_m9BDEA15AECA0AC28AB2480253718DA92EB61789C (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// static readonly DateTime k_UnixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168((&L_0), ((int32_t)1970), 1, 1, 0, 0, 0, 0, 1, /*hidden argument*/NULL);
+		((DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_StaticFields*)il2cpp_codegen_static_fields_for(DateTimeWrapper_t4C23A3282F800B050D5AB1D641C05B67961E975E_il2cpp_TypeInfo_var))->___k_UnixEpoch_0 = L_0;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.IDictionary`2<System.String,System.String> Unity.Services.Authentication.Utilities.HttpUtilities::ParseQueryString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtilities_ParseQueryString_m1C7C46237E72120005DFE046ACEEB0710A148122 (String_t* ___queryString0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* V_0 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_1 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_2 = NULL;
+	int32_t V_3 = 0;
+	String_t* V_4 = NULL;
+	int32_t V_5 = 0;
+	bool V_6 = false;
+	String_t* V_7 = NULL;
+	String_t* V_8 = NULL;
+	RuntimeObject* V_9 = NULL;
+	{
+		// var result = new Dictionary<string, string>();
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_0 = (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)il2cpp_codegen_object_new(Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052(L_0, Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
+		V_0 = L_0;
+		// var splitQuery = queryString.Split('?', '&');
+		String_t* L_1 = ___queryString0;
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)2);
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_3 = L_2;
+		NullCheck(L_3);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)63));
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_4 = L_3;
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppChar)((int32_t)38));
+		NullCheck(L_1);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5;
+		L_5 = String_Split_m101D35FEC86371D2BB4E3480F6F896880093B2E9(L_1, L_4, NULL);
+		V_1 = L_5;
+		// foreach (var param in splitQuery)
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = V_1;
+		V_2 = L_6;
+		V_3 = 0;
+		goto IL_0079;
+	}
+
+IL_0025:
+	{
+		// foreach (var param in splitQuery)
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = V_2;
+		int32_t L_8 = V_3;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		String_t* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		V_4 = L_10;
+		// var assignmentIndex = param.IndexOf('=');
+		String_t* L_11 = V_4;
+		NullCheck(L_11);
+		int32_t L_12;
+		L_12 = String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966(L_11, ((int32_t)61), NULL);
+		V_5 = L_12;
+		// if (assignmentIndex >= 0)
+		int32_t L_13 = V_5;
+		V_6 = (bool)((((int32_t)((((int32_t)L_13) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_14 = V_6;
+		if (!L_14)
+		{
+			goto IL_0074;
+		}
+	}
+	{
+		// var paramName = UnescapeUrlString(param.Substring(0, assignmentIndex));
+		String_t* L_15 = V_4;
+		int32_t L_16 = V_5;
+		NullCheck(L_15);
+		String_t* L_17;
+		L_17 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_15, 0, L_16, NULL);
+		String_t* L_18;
+		L_18 = HttpUtilities_UnescapeUrlString_m5EC1D31D756AF74748889083B40EA9219B058E30(L_17, NULL);
+		V_7 = L_18;
+		// var paramValue = UnescapeUrlString(param.Substring(assignmentIndex + 1));
+		String_t* L_19 = V_4;
+		int32_t L_20 = V_5;
+		NullCheck(L_19);
+		String_t* L_21;
+		L_21 = String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472(L_19, ((int32_t)il2cpp_codegen_add(L_20, 1)), NULL);
+		String_t* L_22;
+		L_22 = HttpUtilities_UnescapeUrlString_m5EC1D31D756AF74748889083B40EA9219B058E30(L_21, NULL);
+		V_8 = L_22;
+		// result[paramName] = paramValue;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_23 = V_0;
+		String_t* L_24 = V_7;
+		String_t* L_25 = V_8;
+		NullCheck(L_23);
+		Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2(L_23, L_24, L_25, Dictionary_2_set_Item_m9BF625649E96E60C1509898A992A6447E351D1A2_RuntimeMethod_var);
+	}
+
+IL_0074:
+	{
+		int32_t L_26 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_26, 1));
+	}
+
+IL_0079:
+	{
+		// foreach (var param in splitQuery)
+		int32_t L_27 = V_3;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_28 = V_2;
+		NullCheck(L_28);
+		if ((((int32_t)L_27) < ((int32_t)((int32_t)(((RuntimeArray*)L_28)->max_length)))))
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		// return result;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_29 = V_0;
+		V_9 = L_29;
+		goto IL_0084;
+	}
+
+IL_0084:
+	{
+		// }
+		RuntimeObject* L_30 = V_9;
+		return L_30;
+	}
+}
+// System.String Unity.Services.Authentication.Utilities.HttpUtilities::EncodeQueryString(System.Collections.Generic.IDictionary`2<System.String,System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtilities_EncodeQueryString_mD64BA770D742F20C5BD1F54F6B5E8E1AF4ED5F09 (RuntimeObject* ___queryParams0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t3C6913E067AB1171D9894C79A396D8A8E90E311B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t174BFB804F1D416642CD11B72858B43316D8B26D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_m654BCCAE2F20CB11D8E8C2D2C886A0C8A13EB1C4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m7345512A32CB4DCAA0643050B18DC8DCD71B927A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringBuilder_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringBuilder_t* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
+	KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	bool V_4 = false;
+	String_t* V_5 = NULL;
+	{
+		// var result = new StringBuilder();
+		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
+		V_0 = L_0;
+		// var firstParam = true;
+		V_1 = (bool)1;
+		// foreach (var param in queryParams)
+		RuntimeObject* L_1 = ___queryParams0;
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.String>>::GetEnumerator() */, IEnumerable_1_t3C6913E067AB1171D9894C79A396D8A8E90E311B_il2cpp_TypeInfo_var, L_1);
+		V_2 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_006c:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_3 = V_2;
+					if (!L_3)
+					{
+						goto IL_0076;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_2;
+					NullCheck(L_4);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
+				}
+
+IL_0076:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0062_1;
+			}
+
+IL_0013_1:
+			{
+				// foreach (var param in queryParams)
+				RuntimeObject* L_5 = V_2;
+				NullCheck(L_5);
+				KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A L_6;
+				L_6 = InterfaceFuncInvoker0< KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.String>>::get_Current() */, IEnumerator_1_t174BFB804F1D416642CD11B72858B43316D8B26D_il2cpp_TypeInfo_var, L_5);
+				V_3 = L_6;
+				// if (!firstParam)
+				bool L_7 = V_1;
+				V_4 = (bool)((((int32_t)L_7) == ((int32_t)0))? 1 : 0);
+				bool L_8 = V_4;
+				if (!L_8)
+				{
+					goto IL_0032_1;
+				}
+			}
+			{
+				// result.Append('&');
+				StringBuilder_t* L_9 = V_0;
+				NullCheck(L_9);
+				StringBuilder_t* L_10;
+				L_10 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_9, ((int32_t)38), NULL);
+				goto IL_0036_1;
+			}
+
+IL_0032_1:
+			{
+				// firstParam = false;
+				V_1 = (bool)0;
+			}
+
+IL_0036_1:
+			{
+				// result.Append(EscapeUrlString(param.Key)).Append('=').Append(EscapeUrlString(param.Value));
+				StringBuilder_t* L_11 = V_0;
+				String_t* L_12;
+				L_12 = KeyValuePair_2_get_Key_m654BCCAE2F20CB11D8E8C2D2C886A0C8A13EB1C4_inline((&V_3), KeyValuePair_2_get_Key_m654BCCAE2F20CB11D8E8C2D2C886A0C8A13EB1C4_RuntimeMethod_var);
+				String_t* L_13;
+				L_13 = HttpUtilities_EscapeUrlString_mDC6203F9AFC6BAEE7514CFF1BA1888CF969E0D4E(L_12, NULL);
+				NullCheck(L_11);
+				StringBuilder_t* L_14;
+				L_14 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_11, L_13, NULL);
+				NullCheck(L_14);
+				StringBuilder_t* L_15;
+				L_15 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_14, ((int32_t)61), NULL);
+				String_t* L_16;
+				L_16 = KeyValuePair_2_get_Value_m7345512A32CB4DCAA0643050B18DC8DCD71B927A_inline((&V_3), KeyValuePair_2_get_Value_m7345512A32CB4DCAA0643050B18DC8DCD71B927A_RuntimeMethod_var);
+				String_t* L_17;
+				L_17 = HttpUtilities_EscapeUrlString_mDC6203F9AFC6BAEE7514CFF1BA1888CF969E0D4E(L_16, NULL);
+				NullCheck(L_15);
+				StringBuilder_t* L_18;
+				L_18 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_15, L_17, NULL);
+			}
+
+IL_0062_1:
+			{
+				// foreach (var param in queryParams)
+				RuntimeObject* L_19 = V_2;
+				NullCheck(L_19);
+				bool L_20;
+				L_20 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_19);
+				if (L_20)
+				{
+					goto IL_0013_1;
+				}
+			}
+			{
+				goto IL_0077;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0077:
+	{
+		// return result.ToString();
+		StringBuilder_t* L_21 = V_0;
+		NullCheck(L_21);
+		String_t* L_22;
+		L_22 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_21);
+		V_5 = L_22;
+		goto IL_0081;
+	}
+
+IL_0081:
+	{
+		// }
+		String_t* L_23 = V_5;
+		return L_23;
+	}
+}
+// System.String Unity.Services.Authentication.Utilities.HttpUtilities::EscapeUrlString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtilities_EscapeUrlString_mDC6203F9AFC6BAEE7514CFF1BA1888CF969E0D4E (String_t* ___rawString0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// return Uri.EscapeDataString(rawString);
+		String_t* L_0 = ___rawString0;
+		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Uri_EscapeDataString_m844D0FB6899488BDEBAF160B23397CD7ED8CA2DF(L_0, NULL);
+		V_0 = L_1;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		// }
+		String_t* L_2 = V_0;
+		return L_2;
+	}
+}
+// System.String Unity.Services.Authentication.Utilities.HttpUtilities::UnescapeUrlString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtilities_UnescapeUrlString_m5EC1D31D756AF74748889083B40EA9219B058E30 (String_t* ___urlString0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// return Uri.UnescapeDataString(urlString);
+		String_t* L_0 = ___urlString0;
+		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Uri_UnescapeDataString_m095AF55EE0F237A44FC8A53D2EE6FA66A567634D(L_0, NULL);
+		V_0 = L_1;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		// }
+		String_t* L_2 = V_0;
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Utilities.Logger::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_Log_mB0D953187157FA1C5B8C6BF77166032E09B42425 (RuntimeObject* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static void Log(object message) => Debug.unityLogger.Log(k_Tag, message);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0;
+		L_0 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_0);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(5 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_1);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogWarning_m481244B8D55E13846D180249A231EA0A3E3E23EB (RuntimeObject* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static void LogWarning(object message) => Debug.unityLogger.LogWarning(k_Tag, message);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0;
+		L_0 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_0);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(6 /* System.Void UnityEngine.ILogger::LogWarning(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_1);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogError(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogError_mED98D91202A8C7781266A0A513D715CF200DE3E8 (RuntimeObject* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static void LogError(object message) => Debug.unityLogger.LogError(k_Tag, message);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0;
+		L_0 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_0);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7 /* System.Void UnityEngine.ILogger::LogError(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_1);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogException_m2532F898D427E3B5F2F6E3CA979AE1260869B476 (Exception_t* ___exception0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86960211724E96958878FAD8035F1CACBBFAD32A);
+		s_Il2CppMethodInitialized = true;
+	}
+	RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* V_0 = NULL;
+	bool V_1 = false;
+	{
+		// var rex = exception as RequestFailedException;
+		Exception_t* L_0 = ___exception0;
+		V_0 = ((RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)IsInstClass((RuntimeObject*)L_0, RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00_il2cpp_TypeInfo_var));
+		// if (rex != null)
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_1 = V_0;
+		V_1 = (bool)((!(((RuntimeObject*)(RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00*)L_1) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		// Debug.unityLogger.Log(LogType.Exception, k_Tag, $"[ErrorCode:{rex.ErrorCode}] {rex}");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_3;
+		L_3 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_4 = V_0;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = RequestFailedException_get_ErrorCode_mF3E649123FAA0AD7EEE1FFCBFACE6C2A20CBEDAE_inline(L_4, NULL);
+		int32_t L_6 = L_5;
+		RuntimeObject* L_7 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_6);
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_8 = V_0;
+		String_t* L_9;
+		L_9 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral86960211724E96958878FAD8035F1CACBBFAD32A, L_7, L_8, NULL);
+		NullCheck(L_3);
+		InterfaceActionInvoker3< int32_t, String_t*, RuntimeObject* >::Invoke(4 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_3, 4, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_9);
+		goto IL_004f;
+	}
+
+IL_003b:
+	{
+		// Debug.unityLogger.Log(LogType.Exception, k_Tag, exception);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_10;
+		L_10 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		Exception_t* L_11 = ___exception0;
+		NullCheck(L_10);
+		InterfaceActionInvoker3< int32_t, String_t*, RuntimeObject* >::Invoke(4 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_10, 4, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_11);
+	}
+
+IL_004f:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogAssertion(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogAssertion_m0081CF0005ADD6261FDE6CAC56929B1993CB419A (RuntimeObject* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static void LogAssertion(object message) => Debug.unityLogger.Log(LogType.Assert, k_Tag, message);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0;
+		L_0 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_0);
+		InterfaceActionInvoker3< int32_t, String_t*, RuntimeObject* >::Invoke(4 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, 1, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_1);
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Logger::LogVerbose(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_LogVerbose_m26981C7D8C7A044C63FF72D6D9EA5E68C0414D0E (RuntimeObject* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static void LogVerbose(object message) => Debug.unityLogger.Log(k_Tag, message);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0;
+		L_0 = Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline(NULL);
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_0);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(5 /* System.Void UnityEngine.ILogger::Log(System.String,System.Object) */, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteral043E18C57EC839C385CDC2FA4FBC63FC3F4F1922, L_1);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Utilities.NetworkingUtilities::.ctor(Unity.Services.Authentication.Utilities.IScheduler)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkingUtilities__ctor_m0E9E78601B583135C8CA8D53D0A5D814E27CAD11 (NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* __this, RuntimeObject* ___scheduler0, const RuntimeMethod* method) 
+{
+	{
+		// public NetworkingUtilities(IScheduler scheduler)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// m_Scheduler = scheduler;
+		RuntimeObject* L_0 = ___scheduler0;
+		__this->___m_Scheduler_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Scheduler_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Int32 Unity.Services.Authentication.Utilities.NetworkingUtilities::get_RedirectLimit()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NetworkingUtilities_get_RedirectLimit_m384C5E86350C4729ABB3C7B93604AAED25508E06 (NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int RedirectLimit { get; set; }
+		int32_t L_0 = __this->___U3CRedirectLimitU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.NetworkingUtilities::set_RedirectLimit(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkingUtilities_set_RedirectLimit_mBDFDA76F41F86DEF561F9132F44E660503AC1EA3 (NetworkingUtilities_t6042859A2296AE41C2F960B6D7D1672843E3F837* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public int RedirectLimit { get; set; }
+		int32_t L_0 = ___value0;
+		__this->___U3CRedirectLimitU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Unity.Services.Authentication.Utilities.IScheduler Unity.Services.Authentication.Utilities.Scheduler::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Scheduler_get_Instance_mC3FD4E903B8F35F3EED1369D40170F1533E1A468 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisScheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_m4C4B68A26ED728913DD047575532C95851D7246C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	RuntimeObject* V_1 = NULL;
+	{
+		// if (!s_Created)
+		bool L_0 = ((Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_StaticFields*)il2cpp_codegen_static_fields_for(Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var))->___s_Created_6;
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// s_Instance = ContainerObject.Container.AddComponent<Scheduler>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = ContainerObject_get_Container_m308E7B5A31CAEF3F482467294D4A1CE3B26138FC(NULL);
+		NullCheck(L_2);
+		Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* L_3;
+		L_3 = GameObject_AddComponent_TisScheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_m4C4B68A26ED728913DD047575532C95851D7246C(L_2, GameObject_AddComponent_TisScheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_m4C4B68A26ED728913DD047575532C95851D7246C_RuntimeMethod_var);
+		((Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_StaticFields*)il2cpp_codegen_static_fields_for(Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var))->___s_Instance_5 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&((Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_StaticFields*)il2cpp_codegen_static_fields_for(Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var))->___s_Instance_5), (void*)L_3);
+		// s_Created = true;
+		((Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_StaticFields*)il2cpp_codegen_static_fields_for(Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var))->___s_Created_6 = (bool)1;
+	}
+
+IL_0024:
+	{
+		// return s_Instance;
+		Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* L_4 = ((Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_StaticFields*)il2cpp_codegen_static_fields_for(Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F_il2cpp_TypeInfo_var))->___s_Instance_5;
+		V_1 = L_4;
+		goto IL_002c;
+	}
+
+IL_002c:
+	{
+		// }
+		RuntimeObject* L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Int32 Unity.Services.Authentication.Utilities.Scheduler::get_QueuedActions()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scheduler_get_QueuedActions_m648BF97A420DF5AD153C6CC8D8213D5D52719EB1 (Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public int QueuedActions => m_Queue.Count;
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_0 = __this->___m_Queue_4;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_inline(L_0, List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var);
+		return L_1;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Scheduler::ScheduleAction(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler_ScheduleAction_m6F47BCD3BECD9E6AF1A530DB13E1EF6D118737F2 (Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___action0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// m_Queue.Add(new ScheduledInvocation { Action = action, InvocationTime = DateTime.UtcNow });
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_0 = __this->___m_Queue_4;
+		il2cpp_codegen_initobj((&V_0), sizeof(ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = ___action0;
+		(&V_0)->___Action_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___Action_0), (void*)L_1);
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_2;
+		L_2 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		(&V_0)->___InvocationTime_1 = L_2;
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_3 = V_0;
+		NullCheck(L_0);
+		List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_inline(L_0, L_3, List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Scheduler::ScheduleAction(System.Action,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler_ScheduleAction_mD43FFD3E26901CDFEE3F9986D0D973ECC065D6EE (Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___action0, int32_t ___delaySeconds1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// m_Queue.Add(new ScheduledInvocation { Action = action, InvocationTime = DateTime.UtcNow.AddSeconds(delaySeconds) });
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_0 = __this->___m_Queue_4;
+		il2cpp_codegen_initobj((&V_0), sizeof(ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = ___action0;
+		(&V_0)->___Action_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___Action_0), (void*)L_1);
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_2;
+		L_2 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		V_1 = L_2;
+		int32_t L_3 = ___delaySeconds1;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_4;
+		L_4 = DateTime_AddSeconds_mC5FE3FB22A1295CA747746ECE48B9D4A4B6B2E81((&V_1), ((double)L_3), NULL);
+		(&V_0)->___InvocationTime_1 = L_4;
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_5 = V_0;
+		NullCheck(L_0);
+		List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_inline(L_0, L_5, List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Scheduler::CancelAction(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler_CancelAction_mDEF5CC4E8738F2F2AD8B7FDF06566839BF220901 (Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___action0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	bool V_2 = false;
+	{
+		// for (var i = m_Queue.Count - 1; i >= 0; i--)
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_0 = __this->___m_Queue_4;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_inline(L_0, List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var);
+		V_0 = ((int32_t)il2cpp_codegen_subtract(L_1, 1));
+		goto IL_0041;
+	}
+
+IL_0011:
+	{
+		// if (m_Queue[i].Action == action)
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_2 = __this->___m_Queue_4;
+		int32_t L_3 = V_0;
+		NullCheck(L_2);
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_4;
+		L_4 = List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37(L_2, L_3, List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_RuntimeMethod_var);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = L_4.___Action_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = ___action0;
+		bool L_7;
+		L_7 = Delegate_op_Equality_m8B96593B665536587FFD27DE233442C075971C32(L_5, L_6, NULL);
+		V_1 = L_7;
+		bool L_8 = V_1;
+		if (!L_8)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		// m_Queue.RemoveAt(i);
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_9 = __this->___m_Queue_4;
+		int32_t L_10 = V_0;
+		NullCheck(L_9);
+		List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D(L_9, L_10, List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_RuntimeMethod_var);
+	}
+
+IL_003c:
+	{
+		// for (var i = m_Queue.Count - 1; i >= 0; i--)
+		int32_t L_11 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_subtract(L_11, 1));
+	}
+
+IL_0041:
+	{
+		// for (var i = m_Queue.Count - 1; i >= 0; i--)
+		int32_t L_12 = V_0;
+		V_2 = (bool)((((int32_t)((((int32_t)L_12) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_13 = V_2;
+		if (L_13)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Scheduler::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler_Update_m8F9CF1E2E8E2582FD2BB5F37944511B377875774 (Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	bool V_3 = false;
+	{
+		// for (var i = m_Queue.Count - 1; i >= 0; i--)
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_0 = __this->___m_Queue_4;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_inline(L_0, List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_RuntimeMethod_var);
+		V_0 = ((int32_t)il2cpp_codegen_subtract(L_1, 1));
+		goto IL_0053;
+	}
+
+IL_0011:
+	{
+		// var action = m_Queue[i];
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_2 = __this->___m_Queue_4;
+		int32_t L_3 = V_0;
+		NullCheck(L_2);
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_4;
+		L_4 = List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37(L_2, L_3, List_1_get_Item_m6D9EEF48DFCAA8563977AA7C8FF98D2806E25F37_RuntimeMethod_var);
+		V_1 = L_4;
+		// if (action.InvocationTime < DateTime.UtcNow)
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_5 = V_1;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_6 = L_5.___InvocationTime_1;
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_7;
+		L_7 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		bool L_8;
+		L_8 = DateTime_op_LessThan_m2A02FFF5F35E33417FB32CB9F948769CA15AED17(L_6, L_7, NULL);
+		V_2 = L_8;
+		bool L_9 = V_2;
+		if (!L_9)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		// m_Queue.RemoveAt(i);
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_10 = __this->___m_Queue_4;
+		int32_t L_11 = V_0;
+		NullCheck(L_10);
+		List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D(L_10, L_11, List_1_RemoveAt_m69BB52432A3E21A7B3A7C3B90CAD59C3E097801D_RuntimeMethod_var);
+		// action.Action();
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_12 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_13 = L_12.___Action_0;
+		NullCheck(L_13);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_13, NULL);
+	}
+
+IL_004e:
+	{
+		// for (var i = m_Queue.Count - 1; i >= 0; i--)
+		int32_t L_14 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_subtract(L_14, 1));
+	}
+
+IL_0053:
+	{
+		// for (var i = m_Queue.Count - 1; i >= 0; i--)
+		int32_t L_15 = V_0;
+		V_3 = (bool)((((int32_t)((((int32_t)L_15) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_16 = V_3;
+		if (L_16)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Unity.Services.Authentication.Utilities.Scheduler::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler__ctor_mB6649D3159B0445C078524FF5AF65F897D2B8115 (Scheduler_tD09133DE433BDFC3F3AAF8469878B385E39D4C3F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// List<ScheduledInvocation> m_Queue = new List<ScheduledInvocation>();
+		List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* L_0 = (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*)il2cpp_codegen_object_new(List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465(L_0, List_1__ctor_m959ED16FC21FF67B885DFDEF31F442FCD81BE465_RuntimeMethod_var);
+		__this->___m_Queue_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Queue_4), (void*)L_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+IL2CPP_EXTERN_C void ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshal_pinvoke(const ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C& unmarshaled, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_pinvoke& marshaled)
+{
+	Exception_t* ___InvocationTime_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'InvocationTime' of type 'ScheduledInvocation'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___InvocationTime_1Exception, NULL);
+}
+IL2CPP_EXTERN_C void ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshal_pinvoke_back(const ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_pinvoke& marshaled, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C& unmarshaled)
+{
+	Exception_t* ___InvocationTime_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'InvocationTime' of type 'ScheduledInvocation'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___InvocationTime_1Exception, NULL);
+}
+// Conversion method for clean up from marshalling of: Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+IL2CPP_EXTERN_C void ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshal_pinvoke_cleanup(ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+IL2CPP_EXTERN_C void ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshal_com(const ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C& unmarshaled, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_com& marshaled)
+{
+	Exception_t* ___InvocationTime_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'InvocationTime' of type 'ScheduledInvocation'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___InvocationTime_1Exception, NULL);
+}
+IL2CPP_EXTERN_C void ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshal_com_back(const ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_com& marshaled, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C& unmarshaled)
+{
+	Exception_t* ___InvocationTime_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'InvocationTime' of type 'ScheduledInvocation'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___InvocationTime_1Exception, NULL);
+}
+// Conversion method for clean up from marshalling of: Unity.Services.Authentication.Utilities.Scheduler/ScheduledInvocation
+IL2CPP_EXTERN_C void ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshal_com_cleanup(ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.AccessToken::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccessToken__ctor_m892B6201F653266F050F633ED8CC80B59E99F8DB (AccessToken_t46CE551D960788AE3426D714E128E48AC51FF82F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AccessToken() {}
+		BaseJwt__ctor_mBCB4AB92D2B7C6AF884876DC7C97E0D02389673E(__this, NULL);
+		// public AccessToken() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.AccessTokenExtraClaims::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccessTokenExtraClaims__ctor_m20E208A0577F6AE22A0AED3034A6197F620D66DF (AccessTokenExtraClaims_t305F774A480A5C1A73EAAE27B6C634AD81E4EADC* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AccessTokenExtraClaims() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public AccessTokenExtraClaims() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.AuthenticationErrorResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationErrorResponse__ctor_m05F4D318A67E76AB994D750B8F75B8597B6BA968 (AuthenticationErrorResponse_t6967AFC2C38980652CCFDF41FB11D7CADD5E5632* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AuthenticationErrorResponse() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public AuthenticationErrorResponse() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.BaseJwt::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseJwt__ctor_mBCB4AB92D2B7C6AF884876DC7C97E0D02389673E (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public BaseJwt() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public BaseJwt() {}
+		return;
+	}
+}
+// System.DateTime Unity.Services.Authentication.Models.BaseJwt::get_ExpirationTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D BaseJwt_get_ExpirationTime_mE87A55B4AB3C5B749A8C60C94179F88069C75109 (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public DateTime ExpirationTime => ConvertTimestamp(ExpirationTimeUnix);
+		int32_t L_0 = __this->___ExpirationTimeUnix_0;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1;
+		L_1 = BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7(__this, L_0, NULL);
+		return L_1;
+	}
+}
+// System.DateTime Unity.Services.Authentication.Models.BaseJwt::get_IssuedAtTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D BaseJwt_get_IssuedAtTime_mC26B13F3333244211EF2E737F4CA3C83B04FC93C (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public DateTime IssuedAtTime => ConvertTimestamp(IssuedAtTimeUnix);
+		int32_t L_0 = __this->___IssuedAtTimeUnix_1;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1;
+		L_1 = BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7(__this, L_0, NULL);
+		return L_1;
+	}
+}
+// System.DateTime Unity.Services.Authentication.Models.BaseJwt::get_NotBeforeTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D BaseJwt_get_NotBeforeTime_m0090DAF486B90FA72666BF5A597915091C12A6EF (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public DateTime NotBeforeTime => ConvertTimestamp(NotBeforeTimeUnix);
+		int32_t L_0 = __this->___NotBeforeTimeUnix_2;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1;
+		L_1 = BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7(__this, L_0, NULL);
+		return L_1;
+	}
+}
+// System.DateTime Unity.Services.Authentication.Models.BaseJwt::ConvertTimestamp(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7 (BaseJwt_t6CCD85D998BCA096E3E208FCD1D9CA4FEE7586F0* __this, int32_t ___timestamp0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		// if (timestamp != 0)
+		int32_t L_0 = ___timestamp0;
+		V_0 = (bool)((!(((uint32_t)L_0) <= ((uint32_t)0)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// var dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(timestamp);
+		int32_t L_2 = ___timestamp0;
+		il2cpp_codegen_runtime_class_init_inline(DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_il2cpp_TypeInfo_var);
+		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_3;
+		L_3 = DateTimeOffset_FromUnixTimeSeconds_mE1FA5E04CCCE8A0E8903C9DACC64526C721C0A47(((int64_t)L_2), NULL);
+		V_1 = L_3;
+		// return dateTimeOffset.DateTime;
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_4;
+		L_4 = DateTimeOffset_get_DateTime_mDF6DC57E7A5647D8B964D3FD5B6855E7D66EF324((&V_1), NULL);
+		V_2 = L_4;
+		goto IL_0027;
+	}
+
+IL_001c:
+	{
+		// throw new Exception("Token does not contain a value for this timestamp.");
+		Exception_t* L_5 = (Exception_t*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAABA5583336EE2A2E15567578298B9945602F0B1)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BaseJwt_ConvertTimestamp_mE9C3580C049AD01BA9B85FD0DF1E1949FA2F96A7_RuntimeMethod_var)));
+	}
+
+IL_0027:
+	{
+		// }
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_6 = V_2;
+		return L_6;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.ExternalTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExternalTokenRequest__ctor_m97CEC8BA5D0D5F724AD677E33930866DECF324F4 (ExternalTokenRequest_t1908A4F3142851DF54569AF1D4822AB1C2F745E6* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ExternalTokenRequest() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public ExternalTokenRequest() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.OAuthAuthCodeResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OAuthAuthCodeResponse__ctor_mEB70444CBC17EE1919D5A3B5EFA63DC45FA26DC1 (OAuthAuthCodeResponse_t819F40E54DE14BF799F56EE8243D8BDA04040E7C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public OAuthAuthCodeResponse() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public OAuthAuthCodeResponse() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.OAuthTokenResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OAuthTokenResponse__ctor_mF1224B7505130857BC02B61A324B3A6F4FCC9997 (OAuthTokenResponse_tE52A37F111EA0F844E3656E7A7C9B0590886507B* __this, const RuntimeMethod* method) 
+{
+	{
+		// public OAuthTokenResponse() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public OAuthTokenResponse() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.SessionTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionTokenRequest__ctor_m50B49F66C062091CD769D7B04769C66CA3A64CD0 (SessionTokenRequest_tC109F5D2BC5E023345348153BA804466552A605C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public SessionTokenRequest() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public SessionTokenRequest() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.SignInResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SignInResponse__ctor_m610FC868A5B51FDB79BBDF5AF7CC81DBF915FEF2 (SignInResponse_t6CB166D29192FD9BABE441C462117FE08ED78816* __this, const RuntimeMethod* method) 
+{
+	{
+		// public SignInResponse() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public SignInResponse() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.WellKnownKeys::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WellKnownKeys__ctor_mD948CBD6CD8D45D0823E0CE4D7B874E038D62BFA (WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* __this, const RuntimeMethod* method) 
+{
+	{
+		// public WellKnownKeys() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public WellKnownKeys() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Unity.Services.Authentication.Models.WellKnownKey::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WellKnownKey__ctor_m3ECFA1890B9A751C4E0560F4D791B61E6EEF47F2 (WellKnownKey_tE595DB18C008B9F7E7CD8A2F76BC669FC44058CA* __this, const RuntimeMethod* method) 
+{
+	{
+		// public WellKnownKey() {}
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public WellKnownKey() {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AsyncOperation_get_IsDone_mFABF133C322E1F709C84DF9FA4C57C25AE1B28D0_inline (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = __this->___U3CIsDoneU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AsyncOperation_get_Status_m0A936D453514234140366F6C2318ECA656CF3A87_inline (AsyncOperation_t61C50301F6B88D53A578DC2EF1448406FE82C0D0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AsyncOperationStatus Status { get; protected set; }
+		int32_t L_0 = __this->___U3CStatusU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AuthenticationServiceInternal_get_State_m01234DE9BB769F6C48080DDF89A17CAC3AD4DD30_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal AuthenticationState State { get; set; }
+		int32_t L_0 = __this->___U3CStateU3Ek__BackingField_22;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_State_mBE3362F5E6AAA06DA3D0D9CFA6CE38C5A5991FA1_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal AuthenticationState State { get; set; }
+		int32_t L_0 = ___value0;
+		__this->___U3CStateU3Ek__BackingField_22 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* AuthenticationServiceInternal_get_WellKnownKeys_m413980717CA743861F20F5BE752831315F0B519D_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal WellKnownKeys WellKnownKeys { get; private set; }
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_0 = __this->___U3CWellKnownKeysU3Ek__BackingField_23;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_WellKnownKeys_m829E05331FF7572A43CA5CCF93CCCD8E00F3E7F3_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal WellKnownKeys WellKnownKeys { get; private set; }
+		WellKnownKeys_t34B1E48F5F0E6130B27874D90161196DDEC28292* L_0 = ___value0;
+		__this->___U3CWellKnownKeysU3Ek__BackingField_23 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CWellKnownKeysU3Ek__BackingField_23), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AuthenticationServiceInternal_get_AccessToken_m7B4AC5988045E8F833AE7E31782030743B96E8F2_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string AccessToken { get; private set; }
+		String_t* L_0 = __this->___U3CAccessTokenU3Ek__BackingField_21;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationServiceInternal_set_AccessToken_mCA6812FEB9BEE46E4C936835F0B81274A4ADF519_inline (AuthenticationServiceInternal_t900B889D56EFB4844BF3FE45F813B391B771CC5B* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public string AccessToken { get; private set; }
+		String_t* L_0 = ___value0;
+		__this->___U3CAccessTokenU3Ek__BackingField_21 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAccessTokenU3Ek__BackingField_21), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* AuthenticationAsyncOperation_get_Exception_mE8D6E42481B873D50E094488DB0579445AC6F304_inline (AuthenticationAsyncOperation_t34524C7EED2DFE63C1A8FAF171AD5230BE7775C3* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_Exception;
+		RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* L_0 = __this->___m_Exception_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____stringLength_4;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AuthenticationService_set_Instance_mF6E5CECFA4F9F11AD6628770749F28B73904F1F3_inline (RuntimeObject* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static IAuthenticationService Instance { get; internal set; }
+		RuntimeObject* L_0 = ___value0;
+		((AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_StaticFields*)il2cpp_codegen_static_fields_for(AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_StaticFields*)il2cpp_codegen_static_fields_for(AuthenticationService_tAE0E8AD3C0C0EB7C7450966040B0F29CF566CE34_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Task_get_CompletedTask_m1567097D0142D009DC8F9B70DA2C55DA651D55E9_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_0 = ((Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields*)il2cpp_codegen_static_fields_for(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var))->___U3CCompletedTaskU3Ek__BackingField_16;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* CoreRegistry_get_Instance_m73A64BD3CB78EF5AC698D1635B5872CEB9F9AFE2_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static CoreRegistry Instance { get; internal set; }
+		CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA* L_0 = ((CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA_StaticFields*)il2cpp_codegen_static_fields_for(CoreRegistry_t7B61538793CE940CE3A391364C163F1078C9F2BA_il2cpp_TypeInfo_var))->___U3CInstanceU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Debug_get_unityLogger_m4FDE4D41C187123244FE13124DA636BB50C9C1E1_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0 = ((Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_StaticFields*)il2cpp_codegen_static_fields_for(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var))->___s_Logger_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RequestFailedException_get_ErrorCode_mF3E649123FAA0AD7EEE1FFCBFACE6C2A20CBEDAE_inline (RequestFailedException_tBF4D4AF8AD31BEE32091AEBC120B629B052E2D00* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int ErrorCode { get; }
+		int32_t L_0 = __this->___U3CErrorCodeU3Ek__BackingField_18;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_mF6BE8B768C3DA33BE3281D8F143C0FB02E720366_gshared_inline (Action_2_t43544BAAB4CC69E54228A3389CC3D57A805208A2* __this, int32_t ___arg10, int32_t ___arg21, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, int32_t, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg10, ___arg21, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___key_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m9EC29595FAFC7FBDF314B98C6ABE5322D6DB8415_gshared_inline (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = (int32_t)__this->____size_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m4205E16FEF5F169AD524B89B548C62A3A288161F_gshared_inline (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A* __this, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C ___item0, const RuntimeMethod* method) 
+{
+	ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF* L_1 = (ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ScheduledInvocationU5BU5D_t67491AC1BA010178C1CEAD18925E9AD59ED9F1DF* L_6 = V_0;
+		int32_t L_7 = V_1;
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_8 = ___item0;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C L_9 = ___item0;
+		((  void (*) (List_1_tA246EA81BEEA3173320AEFEB5894062760789A1A*, ScheduledInvocation_t3F42E7B877BA7FAD92CC3804BCC232545D80931C, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
+	}
+}
